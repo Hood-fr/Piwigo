@@ -64,7 +64,7 @@ if ( !empty($header_notes) )
 }
 
 // No referencing is required
-if ( !$conf['meta_ref'] )
+/*if ( !$conf['meta_ref'] )
 {
   $page['meta_robots']['noindex'] = 1;
   $page['meta_robots']['nofollow'] = 1;
@@ -82,7 +82,7 @@ if ( !isset($page['meta_robots']['noindex']) )
 {
   $template->assign('meta_ref',1);
 }
-
+*/
 // refresh
 if ( isset( $refresh ) and intval($refresh) >= 0
     and isset( $url_link ) )
