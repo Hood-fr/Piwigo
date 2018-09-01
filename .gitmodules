@@ -52,3 +52,6 @@
 [submodule "plugins/GuestBook"]
 	path = plugins/GuestBook
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/GuestBook
+[submodule "plugins/language_switch"]
+	path = plugins/language_switch
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/language_switch
