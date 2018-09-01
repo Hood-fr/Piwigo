@@ -13,3 +13,6 @@
 [submodule "plugins/AddUsersNotes"]
 	path = plugins/AddUsersNotes
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/AddUsersNotes
+[submodule "plugins/AdminTools"]
+	path = plugins/AdminTools
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/AdminTools
