@@ -19,3 +19,6 @@
 [submodule "plugins/AMenuManager"]
 	path = plugins/AMenuManager
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/AMenuManager
+[submodule "plugins/BatchDownloader"]
+	path = plugins/BatchDownloader
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/BatchDownloader
