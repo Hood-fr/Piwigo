@@ -67,3 +67,6 @@
 [submodule "plugins/PersoAbout"]
 	path = plugins/PersoAbout
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/PersoAbout
+[submodule "plugins/PersoFavicon"]
+	path = plugins/PersoFavicon
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/PersoFavicon
