@@ -25,3 +25,6 @@
 [submodule "plugins/Comments_on_Albums"]
 	path = plugins/Comments_on_Albums
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/Comments_on_Albums
+[submodule "plugins/CryptograPHP"]
+	path = plugins/CryptograPHP
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/CryptograPHP
