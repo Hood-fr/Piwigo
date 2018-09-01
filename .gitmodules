@@ -61,3 +61,6 @@
 [submodule "plugins/meta"]
 	path = plugins/meta
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/meta
+[submodule "plugins/no_stats_for_robots"]
+	path = plugins/no_stats_for_robots
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/no_stats_for_robots
