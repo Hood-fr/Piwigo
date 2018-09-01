@@ -73,3 +73,6 @@
 [submodule "plugins/plugin_lang_analysis"]
 	path = plugins/plugin_lang_analysis
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/plugin_lang_analysis
+[submodule "plugins/rightClick"]
+	path = plugins/rightClick
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/rightClick
