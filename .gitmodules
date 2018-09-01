@@ -10,3 +10,6 @@
 [submodule "plugins/AdditionalPages"]
 	path = plugins/AdditionalPages
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/AdditionalPages
+[submodule "plugins/AddUsersNotes"]
+	path = plugins/AddUsersNotes
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/AddUsersNotes
