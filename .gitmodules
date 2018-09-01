@@ -100,3 +100,6 @@
 [submodule "plugins/Statistics"]
 	path = plugins/Statistics
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/Statistics
+[submodule "plugins/TakeATour"]
+	path = plugins/TakeATour
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/TakeATour
