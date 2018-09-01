@@ -43,3 +43,6 @@
 [submodule "plugins/Force_HTTPS"]
 	path = plugins/Force_HTTPS
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/Force_HTTPS
+[submodule "plugins/GDThumb"]
+	path = plugins/GDThumb
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/GDThumb
