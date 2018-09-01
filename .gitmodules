@@ -4,3 +4,6 @@
 [submodule "themes/stripped"]
 	path = themes/stripped
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/themes/stripped
+[submodule "plugins/PayPalShoppingCart"]
+	path = plugins/PayPalShoppingCart
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/PayPalShoppingCart
