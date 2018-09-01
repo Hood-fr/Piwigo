@@ -46,3 +46,6 @@
 [submodule "plugins/GDThumb"]
 	path = plugins/GDThumb
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/GDThumb
+[submodule "plugins/GrumPluginClasses"]
+	path = plugins/GrumPluginClasses
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/GrumPluginClasses
