@@ -97,3 +97,6 @@
 [submodule "plugins/SocialButtons"]
 	path = plugins/SocialButtons
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/SocialButtons
+[submodule "plugins/Statistics"]
+	path = plugins/Statistics
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/Statistics
