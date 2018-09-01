@@ -82,3 +82,6 @@
 [submodule "plugins/rv_gmaps"]
 	path = plugins/rv_gmaps
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/rv_gmaps
+[submodule "plugins/rv_sitemap"]
+	path = plugins/rv_sitemap
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/rv_sitemap
