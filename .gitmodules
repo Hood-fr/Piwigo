@@ -103,3 +103,6 @@
 [submodule "plugins/TakeATour"]
 	path = plugins/TakeATour
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/TakeATour
+[submodule "plugins/ThumbnailTooltip"]
+	path = plugins/ThumbnailTooltip
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/ThumbnailTooltip
