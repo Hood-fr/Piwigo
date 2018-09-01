@@ -16,3 +16,6 @@
 [submodule "plugins/AdminTools"]
 	path = plugins/AdminTools
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/AdminTools
+[submodule "plugins/AMenuManager"]
+	path = plugins/AMenuManager
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/AMenuManager
