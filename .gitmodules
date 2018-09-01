@@ -64,3 +64,6 @@
 [submodule "plugins/no_stats_for_robots"]
 	path = plugins/no_stats_for_robots
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/no_stats_for_robots
+[submodule "plugins/PersoAbout"]
+	path = plugins/PersoAbout
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/PersoAbout
