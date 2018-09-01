@@ -94,3 +94,6 @@
 [submodule "plugins/SmiliesSupport"]
 	path = plugins/SmiliesSupport
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/SmiliesSupport
+[submodule "plugins/SocialButtons"]
+	path = plugins/SocialButtons
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/SocialButtons
