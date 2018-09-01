@@ -85,3 +85,6 @@
 [submodule "plugins/rv_sitemap"]
 	path = plugins/rv_sitemap
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/rv_sitemap
+[submodule "plugins/search_links"]
+	path = plugins/search_links
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/search_links
