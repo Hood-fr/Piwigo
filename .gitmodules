@@ -28,3 +28,6 @@
 [submodule "plugins/CryptograPHP"]
 	path = plugins/CryptograPHP
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/CryptograPHP
+[submodule "plugins/event_tracer"]
+	path = plugins/event_tracer
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/event_tracer
