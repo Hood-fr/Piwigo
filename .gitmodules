@@ -88,3 +88,6 @@
 [submodule "plugins/search_links"]
 	path = plugins/search_links
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/search_links
+[submodule "plugins/ShareThis"]
+	path = plugins/ShareThis
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/ShareThis
