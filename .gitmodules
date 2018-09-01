@@ -55,3 +55,6 @@
 [submodule "plugins/language_switch"]
 	path = plugins/language_switch
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/language_switch
+[submodule "plugins/LocalFilesEditor"]
+	path = plugins/LocalFilesEditor
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/LocalFilesEditor
