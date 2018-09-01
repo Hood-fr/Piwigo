@@ -40,3 +40,6 @@
 [submodule "plugins/ExtendedDescription"]
 	path = plugins/ExtendedDescription
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/ExtendedDescription
+[submodule "plugins/Force_HTTPS"]
+	path = plugins/Force_HTTPS
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/Force_HTTPS
