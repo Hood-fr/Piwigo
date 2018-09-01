@@ -34,3 +34,6 @@
 [submodule "plugins/exif_view"]
 	path = plugins/exif_view
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/exif_view
+[submodule "plugins/export_data"]
+	path = plugins/export_data
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/export_data
