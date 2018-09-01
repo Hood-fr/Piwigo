@@ -49,3 +49,6 @@
 [submodule "plugins/GrumPluginClasses"]
 	path = plugins/GrumPluginClasses
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/GrumPluginClasses
+[submodule "plugins/GuestBook"]
+	path = plugins/GuestBook
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/GuestBook
