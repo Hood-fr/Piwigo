@@ -7,3 +7,6 @@
 [submodule "plugins/PayPalShoppingCart"]
 	path = plugins/PayPalShoppingCart
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/PayPalShoppingCart
+[submodule "plugins/AdditionalPages"]
+	path = plugins/AdditionalPages
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/AdditionalPages
