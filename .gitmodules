@@ -76,3 +76,6 @@
 [submodule "plugins/rightClick"]
 	path = plugins/rightClick
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/rightClick
+[submodule "plugins/rv_autocomplete"]
+	path = plugins/rv_autocomplete
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/rv_autocomplete
