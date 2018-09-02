@@ -432,3 +432,4 @@ $lang['Link: %s'] = '链接： %s';
 $lang['Your authentication key is no longer valid.'] = '您的认证密钥已失效。';
 $lang['Invalid username or password!'] = '用户名或密码无效！';
 $lang['generate random password'] = '生成随机密码';
+$lang['Please register'] = '注册或以用户身份登录以避免验证码，并能够编辑或删除您的评论';

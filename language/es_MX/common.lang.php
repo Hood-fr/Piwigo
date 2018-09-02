@@ -427,3 +427,4 @@ $lang['A comment on your site'] = 'Un comentario en tu sitio';
 $lang['About'] = 'Acerca de';
 $lang['About Piwigo'] = 'Acerca de Piwigo';
 $lang['Accelerate diaporama speed'] = 'Incrementar la velocidad del pase de diapositivas';
+$lang['Please register'] = 'Regístrese o inicie sesión como usuario para evitar el código de captcha y poder editar o eliminar sus comentarios';

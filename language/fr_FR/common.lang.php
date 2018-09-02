@@ -428,3 +428,4 @@ $lang['Link: %s'] = 'Lien: %s';
 $lang['Your authentication key is no longer valid.'] = 'Votre clef d\'identification n\'est plus valide.';
 $lang['Invalid username or password!'] = 'Nom d\'utilisateur ou mot de passe invalide !';
 $lang['generate random password'] = 'générer un mot de passe aléatoire';
+$lang['Please register'] = 'Enregistrez-vous ou connectez-vous comme utilisateur pour éviter les codes captcha et pouvoir modifier ou supprimer vos commentaires';

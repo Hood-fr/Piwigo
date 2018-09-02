@@ -448,3 +448,4 @@ $lang['month']['9'] = 'септември';
 $lang['Your authentication key is no longer valid.'] = 'Вашият ключ да верификация вече не е активен.';
 $lang['generate random password'] = 'генериране на произволна парола';
 $lang['Invalid username or password!'] = 'Невалидно име или парола!';
+$lang['Please register'] = 'Регистрирайте се или влезте като потребител, за да избегнете captcha code и да можете да редактирате или изтривате коментарите си';

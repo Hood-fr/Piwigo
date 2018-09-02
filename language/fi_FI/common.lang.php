@@ -431,3 +431,4 @@ $lang['Link: %s'] = 'Linkki: %s';
 $lang['Your authentication key is no longer valid.'] = 'Todennusavaimesi ei ole enää voimassa.';
 $lang['Invalid username or password!'] = 'Väärä käyttäjänimi tai salasana!';
 $lang['generate random password'] = 'luo satunnainen salasana';
+$lang['Please register'] = 'Rekisteröidy tai kirjaudu sisään käyttäjäksi vältettäväksesi captcha-koodin ja voit muokata tai poistaa kommentteja';

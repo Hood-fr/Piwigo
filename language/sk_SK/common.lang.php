@@ -438,3 +438,4 @@ $lang['Link: %s'] = 'Link: %s';
 $lang['Your authentication key is no longer valid.'] = 'Váš autentifikačný kľúč nie je viac platný.';
 $lang['generate random password'] = 'generovanie náhodného hesla';
 $lang['Invalid username or password!'] = 'Neplatné meno alebo heslo!';
+$lang['Please register'] = 'Zaregistrujte sa alebo sa prihláste ako používateľ, aby ste sa vyhli kódu captcha a mohli upravovať alebo mazať svoje komentáre';

@@ -427,3 +427,4 @@ $lang['Apply on properties'] = '適用於性能';
 $lang['Album name, A &rarr; Z'] = '相冊名稱, A &rarr; Z';
 $lang['Album name, Z &rarr; A'] = '相冊名稱, Z &rarr; A';
 $lang['Link: %s'] = '連結: %s';
+$lang['Please register'] = '注册或以用户身份登录以避免验证码，并能够编辑或删除您的评论';

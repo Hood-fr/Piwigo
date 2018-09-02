@@ -68,3 +68,4 @@ $lang['Successfully registered, you will soon receive an email with your connect
 $lang['Please, enter a login'] = 'Please enter a login';
 $lang['Piwigo encountered a non recoverable error'] = 'Piwigo encountered an irrecoverable error';
 $lang['Forgot your password?'] = 'Forgotten your password?';
+$lang['Please register'] = 'Register or login as user to avoid captcha code, and being able to edit or delete your comments';

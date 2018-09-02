@@ -433,3 +433,4 @@ $lang['Photo title'] = 'Titre de la photo';
 $lang['generate random password'] = 'générer un mot de passe aléatoire';
 $lang['Your authentication key is no longer valid.'] = 'Voter clef d\'identification n\'est plus valide';
 $lang['Invalid username or password!'] = 'Nom d\'utilisateur ou mot de passe invalide !';
+$lang['Please register'] = 'Enregistrez-vous ou connectez-vous comme utilisateur pour éviter les codes captcha et pouvoir modifier ou supprimer vos commentaires';

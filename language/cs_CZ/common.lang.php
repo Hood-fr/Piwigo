@@ -435,3 +435,4 @@ $lang['No results for'] = 'Žádné výsledky pro';
 $lang['Your authentication key is no longer valid.'] = 'Váš autorizační klíč není nadále platný.';
 $lang['Invalid username or password!'] = 'Chybné uživatelské jméno nebo heslo!';
 $lang['generate random password'] = 'generovat náhodné heslo';
+$lang['Please register'] = 'Zaregistrujte se nebo se přihlaste jako uživatel, abyste zabránili kódu captcha a mohli své komentáře upravit nebo smazat';

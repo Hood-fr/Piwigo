@@ -429,3 +429,4 @@ $lang['Link: %s'] = 'Σύνδεσμος: %s';
 $lang['Your authentication key is no longer valid.'] = 'Το κλειδί ταυτοποίησης σας δεν είναι πλέον έγκυρο.';
 $lang['generate random password'] = 'δημιουργήστε τυχαίο κωδικό πρόσβασης';
 $lang['Invalid username or password!'] = 'Μη έγκυρο όνομα ή κωδικός!';
+$lang['Please register'] = 'Εγγραφείτε ή συνδεθείτε ως χρήστης για να αποφύγετε τον κωδικό captcha και να είστε σε θέση να επεξεργαστείτε ή να διαγράψετε τα σχόλιά σας';

@@ -428,3 +428,4 @@ $lang['Link: %s'] = 'Enllaç: %s';
 $lang['Your authentication key is no longer valid.'] = 'D\'aquí poc temps la teva clau autenticació no serà vàlida';
 $lang['Invalid username or password!'] = 'Contrasenya no vàlida';
 $lang['generate random password'] = 'Genera una contrasenya aleatòria';
+$lang['Please register'] = 'Registre o inici de sessió com a usuari per evitar el codi captcha i poder editar o eliminar els vostres comentaris';

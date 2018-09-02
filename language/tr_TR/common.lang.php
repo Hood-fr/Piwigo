@@ -429,3 +429,4 @@ $lang['Link: %s'] = 'Bağlantı: %s';
 $lang['Your authentication key is no longer valid.'] = 'Kimlik doğrulama anahtarınız artık geçerli değil.';
 $lang['Invalid username or password!'] = 'Geçersiz kullanıcı adı veya şifre!';
 $lang['generate random password'] = 'rastgele şifre oluştur';
+$lang['Please register'] = 'Captcha kodunu önlemek ve yorumlarınızı düzenleyebilmek veya silmek için kullanıcı olarak kayıt olun veya giriş yapın';

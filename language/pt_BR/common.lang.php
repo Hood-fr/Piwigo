@@ -430,3 +430,4 @@ $lang['Link: %s'] = 'Link: %s';
 $lang['Your authentication key is no longer valid.'] = 'Sua chave de autenticação não é mais válida.';
 $lang['Invalid username or password!'] = 'Senha ou nome de usuário inválido!';
 $lang['generate random password'] = 'gerar senha aleatória';
+$lang['Please register'] = 'Registre-se ou faça login como usuário para evitar o código captcha e poder editar ou excluir seus comentários';

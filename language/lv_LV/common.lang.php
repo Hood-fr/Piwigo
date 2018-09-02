@@ -429,3 +429,4 @@ $lang['Link: %s'] = 'Saite: %s';
 $lang['Your authentication key is no longer valid.'] = 'Jūsu autentifikācijas atslēga vairs nav derīga';
 $lang['generate random password'] = 'ģenerēt gadījumveida paroli';
 $lang['Invalid username or password!'] = 'Nepareizs lietotjvārds vai parole';
+$lang['Please register'] = 'Reģistrējieties vai piesakieties kā lietotājs, lai izvairītos no captcha koda un lai varētu rediģēt vai dzēst savus komentārus';

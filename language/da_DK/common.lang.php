@@ -431,3 +431,4 @@ $lang['Link: %s'] = 'Link: %s';
 $lang['Your authentication key is no longer valid.'] = 'Din autentifikationsnøgle er ikke længere gyldig.';
 $lang['Invalid username or password!'] = 'Ugyldigt brugernavn eller adgangskode!';
 $lang['generate random password'] = 'generer tilfældig adgangskode';
+$lang['Please register'] = 'Registrer eller log ind som bruger for at undgå captcha kode, og at kunne redigere eller slette dine kommentarer';

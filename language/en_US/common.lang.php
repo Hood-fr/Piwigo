@@ -42,3 +42,4 @@ $lang['Piwigo encountered a non recoverable error'] = 'Piwigo encountered an unr
 $lang['Anti-flood system : please wait for a moment before trying to post another comment'] = 'Anti-flood system: please wait a moment before trying to post another comment.';
 $lang['An administrator must authorize your comment before it is visible.'] = 'An administrator must authorize your comment before it is displayed.';
 $lang['Bad status for user "guest", using default status. Please notify the webmaster.'] = 'Bad status for guest user; default status will be used. Please notify the webmaster.';
+$lang['Please register'] = 'Register or login as user to avoid captcha code, and being able to edit or delete your comments';

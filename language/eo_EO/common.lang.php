@@ -430,3 +430,4 @@ $lang['Link: %s'] = 'Ligilo: %s';
 $lang['Your authentication key is no longer valid.'] = 'Via identigila ŝlosilo ne plu validas';
 $lang['generate random password'] = 'generi hazardan pasvorton';
 $lang['Invalid username or password!'] = 'Ne valida uzantnomo aŭ pasvorto!';
+$lang['Please register'] = 'Registru aŭ ensalutu kiel uzanto por eviti la kodon captcha, kaj povante redakti aŭ forigi viajn komentojn';

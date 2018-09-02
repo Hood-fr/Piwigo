@@ -451,3 +451,4 @@ $lang['Link: %s'] = 'Link: %s';
 $lang['Your authentication key is no longer valid.'] = 'Teie autentimise võti enam ei kehti';
 $lang['Invalid username or password!'] = 'Vale kasutajanimi või salasõna!';
 $lang['generate random password'] = 'Genereeri juhuslik salasõna';
+$lang['Please register'] = 'Registreeruge või kasutage kasutajanimega, et vältida captcha-koodi ning saate oma kommentaare redigeerida või kustutada';

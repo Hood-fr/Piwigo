@@ -433,3 +433,4 @@ $lang['Link: %s'] = 'Hivatkozás: %s';
 $lang['Your authentication key is no longer valid.'] = 'A hitelesítési kulcsod már nem érvényes.';
 $lang['Invalid username or password!'] = 'A felhasználó-azonosító vagy a jelszó érvénytelen ';
 $lang['generate random password'] = 'Véletlenszerű jelszó generálása';
+$lang['Please register'] = 'Regisztrálj vagy jelentkezz be felhasználóként, hogy elkerüld a captcha kódot, és szerkesztsd vagy törölheted a megjegyzéseidet';

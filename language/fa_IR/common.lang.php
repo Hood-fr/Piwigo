@@ -435,3 +435,4 @@ $lang['Link: %s'] = 'لینک: %s';
 $lang['Your authentication key is no longer valid.'] = 'کلید احراز هویت شما نامعتبر بوده و باید دوباره ارسال شود.';
 $lang['Invalid username or password!'] = 'رمز یا نام کاربری ناموجود است';
 $lang['generate random password'] = 'ساخت رمز اتفاقی';
+$lang['Please register'] = 'ثبت نام یا ورود به عنوان کاربر برای جلوگیری از کد کپچا، و قادر به ویرایش و یا حذف نظرات خود را';
