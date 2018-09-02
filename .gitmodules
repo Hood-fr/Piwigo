@@ -106,3 +106,6 @@
 [submodule "plugins/ThumbnailTooltip"]
 	path = plugins/ThumbnailTooltip
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/ThumbnailTooltip
+[submodule "plugins/stop_spammers"]
+	path = plugins/stop_spammers
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/stop_spammers
