@@ -150,7 +150,8 @@ SELECT
     com.website_url,
     com.email,
     com.content,
-    com.validated
+    com.validated,
+    com.spam_feedback
   FROM '.COMMENTS_TABLE.' AS com
   LEFT JOIN '.USERS_TABLE.' AS u
     ON u.'.$conf['user_fields']['id'].' = author_id
@@ -185,6 +186,8 @@ SELECT
           'DATE' => format_date($row['date'], array('day_name','day','month','year','time')),
           'CONTENT' => trigger_change('render_comment_content',$row['content']),
           'WEBSITE_URL' => $row['website_url'],
+          'IS_PENDING' => ('false' == $row['validated']),
+          'IS_SPAM' => ('spam' == $row['spam_feedback']),
         );
 
       if (can_manage_comment('delete', $row['author_id']))

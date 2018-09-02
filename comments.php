@@ -388,7 +388,8 @@ SELECT SQL_CALC_FOUND_ROWS com.id AS comment_id,
        com.date,
        com.website_url,
        com.content,
-       com.validated
+       com.validated,
+       com.spam_feedback
   FROM '.IMAGE_CATEGORY_TABLE.' AS ic
     INNER JOIN '.COMMENTS_TABLE.' AS com
     ON ic.image_id = com.image_id
@@ -484,6 +485,8 @@ SELECT *
       'WEBSITE_URL' => $comment['website_url'],
       'DATE'=>format_date($comment['date'], array('day_name','day','month','year','time')),
       'CONTENT'=>trigger_change('render_comment_content',$comment['content']),
+      'IS_PENDING' => ('false' == $comment['validated']),
+      'IS_SPAM' => ('spam' == $comment['spam_feedback']),
       );
 
     if (is_admin())
