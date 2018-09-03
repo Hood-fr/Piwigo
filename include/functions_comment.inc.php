@@ -288,7 +288,7 @@ INSERT INTO '.COMMENTS_TABLE.'
 
       if ('moderate' == $comment_action or 'moderate-spam' == $comment_action)
       {
-        $keyargs_content[] = = array(
+        $keyargs_content[] = array(
 		get_l10n_args('(!) This comment requires validation'),
 		get_l10n_args(($spam_feedback=='spam' ? '(AKISMET)':'')),
 		);
