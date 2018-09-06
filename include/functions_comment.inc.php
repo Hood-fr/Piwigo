@@ -242,12 +242,12 @@ SELECT count(1) FROM '.COMMENTS_TABLE.'
       else{
           $spam_feedback='ham';
       }
-
-echo 'feedback :'.$spam_feedback;
+      
+      $comm['user_agent']=isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';      
 
     $query = '
 INSERT INTO '.COMMENTS_TABLE.'
-  (author, author_id, anonymous_id, content, date, validated, validation_date, image_id, website_url, email, spam_feedback)
+  (author, author_id, anonymous_id, content, date, validated, validation_date, image_id, website_url, email, spam_feedback, user_agent)
   VALUES (
     \''.$comm['author'].'\',
     '.$comm['author_id'].',
@@ -259,7 +259,8 @@ INSERT INTO '.COMMENTS_TABLE.'
     '.$comm['image_id'].',
     '.(!empty($comm['website_url']) ? '\''.$comm['website_url'].'\'' : 'NULL').',
     '.(!empty($comm['email']) ? '\''.$comm['email'].'\'' : 'NULL').',
-    \''.($spam_feedback=='spam' ? 'spam':'ham').'\'
+    \''.($spam_feedback=='spam' ? 'spam':'ham').'\',
+    \''.$comm['user_agent'].'\'
   )
 ';
     pwg_query($query);
@@ -421,8 +422,8 @@ function update_user_comment($comment, $post_key)
       else{
           $spam_feedback='ham';
       }
-
-    echo 'feedback :'.$spam_feedback;
+ 
+    $comm['user_agent']=isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
 
     $user_where_clause = '';
     if (!is_admin())
@@ -437,7 +438,8 @@ UPDATE '.COMMENTS_TABLE.'
       website_url = '.(!empty($comment['website_url']) ? '\''.$comment['website_url'].'\'' : 'NULL').',
       validated = \''.($comment_action=='validate' ? 'true':'false').'\',
       validation_date = '.($comment_action=='validate' ? 'NOW()':'NULL').',
-      spam_feedback = \''.($spam_feedback=='spam' ? 'spam':'ham').'\',
+      spam_feedback = \''.($spam_feedback=='spam' ? 'spam':'ham').'\',,
+      user_agent = \''.$comment['user_agent'].'\',
   WHERE id = '.$comment['comment_id'].
 $user_where_clause.'
 ;';
