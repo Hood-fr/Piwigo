@@ -68,7 +68,8 @@ if ( !empty($header_notes) )
 {
   $page['meta_robots']['noindex'] = 1;
   $page['meta_robots']['nofollow'] = 1;
-}
+}*/
+
 
 if ( !empty($page['meta_robots']) )
 {
@@ -78,11 +79,12 @@ if ( !empty($page['meta_robots']) )
         .'">'
     );
 }
+
 if ( !isset($page['meta_robots']['noindex']) )
 {
   $template->assign('meta_ref',1);
 }
-*/
+
 // refresh
 if ( isset( $refresh ) and intval($refresh) >= 0
     and isset( $url_link ) )
