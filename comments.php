@@ -503,6 +503,13 @@ SELECT *
           'pwg_token' => get_pwg_token(),
           )
         );
+      $tpl_comment['U_SUBMITSPAM'] = add_url_params(
+        $url_self,
+        array(
+          'submit_spam_comment' => $comment['comment_id'],
+          'pwg_token' => get_pwg_token(),
+          )
+        );
     }
 
     if (can_manage_comment('edit', $comment['author_id']))

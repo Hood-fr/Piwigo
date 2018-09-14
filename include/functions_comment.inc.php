@@ -332,8 +332,6 @@ DELETE FROM '.COMMENTS_TABLE.'
 $user_where_clause.'
 ;';
 
-  trigger_notify('user_comment_deletion', $comment_id, 'picture');// trigger is but before submitting the query in order to be able to submit spam to askimet plugin before removing the comment
-
   if ( pwg_db_changes(pwg_query($query)) )
   {
     invalidate_user_cache_nb_comments();
@@ -342,12 +340,19 @@ $user_where_clause.'
                 array('author' => $GLOBALS['user']['username'],
                       'comment_id' => $comment_id
                   ));
-    //trigger_notify('user_comment_deletion', $comment_id); INITIAL LOCATION OF TRIGGER
+    trigger_notify('user_comment_deletion', $comment_id);
 
     return true;
   }
 
   return false;
+}
+
+function submit_spam_comment($comment_id)
+{
+    trigger_notify('comment_spam_submission', $comment_id);
+    delete_user_comment($comment_id);
+    return false;
 }
 
 /**

@@ -402,6 +402,23 @@ UPDATE '.CATEGORIES_TABLE.'
 
       redirect($url_self);
     }
+    case 'submit_spam_comment' :
+    {
+      check_pwg_token();
+
+      include_once(PHPWG_ROOT_PATH.'include/functions_comment.inc.php');
+
+      check_input_parameter('comment_to_submit', $_GET, false, PATTERN_ID);
+
+      $author_id = get_comment_author_id($_GET['comment_to_submit']);
+
+      if (can_manage_comment('delete', $author_id))
+      {
+        submit_spam_comment($_GET['comment_to_submit']);
+      }
+
+      redirect($url_self);
+    }
     case 'validate_comment' :
     {
       check_pwg_token();
