@@ -112,3 +112,6 @@
 [submodule "plugins/PersoFooter"]
 	path = plugins/PersoFooter
 	url = git@github.com:Hood-fr/PersoFooter.git
+[submodule "plugins/FacebookPlug"]
+	path = plugins/FacebookPlug
+	url = git@github.com:Hood-fr/FacebookPlug.git
