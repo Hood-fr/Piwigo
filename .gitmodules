@@ -115,3 +115,6 @@
 [submodule "plugins/FacebookPlug"]
 	path = plugins/FacebookPlug
 	url = git@github.com:Hood-fr/FacebookPlug.git
+[submodule "themes/stripped_responsive"]
+	path = themes/stripped_responsive
+	url = git@github.com:Hood-fr/stripped-responsive.git
