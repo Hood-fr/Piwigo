@@ -109,3 +109,12 @@
 [submodule "plugins/stop_spammers"]
 	path = plugins/stop_spammers
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/stop_spammers
+[submodule "plugins/PersoFooter"]
+	path = plugins/PersoFooter
+	url = git@github.com:Hood-fr/PersoFooter.git
+[submodule "plugins/FacebookPlug"]
+	path = plugins/FacebookPlug
+	url = git@github.com:Hood-fr/FacebookPlug.git
+[submodule "themes/stripped_responsive"]
+	path = themes/stripped_responsive
+	url = git@github.com:Hood-fr/stripped-responsive.git
