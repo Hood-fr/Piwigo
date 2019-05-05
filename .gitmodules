@@ -111,10 +111,10 @@
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/stop_spammers
 [submodule "plugins/PersoFooter"]
 	path = plugins/PersoFooter
-	url = git@github.com:Hood-fr/PersoFooter.git
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/PersoFooter
 [submodule "plugins/FacebookPlug"]
 	path = plugins/FacebookPlug
-	url = git@github.com:Hood-fr/FacebookPlug.git
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/FacebookPlug
 [submodule "themes/stripped_responsive"]
 	path = themes/stripped_responsive
-	url = git@github.com:Hood-fr/stripped-responsive.git
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/themes/stripped-responsive
