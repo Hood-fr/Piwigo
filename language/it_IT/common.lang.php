@@ -22,7 +22,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Italiano [IT]
-Version: 2.9.4
+Version: 2.9.5
 Language URI: http://piwigo.org/ext/extension_view.php?eid=424
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -262,7 +262,7 @@ $lang['posted on %s'] = 'disponibile il %s';
 $lang['Posted on'] = 'Inviato il';
 $lang['Powered by'] = 'Realizzato grazie a';
 $lang['Preferences'] = 'Preferenze';
-$lang['Previous'] = 'Precendente';
+$lang['Previous'] = 'precedente';
 $lang['Profile'] = 'Profilo';
 $lang['Quick connect'] = 'Connessione veloce';
 $lang['Quick search'] = 'Ricerca rapida';

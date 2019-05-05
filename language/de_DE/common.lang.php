@@ -22,7 +22,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Deutsch [DE]
-Version: 2.9.4
+Version: 2.9.5
 Language URI: http://piwigo.org/ext/extension_view.php?eid=416
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -300,7 +300,7 @@ $lang['Repeat the slideshow'] = 'Diashow wiederholen';
 $lang['Not repeat the slideshow'] = 'Diashow nicht wiederholen';
 $lang['Reduce diaporama speed'] = 'Diashow langsamer';
 $lang['Accelerate diaporama speed'] = 'Diashow schneller';
-$lang['Submit'] = 'Absenden';
+$lang['Submit'] = 'Anmelden';
 $lang['Yes'] = 'Ja';
 $lang['No'] = 'Nein';
 $lang['%d photo'] = '%d Foto';
