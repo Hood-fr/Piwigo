@@ -116,7 +116,7 @@ $conf['newcat_default_position'] = 'first';
 // level_separator : character string used for separating a category level
 // to the sub level. Suggestions : ' / ', ' &raquo; ', ' &rarr; ', ' - ',
 // ' &gt;'
-$conf['level_separator'] = ' / ';
+$conf['level_separator'] = '<br>/ ';
 
 // paginate_pages_around : on paginate navigation bar, how many pages
 // display before and after the current page ?
