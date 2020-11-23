@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 $lang['Hello'] = 'Здравей';
@@ -417,6 +402,7 @@ $lang['Private'] = 'Личен';
 $lang['Position'] = 'Позиция';
 $lang['Plugins which need upgrade'] = 'Разширения за обновяване';
 $lang['Piwigo version'] = 'Piwigo версия';
+$lang['Piwigo for Android'] = 'Piwigo за Android';
 $lang['Piwigo configuration'] = 'Piwigo конфигурация';
 $lang['Piwigo Administration'] = 'Piwigo Администриране';
 $lang['Piwigo Update'] = 'Piwigo ъпдейт';
@@ -586,6 +572,7 @@ $lang['Type here the title'] = 'Въведете заглавието тук';
 $lang['Type here the author name'] = 'Въведете името на автора тук';
 $lang['This site already exists'] = 'Този сайт вече съществува';
 $lang['leave'] = 'оставяне';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em>Piwigo за Android</em> приложение ви позволява да свържете вашия Android телефон или таблет с галерията, да създавате албуми и да качване няколко снимки наведнъж.';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = '<em>Piwigo за iOS</ EM> приложение ви дава възможност да се свържете към галерия от вашия iPhone, iPad или iPod Touch, да създаване албуми и да качване няколко снимки наведнъж.';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom е фотографски софтуер, предназначен за управление на големи количества цифрови изображения и публикуването им след редактирането.';
 $lang['An error has occured during extract. Please check files permissions of your piwigo installation.<br><a href="%s">Click here to show log error</a>.'] = 'Възникнала е грешка по време на извличането. Моля проверете правата за файловете в инсталацията.<br><a href="%s">Кликнете тук за да видите грешката</a>.';

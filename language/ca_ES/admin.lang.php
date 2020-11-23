@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 $lang['%d association'] = '%d associació';
@@ -649,7 +634,7 @@ $lang['Error on file "%s" : %s'] = 'Error a l\'arxiu "%s": %s';
 $lang['automatic order'] = 'Ordre automàtic';
 $lang['manual order'] = 'ordre manual';
 $lang['Albums automatically sorted'] = 'Àlbums ordenats automàticament';
-$lang['Batch Manager'] = 'Gestor de pocessamet per lots';
+$lang['Batch Manager'] = 'Gestor de processament per lots';
 $lang['include child albums'] = 'incloure els sub-àlbums';
 $lang['Selection'] = 'Selecció';
 $lang['Action'] = 'Acció';
@@ -798,6 +783,7 @@ $lang['Original Size'] = 'Mida original';
 $lang['Permission granted for groups'] = 'Permisos atorgats a grups';
 $lang['Permission granted for users'] = 'Permís atorgat a usuaris';
 $lang['Photo name'] = 'Nom de la foto';
+$lang['Piwigo for Android'] = 'Piwigo per Android';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo per iOS (iPhone, iPad, iPod Touch)';
 $lang['Predefined filter'] = 'Filtre predeterminat';
 $lang['Resize after upload'] = 'Redimensionar després de penjar la foto al servidor';
@@ -830,6 +816,7 @@ $lang['registered users'] = 'usuaris registrats';
 $lang['%d group'] = '%d grup';
 $lang['%d groups'] = '%d grups';
 $lang['%u users have automatic permission because they belong to a granted group.'] = '%u usuaris han obtingut permisos automàticament perquè pertanyen a un grup que li han atorgat el permís.';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em>Piwigo per Android</em> Aquesta aplicació us permet connectar a la vostra galeria Piwigo des d\'un dispositiu Android, crear nous àlbums i penjar vàries fotos a la vegada.';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = '<em>Piwigo per iOS</em> Aquesta aplicació us permet connectar a la vostra galeria Piwigo des d\'un iPhone, iPad o iPod Touch, crear àlbums i penjar vàries fotos a la vegada.';
 $lang['Add group'] = 'Afegeix grup';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom és un programari de fotografia dissenyat per a gestionar grans quantitats d\'imatges digitals i realitzar tasques de postproducció.';
@@ -1019,3 +1006,18 @@ $lang['No filter on album. Select one or type to search'] = 'No hi ha cap filtre
 $lang['No tag selected, no action possible.'] = 'No s\'ha seleccionat cap etiqueta i no es pot realitzar cap acció';
 $lang['Storage used'] = 'Emmagatzemament utilitzat';
 $lang['checksum'] = 'suma de verificació';
+$lang['%d checksums were added'] = 's\'han afegit %d checksums';
+$lang['... or hide this link'] = '...o amagueu aquest enllaç';
+$lang['Compute %d missing checksums'] = 'Calcula %d checksums que manquen';
+$lang['Create a first album'] = 'Creeu un primer àlbum';
+$lang['Deletion in progress'] = 'Supressió en curs';
+$lang['Display album date period'] = 'Mostra el periode de dates associat amb cada àlbum, p.ex. «del 12 de al 15 de juliol de 2018»';
+$lang['Display category date'] = 'Mostra la data de la categoria';
+$lang['Piwigo requires an album to add photos.'] = 'Piwigo necessita un àlbum per afegir-hi fotos.';
+$lang['Some checksums are missing.'] = 'Manquen alguns checksums.';
+$lang['Synchronization in progress'] = 'Sincronització en curs';
+$lang['Visit'] = 'Visiteu';
+$lang['Welcome!'] = 'Benvinguts!';
+$lang['With no checksum'] = 'Sense checksum';
+$lang['checksums to add'] = 'Checksums per afegir';
+$lang['or'] = 'o';

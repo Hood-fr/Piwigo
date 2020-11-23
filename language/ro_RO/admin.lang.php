@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 
@@ -623,6 +608,7 @@ $lang['Aperture is designed for professional photographers with iPhoto simplicit
 $lang['Aperture is a powerful tool to refine images and manage massive libraries on Mac.'] = 'Aperture este un instrument puternic proiectat pentru redefinirea imaginilor și pentru gestiunea de biblioteci mari pe un sistem Mac.';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom este un program pentru fotografii proiectat pentru a gestiona și a prelucra mari cantități de imagini digitale.';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = '<em>Piwigo pentru iOS</em> programul vă permite să vă conectați iPhone-ul, iPad-ul sau iPad-ul Touch la galeria dvs. Piwigo, să creați unele albume și să transmiteți mai multe fotografii în același timp.';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em>Piwigo pentru Android</em> programul vă permite să vă conectați telefonul sau tableta dvs. Android  la galeria dvs. Piwigo, să creați unele albume și să transmiteți mai multe fotografii în același timp.';
 $lang['%u users have automatic permission because they belong to a granted group.'] = 'u% de utilizatori  au permisiunea automată, deoarece aceștia aparțin unui grup cu permisii.';
 $lang['View in gallery'] = 'Vezi în galerie';
 $lang['Used metadata'] = 'Metadate utilizate';
@@ -687,6 +673,7 @@ $lang['Piwigo version'] = 'Versiune Piwigo';
 $lang['Please select at least two groups'] = 'Te rog alege cel puţin două grupuri';
 $lang['Permission granted for users'] = 'Permisiuni acordate pentru utilizator';
 $lang['Permission management'] = 'Management de permisiuni';
+$lang['Piwigo for Android'] = 'Piwigo pentru Android';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo pentru iOS (iPhone, iPad, iPod Touch=';
 $lang['The name of a group must not contain " or \' or be empty.'] = 'Numele unui grup trebuie să nu conţină " sau \' sau sa fie gol.';
 $lang['The name of an album must not be empty'] = 'Numele unui album trebuie să nu fie gol';
@@ -1013,3 +1000,18 @@ $lang['Confirm deletion'] = 'Confirma stergerea';
 $lang['Dashboard'] = 'Panou de control';
 $lang['Delete album "%s" and its %d sub-albums.'] = 'Şterge albumul "%s" şi  %d subalbumele ale sale';
 $lang['Delete album "%s".'] = 'Şterge albumul "%s".';
+$lang['Display album date period'] = 'Arata perioada de tomp asociata cu fiecare album, de ex. <<din 12 pana in 15 iulie, 2018>>';
+$lang['%d checksums were added'] = '%d sume de control au fost adaugate';
+$lang['... or hide this link'] = '... sau ascunde acest link';
+$lang['Compute %d missing checksums'] = 'Calculeaza %d sume de control lipsa';
+$lang['Create a first album'] = 'Creaza primul album';
+$lang['Deletion in progress'] = 'Stergere in desfasurare';
+$lang['Display category date'] = 'Afiseaza data categoriei';
+$lang['Piwigo requires an album to add photos.'] = 'Piwigo are nevoie de un album pentru a adauga fotografii';
+$lang['Some checksums are missing.'] = 'Unele sume de control lipsesc';
+$lang['Synchronization in progress'] = 'Sincronizare in desfasurare';
+$lang['Visit'] = 'Vizita';
+$lang['Welcome!'] = 'Bine ai venit!';
+$lang['With no checksum'] = 'Fara suma de control';
+$lang['checksums to add'] = 'Sume de control de adaugat';
+$lang['or'] = 'sau';

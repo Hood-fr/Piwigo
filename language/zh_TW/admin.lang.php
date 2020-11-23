@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 $lang['%d association'] = '%d 相關';
@@ -829,6 +814,8 @@ $lang['Applications'] = '申請';
 $lang['Available on'] = '可用的';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'iOS (iPhone, iPad, iPod Touch) 版的 Piwigo ';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = '<em>iOS 版的Piwigo</em>允許您從iPhone, iPad 或 iPod Touch 連接到您的Piwigo畫廊，建立多個相冊並一次上傳多張相片。';
+$lang['Piwigo for Android'] = 'Android 版的Piwigo';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em>Android 版的Piwigo</em>允許從 Android 手機或平版連接到您的Piwigo畫廊，建立多個相冊並一次上傳多張相片。';
 $lang['Piwigo Publish plugin for Lightroom'] = 'Piwigo 的 Lightroom 照片發布插件';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe 的 Photoshop Lightroom 是一套攝影軟件，可管理大量數位影像和進行後製工作。';
 $lang['The Piwigo publish Plug-in allows you to export and synchronize photos from Lightroom directly to your Piwigo photo gallery.'] = 'Piwigo的發布插件允許你 從Lightroom匯出照片，使你的Lightroom照片與您的Piwigo相冊同步。';

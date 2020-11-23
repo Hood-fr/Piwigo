@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 $lang['%d association'] = '%d hozzárendelés (fizikai és virtuális)';
@@ -851,6 +836,7 @@ $lang['X Repeat'] = 'X ismétlődés';
 $lang['Y Position'] = 'Y pozíció';
 $lang['Available on'] = 'Elérhető';
 $lang['add a new watermark'] = 'új vízjel hozzáadása';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = 'A <em>Piwigo for Android</em> alkalmazás segítségével csatlakozhat Piwigo galériájához telefonjával vagy táblagépével, létrehozhat új albumokat, feltölthet képeket (egyszerre akár többet is) képgalériájába.';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = 'A <em>Piwigo for iOS</em> alkalmazás segítségével csatlakozhat Piwigo galériájához iPhone, iPad vagy iPod Touch eszközével, létrehozhat új albumokat, feltölthet képeket (egyszerre akár többet is) képgalériájába.';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Az Adobe Photoshop Lightroom egy képkezelő program, melyet nagy mennyiségű digitális kép utómunkálataihoz és kezeléséhez terveztek.';
 $lang['Features include gallery browsing, album creation and photo upload.'] = 'Jellemzői: galéria böngészés, album létrehozás, képek feltöltése.';
@@ -859,6 +845,7 @@ $lang['No group is permitted to see this private album'] = 'Nincs engedélyezett
 $lang['On your Linux, simply install Shotwell with your package manager and the activate Piwigo publishing option.'] = 'Egyszerűen telepítheti a Linux csomagkezelője segítségével, majd könnyedén beállíthatja Piwigo galériájának eléréséhez.';
 $lang['Piwigo Publish plugin for Lightroom'] = 'Piwigo Lightroom feltöltő';
 $lang['Piwigo export plugin for iPhoto'] = 'Piwigo iPhoto feltöltő';
+$lang['Piwigo for Android'] = 'Piwigo Androidon';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo iOS-en (iPhone, iPad, iPod Touch)';
 $lang['Piwigo publish plugin for Shotwell'] = 'Piwigo Shotwell feltöltő';
 $lang['Piwigo publish plugin for digiKam'] = 'Piwigo digiKam feltöltő';
@@ -1013,3 +1000,18 @@ $lang['No tag selected, no action possible.'] = 'Nincs cimke választva, nincs m
 $lang['Piwigo %s is available, please update'] = 'Piwigo %s már elérhető, kérlek, frissíts';
 $lang['Running on an up-to-date Piwigo is important for security.'] = 'A legfrisebb Piwigo-t futtatni biztonsági okok miatt fontos.';
 $lang['Select tags'] = 'Válassz cimkéket';
+$lang['Synchronization in progress'] = 'Zajlik a szinkronizálás';
+$lang['Visit'] = 'Látogatás';
+$lang['Welcome!'] = 'Helló!';
+$lang['With no checksum'] = 'Ellenőrzőszám nélkül';
+$lang['checksums to add'] = 'ellenőrzőszámokat kell hozzáadni';
+$lang['or'] = 'vagy';
+$lang['%d checksums were added'] = '%d ellenőrzőszám került hozzáadásra';
+$lang['... or hide this link'] = '... vagy rejtsük el ezt a hivatkozást (linket)';
+$lang['Compute %d missing checksums'] = 'Számítsuk ki a %d hiányzó ellenőrzőszámot';
+$lang['Create a first album'] = 'Készítsük el az első albumot';
+$lang['Deletion in progress'] = 'A törlés folyamatban van';
+$lang['Display album date period'] = 'Mutasd minden albumnál a hozzá tartozó dátumokat, pl. "2018 július 12-től 15-ig"';
+$lang['Display category date'] = 'Mutasd a kategória dátumát';
+$lang['Piwigo requires an album to add photos.'] = 'Piwigo-nak szükséges van egy albumra, hogy képeket lehessen hozzáadni.';
+$lang['Some checksums are missing.'] = 'Néhány ellenőrzőszám hiányzik.';

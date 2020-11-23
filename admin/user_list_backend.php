@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 define('PHPWG_ROOT_PATH','../');
@@ -30,6 +15,8 @@ check_status(ACCESS_ADMINISTRATOR);
 
 check_input_parameter('iDisplayStart', $_REQUEST, false, PATTERN_ID);
 check_input_parameter('iDisplayLength', $_REQUEST, false, PATTERN_ID);
+
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Easy set variables
@@ -106,11 +93,39 @@ if ( isset( $_REQUEST['iSortCol_0'] ) )
 $sWhere = "";
 if ( $_REQUEST['sSearch'] != "" )
 {
-  $sWhere = "WHERE (";
-  for ( $i=0 ; $i<count($aColumns) ; $i++ )
+  $user_ids = null;
+
+  if (preg_match('/group:(\d+)/', $_REQUEST['sSearch'], $matches))
   {
-    $sWhere .= $aColumns[$i]." LIKE '%".pwg_db_real_escape_string( $_REQUEST['sSearch'] )."%' OR ";
+    $group_id = $matches[1];
+
+    $query = '
+SELECT
+    `user_id`
+  FROM '.USER_GROUP_TABLE.'
+  WHERE `group_id` = '.$group_id.'
+';
+    $user_ids = query2array($query, null, 'user_id');
+    $user_ids[] = -1;
+
+    $_REQUEST['sSearch'] = preg_replace('/group:(\d+)/', '', $_REQUEST['sSearch']);
   }
+
+  $sWhere = "WHERE (";
+
+  if (is_array($user_ids))
+  {
+    $sWhere.= '`user_id` IN ('.implode(',', $user_ids).') OR ';
+  }
+
+  if ($_REQUEST['sSearch'] != "")
+  {
+    for ( $i=0 ; $i<count($aColumns) ; $i++ )
+    {
+      $sWhere .= $aColumns[$i]." LIKE '%".pwg_db_real_escape_string( $_REQUEST['sSearch'] )."%' OR ";
+    }
+  }
+
   $sWhere = substr_replace( $sWhere, "", -3 );
   $sWhere .= ')';
 }
@@ -216,9 +231,9 @@ if (count($user_ids) > 0)
   $query = '
 SELECT
     user_id,
-    GROUP_CONCAT(name ORDER BY name SEPARATOR ", ") AS groups
+    GROUP_CONCAT(name ORDER BY name SEPARATOR ", ") AS `groups`
   FROM '.USER_GROUP_TABLE.'
-    JOIN '.GROUPS_TABLE.' ON id = group_id
+    JOIN `'.GROUPS_TABLE.'` ON id = group_id
   WHERE user_id IN ('.implode(',', $user_ids).')
   GROUP BY user_id
 ;';
