@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 $lang['%d association'] = '%d kết hợp';
@@ -828,6 +813,8 @@ $lang['Applications'] = 'Các ứng dụng';
 $lang['Available on'] = 'Có thể dùng được vào';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Phiên bản Piwigo cho iOS (iPhone, iPad, iPod Touch)';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = '<em>Phiên bản Piwigo cho iOS</em> ứng dụng cho phép bạn kết nối Piwigo của mình từ iPhone, iPad hoặc iPod Touch, tạo albums ảnh và tải lên máy chủ lưu trữ ảnh ngay lập tức.';
+$lang['Piwigo for Android'] = 'Phiên bản Piwigo cho Android';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em>Phiên bản Piwigo cho  Android</em> ứng dụng cho phép bạn kết nối Piwigo của mình từ điện thoại chạy Android hoặc máy tính bảng, tạo albums ảnh và tải lên máy chủ lưu trữ ảnh ngay lập tức.';
 $lang['Piwigo Publish plugin for Lightroom'] = 'Plugin Publish của Piwigo cho Lightroom';
 $lang['%d day'] = '%d ngày';
 $lang['%d days'] = '%d ngày';

@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 $lang['%d association'] = '%d Element wird angezeigt';
@@ -91,7 +76,7 @@ $lang['Group name'] = 'Gruppenname';
 $lang['Groups'] = 'Gruppen';
 $lang['Guests'] = 'Gäste';
 $lang['History'] = 'Statistik';
-$lang['Informations'] = 'Benachrichtigung';
+$lang['Informations'] = 'Es gibt Neuigkeiten!';
 $lang['Install'] = 'Installieren';
 $lang['Link all album photos to a new album'] = 'Alle Album-Fotos mit einem neuen Album verknüpfen';
 $lang['Link all album photos to some existing albums'] = 'Alle Album-Fotos mit einem existierenden Album verknüpfen';
@@ -396,7 +381,7 @@ $lang['Group'] = 'Gruppe';
 $lang['[%s] Visit album %s'] = '[%s] Album %s ansehen';
 $lang['Hello,'] = 'Guten Tag!';
 $lang['See you soon.'] = 'Bis bald!';
-$lang['Discover album:'] = 'Entdecken Sie dieses Album:';
+$lang['Discover album:'] = 'Entdecke dieses Album:';
 $lang['Mail content'] = 'Text der E-Mail';
 $lang['none'] = 'nichts';
 $lang['high'] = 'hoch';
@@ -549,7 +534,7 @@ $lang['Instructions to use Piwigo'] = 'Hinweise zur Benutzung von Piwigo';
 $lang['Installed Themes'] = 'Installierte Themes';
 $lang['Add New Theme'] = 'Ein neues Theme hinzufügen';
 $lang['Forbid this theme to users'] = 'Dieses Theme den Benutzern verbieten';
-$lang['Set as default theme for unregistered and new users'] = 'Standardthema für unregistrierte und neue Benutzer festlegen';
+$lang['Set as default theme for unregistered and new users'] = 'Standardoberfläche für nicht registrierte und neue Benutzer festlegen';
 $lang['unknown'] = 'unbekannt';
 $lang['Upload Photos'] = 'Bilder hochladen';
 $lang['Drop into album'] = 'In dieses Album hochladen';
@@ -581,14 +566,14 @@ $lang['Active Themes'] = 'Aktive Themes';
 $lang['Add write access to the "%s" directory'] = 'Geben Sie dem  »%s«-Verzeichnis Schreibrechte';
 $lang['Administration Home'] = 'Administrations-Übersicht';
 $lang['Change Admin Colors'] = 'Administrationsfarben anpassen';
-$lang['Delete this theme'] = 'Dieses Thema löschen';
+$lang['Delete this theme'] = 'Dieses Theme löschen';
 $lang['Directory does not exist'] = 'Verzeichnis existiert nicht';
 $lang['Download,'] = 'Download,';
 $lang['FTP + Synchronization'] = 'FTP + Synchronisieren';
 $lang['Get Support on Piwigo Forum'] = 'Holen Sie sich Hilfe im Piwigo-Forum';
 $lang['Help Me'] = 'Hilfe';
-$lang['Impossible to activate this theme, the parent theme is missing: %s'] = 'Es ist nicht möglich, dieses Thema zu aktivieren, da das Elternthema %s fehlt';
-$lang['Impossible to delete this theme. Other themes depends on it: %s'] = 'Es ist nicht möglich, dieses Thema zu löschen; andere Themes basieren darauf: %s';
+$lang['Impossible to activate this theme, the parent theme is missing: %s'] = 'Es ist nicht möglich, dieses Theme zu aktivieren, da das Elterntheme %s fehlt';
+$lang['Impossible to delete this theme. Other themes depends on it: %s'] = 'Es ist nicht möglich, diese Oberfläche zu löschen; andere Themes basieren darauf: %s';
 $lang['Inactive Themes'] = 'Inaktive Themes';
 $lang['Install on your computer,'] = 'Auf Ihrem Computer installieren,';
 $lang['Make this theme available to users'] = 'Dieses Theme den Benutzern zur Verfügung stellen';
@@ -597,7 +582,7 @@ $lang['Piwigo Uploader'] = 'Piwigo-Uploader';
 $lang['Read Piwigo Documentation'] = 'Lese die Piwigo-Dokumentation';
 $lang['Start pLoader and add your photos.'] = 'Starten Sie pLoader und fügen Sie Ihre Fotos hinzu.';
 $lang['Switch to clear or dark colors for administration'] = 'Helle oder dunkle Farben für die Administration wählen.';
-$lang['Theme has been successfully installed'] = 'Thema wurde erfolgreich installiert';
+$lang['Theme has been successfully installed'] = 'Theme wurde erfolgreich installiert';
 $lang['Visit Gallery'] = 'Galerie ansehen';
 $lang['Visit Piwigo project website'] = 'Piwigo-Projekt-Webseite besuchen';
 $lang['Guest Settings'] = 'Einstellungen für Gäste';
@@ -616,11 +601,11 @@ $lang['Language has been successfully installed'] = 'Sprachdateien wurden erfolg
 $lang['Select:'] = 'Auswahl:';
 $lang['None'] = 'Nichts';
 $lang['Invert'] = 'Invertieren';
-$lang['Impossible to deactivate this theme, you need at least one theme.'] = 'Es ist nicht möglich, dieses Thema zu deaktivieren, Sie benötigen mindestens ein Thema.';
+$lang['Impossible to deactivate this theme, you need at least one theme.'] = 'Es ist nicht möglich, dieses Theme zu deaktivieren, Sie benötigen mindestens ein Thema.';
 $lang['Miscellaneous'] = 'Verschiedenes';
 $lang['Virtual Links'] = 'Virtuelle Verbindungen';
 $lang['Webmaster status is required.'] = 'Sie benötigen Webmaster-Berechtigung.';
-$lang['Bound Theme'] = 'Verbundenes Thema';
+$lang['Bound Theme'] = 'Verbundenes Theme';
 $lang['Allow rating'] = 'Bewertungen von Fotos erlauben';
 $lang['Select at least one comment'] = 'Mindestens einen Kommentar auswählen';
 $lang['Active Plugins'] = 'Aktivierte Plugins';
@@ -642,7 +627,7 @@ $lang['Add Photos'] = 'Fotos hinzufügen';
 $lang['The following tag was deleted'] = 'Folgendes Schlagwort wurde gelöscht';
 $lang['There is no other language available.'] = 'Es ist keine weitere Sprache verfügbar.';
 $lang['There is no other plugin available.'] = 'Es ist kein weiteres Plugin verfügbar.';
-$lang['There is no other theme available.'] = 'Es ist kein weiteres Thema verfügbar.';
+$lang['There is no other theme available.'] = 'Es ist kein weiteres Theme verfügbar.';
 $lang['Add another set of photos'] = 'Ein weiteres Fotoset hinzufügen';
 $lang['By rank'] = 'Nach Rangfolge';
 $lang['Manual order'] = 'Manuelle Sortierung';
@@ -681,7 +666,7 @@ $lang['remove this filter'] = 'Diesen Filter entfernen';
 $lang['Duplicates'] = 'Duplikate';
 $lang['Add a filter'] = 'Einen Filter hinzufügen';
 $lang['Remove all filters'] = 'Alle Filter entfernen';
-$lang['Refresh photo set'] = 'Das Fotoset aktualisieren';
+$lang['Refresh photo set'] = 'Fotoset aktualisieren';
 $lang['The whole page'] = 'Die ganze Seite';
 $lang['The whole set'] = 'Das ganze Set';
 $lang['No photo in the current set.'] = 'Keine Fotos im gegenwärtigen Set.';
@@ -831,9 +816,11 @@ $lang['Web Form'] = 'Webformular';
 $lang['With no album'] = 'Ohne Album';
 $lang['With no tag'] = 'Ohne Schlagwort';
 $lang['With no virtual album'] = 'Ohne virtuelles Album';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = 'Das App <em>Piwigo für Android</em> ermöglicht es Ihnen, sich mit Ihrer Piwigo-Galerie zu verbinden, Alben zu erstellen und mehrere Fotos gleichzeitig hochzuladen.';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = 'Das App <em>Piwigo für iOS</em> ermöglicht es Ihnen, sich mit Ihrer Piwigo-Galerie zu verbinden, Alben zu erstellen und mehrere Fotos gleichzeitig hochzuladen.';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom ist eine Bildbearbeitungssoftware, die entwickelt wurde, um eine grosse Anzahl von Bildern zu verwalten und zu bearbeiten.';
 $lang['Available on'] = 'Erhältlich bei ';
+$lang['Piwigo for Android'] = 'Piwigo für Android';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo für iOS (iPhone, iPad, iPod Touch)';
 $lang['Piwigo Publish plugin for Lightroom'] = 'Piwigo-Publish-Plugin für Lightroom';
 $lang['The Piwigo publish Plug-in allows you to export and synchronize photos from Lightroom directly to your Piwigo photo gallery.'] = 'Das Piwigo-Publish-Plugin erlaubt es Ihnen, Bilder aus Lightroom zu exportieren und mit Ihrer Piwigo-Fotogalerie zu synchronisieren.';
@@ -1003,7 +990,7 @@ $lang['No tag selected, no action possible.'] = 'Kein TAG gewählt, keine Aktion
 $lang['Piwigo %s is available, please update'] = 'Piwigo %s ist verfügbar, bitte updaten.';
 $lang['Piwigo Remote Sync is able to upload a whole folder hierarchy. If you run it again, only new photos will be uploaded.'] = 'Piwigo Remote Sync kann eine ganze Ordnerhierarchie hochladen. Wenn Sie es wieder ausführen, werden nur neue Fotos hochgeladen.';
 $lang['Running on an up-to-date Piwigo is important for security.'] = 'Das Ausführen eines up-to-date Piwigo ist wichtig für die Sicherheit.';
-$lang['Select tags'] = 'Wähle TAG';
+$lang['Select tags'] = 'Stichworte auswählen';
 $lang['Share / Send your photos directly from your Mac Os X (10.10 and following) to Piwigo'] = 'Teilen und senden Sie Ihre Fotos direkt von Ihrem MacOS (10.10 und später) an Piwigo';
 $lang['Storage used'] = 'Speicher benutzt';
 $lang['Time has come to update your Piwigo with version %s, go to %s'] = 'Die Zeit ist gekommen, um dein Piwigo mit Version %s zu aktualisieren, gehe zu %s';
@@ -1012,3 +999,18 @@ $lang['delete album and all %d photos, even the %d associated to other albums'] 
 $lang['delete album and the %d orphan photos'] = 'Lösche Album und %d verwaiste Fotos';
 $lang['delete only album, not photos'] = 'löscht nur Alben, keine Fotos';
 $lang['orphans to delete'] = 'verwaiste Daten zum löschen';
+$lang['Display album date period'] = 'Zeitspanne, die mit dem Album verknüpft anzeigen, z.B. << vom 12. bis 15. Juli 2018 ';
+$lang['checksums to add'] = 'Checksummen zum Hinzufügen';
+$lang['Deletion in progress'] = 'Löschprozess im Gange';
+$lang['Piwigo requires an album to add photos.'] = 'Piwigo benötigt ein Album um Fotos hinzuzufügen.';
+$lang['Some checksums are missing.'] = 'Einige Checksummen fehlen.';
+$lang['Synchronization in progress'] = 'Synchronisationsprozess im Gange';
+$lang['%d checksums were added'] = '%d Checksummen wurden hinzugefügt ';
+$lang['... or hide this link'] = '... oder verstecke den Link';
+$lang['Compute %d missing checksums'] = 'Berechne %d fehlende Checksummen';
+$lang['Create a first album'] = 'Erstes Album erstellen';
+$lang['Visit'] = 'Galerie';
+$lang['Welcome!'] = 'Willkommen!';
+$lang['With no checksum'] = 'Ohne Checksumme';
+$lang['or'] = 'oder';
+$lang['Display category date'] = 'Kategorie-Datum anzeigen';

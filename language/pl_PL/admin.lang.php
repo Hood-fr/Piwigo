@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 $lang['%d association'] = '%d powiązanie';
@@ -712,7 +697,7 @@ $lang['Searching...'] = 'Wyszukiwanie...';
 $lang['Type in a search term'] = 'Wpisz frazę do wyszukania';
 $lang['Activate icon "new" next to albums and pictures'] = 'Aktywuj ikonę "nowe" obok albumów i zdjęć';
 $lang['Deactivate all'] = 'Deaktywuj wszystko';
-$lang['Default photos order'] = 'Domślne sortowanie zdjęć';
+$lang['Default photos order'] = 'Domyślne sortowanie zdjęć';
 $lang['Restore'] = 'Przywróć';
 $lang['Restore default configuration. You will lose your plugin settings!'] = 'Przywróć domyślną konfigurację. Stracisz ustawienia wtyczek!';
 $lang['Show menubar'] = 'Pokazuj belkę z menu';
@@ -817,10 +802,12 @@ $lang['Not cropped correctly?'] = 'Rozmiar nie zmieniony poprawnie?';
 $lang['Center of interest'] = 'Centrum zainteresowania';
 $lang['Move to album'] = 'Przenieś do albumu';
 
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em>Piwigo na Androida</em> aplikacja daje możliwość połączenia Twojej galerii Piwigo z Twoim telefonem lub tabletem opartym na Androidzie. Możesz tworzyć albumy i wysyłać wiele zdjęć jednocześnie.';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = '<em>Piwigo na iOS</em> aplikacja daje możliwość połączenia Twojej galerii Piwigo z Twoim iPhonem, iPadem lub iPodem. Możesz tworzyć albumy i wysyłać wiele zdjęć jednocześnie.';
 $lang['Applications'] = 'Aplikacje';
 $lang['Available on'] = 'Dostępne na';
 $lang['Cancel'] = 'Anuluj';
+$lang['Piwigo for Android'] = 'Piwigo na Androida';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo na iOS (iPhone, iPad, iPod Touch)';
 $lang['any visitor can see this album'] = 'wszyscy odwiedzający galerię zobaczą ten album';
 $lang['apply automatic sort order'] = 'Zastosuj automatyczną kolejność sortowania';
@@ -843,7 +830,7 @@ $lang['Permission management'] = 'Zarządzanie zezwoleniami';
 $lang['Select groups...'] = 'Wybierz grupy...';
 $lang['Select users...'] = 'Wybierz użytkowników...';
 $lang['There is no group in this gallery.'] = 'Do tej galerii nie przydzielono żadnej grupy';
-$lang['Web Form'] = 'Forumlarz www';
+$lang['Web Form'] = 'Formularz www';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom jest oprogramowaniem do zdjęć zaprojektowanym do zarządzania dużą ilością cyfrowych obrazów oraz prac po ich stworzeniu.';
 $lang['On your Linux, simply install Shotwell with your package manager and the activate Piwigo publishing option.'] = 'Na Linux po prostu instalujesz Shotwell swoim menadżerem pakietów a następnie aktywujesz opcję publikowania Piwigo.';
 $lang['Piwigo publish plugin for digiKam'] = 'Wtyczka Piwigo dla digiKam.';
@@ -1008,3 +995,18 @@ $lang['Delete album "%s".'] = 'Skasuj album "%s".';
 $lang['Delete %d orphan photos'] = 'Skasuj osierocone zdjęcie %d';
 $lang['Dashboard'] = 'Pulpit';
 $lang['Confirm deletion'] = 'Potwierdź kasowanie';
+$lang['Piwigo requires an album to add photos.'] = 'Piwigo wymaga albumu by dodać zdjęcia.';
+$lang['Visit'] = 'Wizyta';
+$lang['%d checksums were added'] = 'dodano %d sum kontrolnych';
+$lang['... or hide this link'] = '... lub ukryj ten odnośnik';
+$lang['Compute %d missing checksums'] = 'Oblicz %d brakujące sumy kontrolne';
+$lang['Create a first album'] = 'Utwórz pierwszy album';
+$lang['Deletion in progress'] = 'Trwa usuwanie';
+$lang['Display album date period'] = 'Pokaż okres czasowy związany z każdym z albumów, np. «od 12 do 15 lipca 2018»';
+$lang['Display category date'] = 'Wyświetl datę kategorii';
+$lang['Some checksums are missing.'] = 'Brakuje niektórych sum kontrolnych';
+$lang['Synchronization in progress'] = 'Trwa synchronizacja';
+$lang['Welcome!'] = 'Witamy!';
+$lang['With no checksum'] = 'Bez sum kontrolnych';
+$lang['checksums to add'] = 'sumy kontrolne do dodania';
+$lang['or'] = 'lub';

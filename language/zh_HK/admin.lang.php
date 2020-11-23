@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 $lang['%d photos uploaded'] = '%d 相片已被上傳';
 $lang['%d photos were deleted'] = '%d 相片已被上傳';
@@ -388,6 +373,7 @@ $lang['Are you sure to install this upgrade? You must verify if this version doe
 $lang['Are you sure you want to delete this plugin?'] = '確定要刪除此插件嗎?';
 $lang['%d of %d users selected'] = '%d到%d位用戶選擇';
 $lang['(filtered from %s total users)'] = '(共%s用戶被過濾）';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em>Android 版的Piwigo</em>允許從 Android 手機或平版連接到您的Piwigo畫廊，建立多個相冊並一次上傳多張相片。';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = '<em>iOS 版的Piwigo</em>允許您從iPhone, iPad 或 iPod Touch 連接到您的Piwigo畫廊，建立多個相冊並一次上傳多張相片。';
 $lang['Add a criteria'] = '增加准則';
 $lang['Add a filter'] = '增加篩選';
@@ -766,6 +752,7 @@ $lang['Piwigo cannot retrieve upgrade file from server'] = 'Piwigo 無法從伺�
 $lang['Piwigo configuration'] = 'Piwigo的設定';
 $lang['Piwigo export plugin for Aperture'] = 'Aperture的Piwigo匯出插件';
 $lang['Piwigo export plugin for iPhoto'] = 'iPhoto的Piwigo匯出插件';
+$lang['Piwigo for Android'] = 'Android 版的Piwigo';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'iOS (iPhone, iPad, iPod Touch) 版的 Piwigo ';
 $lang['Piwigo publish plugin for Shotwell'] = 'Piwigo 的 Shotwell 照片發布插件 ';
 $lang['Piwigo publish plugin for digiKam'] = 'Piwigo 的 ddgiKam 照片發布插件';

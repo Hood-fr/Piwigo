@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 $lang['%d albums including'] = '%d álbums incluídos';
 $lang['%d albums moved'] = '%d álbums movidos';
@@ -128,6 +113,7 @@ $lang['ACCESS_5'] = 'Sen acceso';
 $lang['Access type'] = 'Tipo de acceso';
 $lang['Action'] = 'Acción';
 $lang['Actions'] = 'Accións';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = 'O aplicativo <em>Piwigo para Android</em> permíteche conectar o teu móbil ou tableta Android á túa galería Piwigo, creando álbums e enviando fotos ó mesmo tempo.';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = 'O aplicativo <em>Piwigo para iOS</em> permíteche conectar o teu iPhone, iPad ou iPod Touch á túa galería Piwigo, creando álbums e enviando fotos ó mesmo tempo.';
 $lang['A locked gallery is only visible to administrators'] = 'Unha galería bloqueada só pode ser vista polos administradores';
 $lang['... or '] = '... ou';
@@ -306,6 +292,7 @@ $lang['Piwigo cannot retrieve upgrade file from server'] = 'Piwigo non pode recu
 $lang['Piwigo configuration'] = 'Configuración de Piwigo';
 $lang['Piwigo export plugin for Aperture'] = 'Engadido de exportación Piwigo para Aperture';
 $lang['Piwigo export plugin for iPhoto'] = 'Engadido de exportación Piwigo para iPhoto';
+$lang['Piwigo for Android'] = 'Piwigo para Android';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo para iOS (iPhone, iPad, iPod Touch)';
 $lang['Piwigo publish plugin for Shotwell'] = 'Engadido de publicación Piwigo para Shotwell';
 $lang['Piwigo publish plugin for digiKam'] = 'Engadido de publicación Piwigo para digiKam';

@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 $lang['%d association'] = '%d مجموعه';
@@ -796,6 +781,7 @@ $lang['Not cropped correctly?'] = 'الإقتطاع غير صحيح؟';
 $lang['Notify administrators when a comment is'] = 'أبلغ المدير عندالتعليق';
 $lang['Original Size'] = 'الحجم الأصلي';
 $lang['pending validation'] = 'في إنتظار التصريح';
+$lang['Piwigo for Android'] = 'Piwigo for Android';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo for iOS (iPhone, iPad, iPod Touch)';
 $lang['Piwigo Publish plugin for Lightroom'] = 'Piwigo أضافة للنشر بوا سطة برنامج  Lightroom';
 $lang['Predefined filter'] = 'مُرشح مُحدد مُسبقاً';
@@ -844,6 +830,7 @@ $lang['Select groups...'] = 'تحديد مجموعات ..';
 $lang['Select users...'] = 'تحديد المستخدمين';
 $lang['There is no group in this gallery.'] = 'لا توجد مجموعه لهذا الألبوم';
 $lang['visitors need to login and have the appropriate permissions to see this album'] = 'الزوار في حاجه لتسجيل الدخول او  التصريح حتى يمكنهم مشاهده هذا الألبوم';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em>Piwigo for Android</em> تطبيقات للاجهزه اللمسيه التي تعمل علي نظام آندرويذ ، يتيح لهذه الاجهزه رفع الصور و انشاء الآلبومات';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = '<em>Piwigo for iOS</em>  تطبيقات للاجهزه اللمسيه الخاصة بشركه أبل ،آيفون ، آيباد و آيبود  ، تطبيق يتيح لهذه الاجهزه الاتصال بمعرضك الخاص و رفع الصور و انشاء و الألبومات ';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'أدوبي فوتوشوب لايتروم  هو برنامج التصوير المصممة لإدارة كميات كبيرة من الصور الرقمية والقيام بأعمال ما بعد الإنتاج.';
 $lang['Piwigo publish plugin for Shotwell'] = 'اضافة النشر في Piwigo  الخاصه ببرنامج  Shotwell';

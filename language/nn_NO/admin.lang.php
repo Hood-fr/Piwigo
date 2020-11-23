@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 $lang['... or '] = '... eller';
 $lang['ACCESS_0'] = 'Fri tilgang';
@@ -232,6 +217,7 @@ $lang['width must be a number superior to'] = 'breidde må vera eit tal større 
 $lang['Anomaly'] = 'Feil';
 $lang['Are you sure you want to delete this plugin?'] = 'Er du sikker på at du vil fjerne dette tilleggsprogrammet';
 $lang['Are you sure you want to install this plugin?'] = 'Er du sikker på at du vil installere dette tilleggsprogrammet';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em>Piwigo for Android</em> appen gjer det mogleg å kople ein Android telefon eller nettbrett til ditt Piwigo galleri. Du kan lage album og laste opp fleire bilete på ein gong.';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = '<em>Piwigo for iOS</em> appen gjer det mogleg å kople ein iPhone, iPad eller iPod Touch til ditt Piwigo galleri. Du kan lage album og laste opp fleire bilete på ein gong.';
 $lang['Add write access to the "%s" directory'] = 'Legg til skriverettar til "%s" katalogen';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom er programvare laga for å handtere store mengder digitale foto og gjera biletbehandling.';
@@ -531,6 +517,7 @@ $lang['Pending Comments'] = 'Ventande kommentarar';
 $lang['Permalink'] = 'Permalenke';
 $lang['Permalink %s is already used by album %s'] = 'Permalenke %s er allereie i bruk av album %s';
 $lang['Permalink history'] = 'Permalenke-historikk';
+$lang['Piwigo for Android'] = 'Piwigo for Android';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo for iOS (iPhone, iPad, iPod Touch)';
 $lang['Posted %s on %s'] = 'Lagt til %s %s';
 $lang['Permalinks'] = 'Permalenker';

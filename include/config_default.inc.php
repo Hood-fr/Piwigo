@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 /**
@@ -198,10 +183,6 @@ $conf['header_notes']  = array();
 
 // show_thumbnail_caption : on thumbnails page, show thumbnail captions ?
 $conf['show_thumbnail_caption'] = true;
-
-// display_fromto: display the date creation bounds of a
-// category.
-$conf['display_fromto'] = false;
 
 // allow_random_representative : do you wish Piwigo to search among
 // categories elements a new representative at each reload ?
@@ -635,6 +616,14 @@ $conf['full_tag_cloud_items_number'] = 200;
 // cloud in the menubar. Only the most represented tags will be shown
 $conf['menubar_tag_cloud_items_number'] = 20;
 
+// menubar_tag_cloud_content: 'always_all', 'current_only' or 'all_or_current'
+// For the tag cloud in the menubar.
+// 'always_all': tag cloud always displays all tags available to the user
+// 'current_only': tag cloud always displays the tags from the current pictures
+// 'all_or_current': when pictures are displayed, tag cloud shows their tags, but 
+// when none are displayed, all the tags available to the user are shown.
+$conf['menubar_tag_cloud_content'] = 'all_or_current';
+
 // content_tag_cloud_items_number: number of related tags to show in the tag
 // cloud on the content page, when the current section is not a set of
 // tags. Only the most represented tags will be shown
@@ -851,6 +840,9 @@ $conf['batch_manager_images_per_page_global'] = 20;
 // batch manager: how many images should Piwigo display by default on the
 // unit mode. Must be among values {5, 10, 50}
 $conf['batch_manager_images_per_page_unit'] = 5;
+
+// how many missing md5sum should Piwigo compute at once.
+$conf['checksum_compute_blocksize'] = 50;
 
 // +-----------------------------------------------------------------------+
 // |                                 log                                   |

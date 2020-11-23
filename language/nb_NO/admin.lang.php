@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 $lang['%d association'] = '%d assosier';
@@ -814,6 +799,7 @@ $lang['Available on'] = 'Tilgjengelig på';
 $lang['List'] = 'Vis';
 $lang['Not cropped correctly?'] = 'Ikke beskåret riktig?';
 $lang['Notify administrators when a comment is'] = 'Gi beskjed til administrator når en kommentar er';
+$lang['Piwigo for Android'] = 'Piwigo for Android';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo for iOS (iPhone, iPad, iPod Touch)';
 $lang['Save visits in history for'] = 'Lagre besøkshistorie for ';
 $lang['Unable to dump database.'] = 'Kan ikke dumpe databasen';
@@ -821,6 +807,7 @@ $lang['You can activate only one mobile theme.'] = 'Du kan kun aktivere et mobil
 $lang['You can\'t define a default photo order because you have a custom setting in your local configuration.'] = 'Du kan ikke definere standard bilderekkefølge, fordi du har eget oppsett i din lokale konfigurasjon.';
 $lang['simple visitors'] = 'vanlig besøkende';
 $lang['%u users have automatic permission because they belong to a granted group.'] = '%u brukere har automatisk rettigheter fordi de tilhører en gruppe som allerede har rettigheter.';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em>Piwigo for Android</em> applikasjonen gjør at du kan koble til ditt Piwigo-galleri fra din Android-telefon, opprette album og laste opp flere bilder samtidig.';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = '<em>Piwigo for iOS</em> applikasjonen gjør at du kan koble til ditt Piwigo-galleri fra din iPhone, iPad eller iPod Touch, opprette album og laste opp flere bilder samtidig.';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom et et bildebehandlingsprogram, lagd for å å organisere svært mange bilder, samt etterbehandling av bilder.';
 $lang['Aperture is a powerful tool to refine images and manage massive libraries on Mac.'] = 'Aperture er et kraftig verktøy for å avgrense bilder, og for å behandle store bildebibliotek på Mac.';
@@ -1006,3 +993,18 @@ $lang['delete album and all %d photos, even the %d associated to other albums'] 
 $lang['delete album and the %d orphan photos'] = 'slett album og %d eierløse bilder';
 $lang['delete only album, not photos'] = 'slett kun album, ikke bilder';
 $lang['orphans to delete'] = 'eierløse bilder som skal slettes';
+$lang['%d checksums were added'] = '%d sjekksum ble lagt til';
+$lang['... or hide this link'] = '...eller skjul denne lenken';
+$lang['Compute %d missing checksums'] = 'Dataen %d mangler sjekksum';
+$lang['Create a first album'] = 'Lag første album';
+$lang['Deletion in progress'] = 'Sletting pågår';
+$lang['Display album date period'] = 'Vis datoperioden knyttet til hvert album, for eksempel «fra 12. juli til 15. januar 2018»';
+$lang['Display category date'] = 'Vis kategori dato';
+$lang['Piwigo requires an album to add photos.'] = 'Piwigo krever et album for å legge til bilder.';
+$lang['Some checksums are missing.'] = 'Noen sjekksummer mangler.';
+$lang['Synchronization in progress'] = 'Synkronisering pågår';
+$lang['Visit'] = 'Besøk';
+$lang['Welcome!'] = 'Velkommen!';
+$lang['With no checksum'] = 'Uten sjekksum';
+$lang['checksums to add'] = 'sjekksum som skal legges til';
+$lang['or'] = 'eller';

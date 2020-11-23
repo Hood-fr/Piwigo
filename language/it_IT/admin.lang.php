@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 
@@ -836,6 +821,8 @@ $lang['Applications'] = 'Applicazioni';
 $lang['Available on'] = 'Disponibile su';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo per iOS (iPhone, iPad, iPod Touch)';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = 'L\'applicazione <em>Piwigo per iOS</em> permette di collegarti alla tua galleria Piwigo dal tuo iPhone, iPad o iPod Touch, creando degli album e caricando le immagini.';
+$lang['Piwigo for Android'] = 'Piwigo per Android';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = 'L\'applicazione <em>Piwigo per Android</em> permette di collegarti alla tua galleria di Piwigo dal tuo cellulare o tablet Android, creando degli album e caricando le immagini.';
 $lang['Piwigo Publish plugin for Lightroom'] = 'Plugin Piwigo per Lightroom';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom è un software fotografico specializzato per gestire grandi quantità di immagini ed eseguirne la post-produzione.';
 $lang['The Piwigo publish Plug-in allows you to export and synchronize photos from Lightroom directly to your Piwigo photo gallery.'] = 'Il plugin di Piwigo permette di esportare e sincronizzare le immagini da Lightroom direttamente alla tua galleria di Piwigo.';
@@ -1011,3 +998,18 @@ $lang['No filter on album. Select one or type to search'] = 'Nessun filtro. Tocc
 $lang['No tag selected, no action possible.'] = 'Nessun tag selezionato, nessuna azione possibile.';
 $lang['Confirm deletion'] = 'Confermare l\'eliminazione';
 $lang['(determined from photos)'] = '(Determinata dalle foto)';
+$lang['Some checksums are missing.'] = 'Checkums mancanti';
+$lang['Synchronization in progress'] = 'Sincronizzazione in corso';
+$lang['Visit'] = 'Visita';
+$lang['Welcome!'] = 'Benvenuto!';
+$lang['With no checksum'] = 'Senza checksum';
+$lang['checksums to add'] = 'checksum da aggiungere';
+$lang['or'] = 'o';
+$lang['%d checksums were added'] = '%d checksum sono stati aggiunti';
+$lang['... or hide this link'] = '... o nascondi questo link';
+$lang['Compute %d missing checksums'] = 'Calcola %d dei checksum mancanti';
+$lang['Create a first album'] = 'Crea un primo album';
+$lang['Deletion in progress'] = 'Cancellazione in corso';
+$lang['Display album date period'] = 'Visualizza la data del periodo associato a ciascun album, ad es. "dal 12 al 15 luglio 2018"';
+$lang['Display category date'] = 'Visualizza la data della categoria';
+$lang['Piwigo requires an album to add photos.'] = 'Piwigo ha bisogno di un album per aggiungere delle foto.';
