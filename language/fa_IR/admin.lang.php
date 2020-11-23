@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 
@@ -857,6 +842,7 @@ $lang['Multiple Size'] = 'چند سایزه';
 $lang['Not cropped correctly?'] = 'درست بریده نشد؟';
 $lang['Numeric identifier : %d'] = 'شناسه‌ی عددی: %d';
 $lang['Permission management'] = 'مدیریت دسترسی‌ها';
+$lang['Piwigo for Android'] = 'دریافت Piwigo برای Android';
 $lang['Rated %d times, score : %.2f'] = 'به تعداد %d بار رأی داده شده، امتیاز : %.2f';
 $lang['Save manual order'] = 'ذخیره ی ترتیب دستی';
 $lang['Sharpen'] = 'حالت تیز (Sharpen)';
@@ -874,6 +860,7 @@ $lang['cancel manual order'] = 'لغو تغییرات ترتیب دستی';
 $lang['middle'] = 'وسط';
 $lang['top left corner'] = 'گوشه ی بالا سمت چپ';
 $lang['top right corner'] = 'گوشه ی بالا سمت راست';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = 'نرم‌افزار <em>Piwigo برای Android</em> به شما قدرت وصل شدن به گالری، ساخت آلبوم و آپلود عکس به کمک موبایل یا تبلت آندرویدتان را می‌دهد.';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = 'نرم‌افزار <em>Piwigo برای iOS</em> به شما قدرت وصل شدن به گالری، ساخت آلبوم و آپلود عکس به کمک iPhone، iPad یا iPod Touch ـتان را می‌دهد.';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom یک نرم‌افزار عکاسی می‌باشد که برای مدیریت عکس‌های دیجیتالی بزرگ طراحی شده است.';
 $lang['Center of interest'] = 'نقطه‌ی طلایی (Center of Interest)';
@@ -1011,3 +998,4 @@ $lang['No filter on album. Select one or type to search'] = 'فیلتری روی
 $lang['No tag selected, no action possible.'] = 'هیچ برچسبی انتخاب نشده، کاری قابل انجام نیست';
 $lang['Piwigo %s is available, please update'] = 'ورژن %s از Piwigo آماده‌ی آپدیت کردن است
 ';
+$lang['Piwigo Remote Sync is able to upload a whole folder hierarchy. If you run it again, only new photos will be uploaded.'] = 'Piwigo Remote Sync قابلیت این را دارد که یک پوشه(فولدر) را با تمام زیر مجموعه هایش آپلود کند. اگر مجدد این عملیات را انجام دهید فقط موارد جدید آپلود میشود.';

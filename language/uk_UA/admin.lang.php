@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 
@@ -827,8 +812,10 @@ $lang['Web Form'] = 'Веб-форми';
 $lang['Available on'] = 'Доступні на';
 $lang['Delete multiple size images'] = 'Видалення декількох зображень розміром';
 $lang['Generate multiple size images'] = 'Створення декількох зображень розміром';
+$lang['Piwigo for Android'] = 'Piwigo для Android';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo для iOS(iPhone, iPad, iPod Touch)';
 $lang['%u users have automatic permission because they belong to a granted group.'] = '%u користувачі мають автоматичний дозвіл, тому що вони належать до наданої групи.';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em>Piwigo для Android</em> додаток дозволяє вам підключити ваш телефон або планшет в галерею Piwigo, створити кілька альбомів і завантажити декілька зображень одночасно.';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = '<em>Piwigo для iOS</em> додаток дає можливість підключатись до вашої галереї Piwigo з вашого сенсорного iPhone, iPad та iPod, створити кілька альбомів і завантажити декілька зображень одночасно.';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom являє собою програмне забезпечення фотографа, призначене для управління великою кількістю цифрових зображень і робить роботу постпродакшн.';
 $lang['any visitor can see this album'] = 'будь-який відвідувач може бачити цей альбом';
@@ -1006,3 +993,18 @@ $lang['Delete album "%s".'] = 'Видалити альбом "%s".';
 $lang['Display form'] = 'Форма відображення';
 $lang['First photo added'] = 'Перша фотографія додана';
 $lang['It only takes a few clicks.'] = 'Це займає лише кілька кліків.';
+$lang['Display category date'] = 'Показати дату категорії';
+$lang['Display album date period'] = 'Показувати період, пов\'язаний з кожним альбомом, наприклад, «з 12 до 15 липня 2018 року»';
+$lang['Compute %d missing checksums'] = 'Вичислити %d відсутні контрольні суми';
+$lang['%d checksums were added'] = '%d контрольних сум було додано';
+$lang['... or hide this link'] = '... або приховати це посилання';
+$lang['Piwigo requires an album to add photos.'] = 'Piwigo потребує альбом для додавання фотографій.';
+$lang['Some checksums are missing.'] = 'Деякі контрольні суми відсутні.';
+$lang['Synchronization in progress'] = 'Виконується синхронізація';
+$lang['Visit'] = 'Відвідати';
+$lang['Welcome!'] = 'Ласкаво просимо!';
+$lang['With no checksum'] = 'Без контрольної суми';
+$lang['checksums to add'] = 'контрольні суми для додавання';
+$lang['or'] = 'чи';
+$lang['Deletion in progress'] = 'Виконується видалення';
+$lang['Create a first album'] = 'Створіть перший альбом';

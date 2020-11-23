@@ -1,27 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// | Czech language localization                                           |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2009     Pavel Budka & Petr Jirsa    http://pbudka.co.cc |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 $lang['%d association'] = '%d spojenie';
@@ -832,6 +814,8 @@ $lang['Applications'] = 'Aplikácie';
 $lang['Available on'] = 'K dispozícii';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo pre iOS (iPhone, iPad, iPod Touch)';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = '<em>Piwigo pre iOS</em> aplikácie umožňujúcej spojenie na Vašu Piwigo galériu pre Váš iPhone, iPad alebo iPod Touch, vytváranie albumov a nahrávanie fotografií.';
+$lang['Piwigo for Android'] = 'Piwigo pre Android';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em>Piwigo pre Android</em> aplikácie umožňujúcej spojenie na Vašu Piwigo galériu pre Váš iPhone, iPad alebo iPod Touch, vytváranie albumov a nahrávanie fotografií.';
 $lang['Piwigo Publish plugin for Lightroom'] = 'Piwigo publikačný doplnok pre Lightroom';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom je fotografický softvér určený na správu väčšieho počtu digitálnych fotografií a postprodukčnú prácu.';
 $lang['The Piwigo publish Plug-in allows you to export and synchronize photos from Lightroom directly to your Piwigo photo gallery.'] = 'Piwigo publikačný doplnok umožňuje export a synchronizáciu fotografií z Lightroomu priamo do Vašej Piwigo foto galérie.';
@@ -1011,3 +995,18 @@ $lang['Delete album "%s" and its %d sub-albums.'] = 'Odstrániť album "%s" a je
 $lang['Dashboard'] = 'Dashboard';
 $lang['Confirm deletion'] = 'Potvrďte vymazanie';
 $lang['(determined from photos)'] = '(určený z fotografií)';
+$lang['%d checksums were added'] = '%d pridaných kontrolných súčtov';
+$lang['... or hide this link'] = '... alebo schovať tento link';
+$lang['Compute %d missing checksums'] = 'Vypočítať %d chýbajúcich kontrolných súčtov';
+$lang['Create a first album'] = 'Vytvoriť prvý album';
+$lang['Deletion in progress'] = 'Prebieha vymazanie';
+$lang['Display album date period'] = 'Zobraziť časové obdobie spojené s každým albumom, napr. «Od 12. do 15. júla 2018»';
+$lang['Display category date'] = 'Zobraziť dátum kategórie';
+$lang['Piwigo requires an album to add photos.'] = 'Piwigo vyžaduje na pridávanie fotografií album.';
+$lang['Some checksums are missing.'] = 'Niektoré kontrolné súčty chýbajú.';
+$lang['Synchronization in progress'] = 'Prebieha synchronizácia';
+$lang['Visit'] = 'Návšteva';
+$lang['Welcome!'] = 'Vitajte!';
+$lang['With no checksum'] = 'Bez kontrolného súčtu';
+$lang['checksums to add'] = 'kontrolné súčty, ktoré sa majú pridať';
+$lang['or'] = 'alebo';

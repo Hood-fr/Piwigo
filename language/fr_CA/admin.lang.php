@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 
@@ -841,6 +826,8 @@ $lang['Applications'] = 'Applications';
 $lang['Available on'] = 'Disponible sur';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo pour iOS (iPhone, iPad, iPod Touch)';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = 'L\'application <em>Piwigo pour iOS</em> vous permet de connecter votre iPhone, iPad ou iPod Touch à votre galerie Piwigo pour y créer des albums et envoyer plusieurs photos à la fois.';
+$lang['Piwigo for Android'] = 'Piwigo pour Android';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = 'L\'application <em>Piwigo pour Android</em> vous permet de connecter votre smartphone ou votre tablette Android à votre galerie Piwigo pour y créer des albums et envoyer plusieurs photos à la fois.';
 $lang['Piwigo Publish plugin for Lightroom'] = 'Plugin de publication Piwigo pour Lightroom';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom est un logiciel de photographie conçu pour gérer d\'importantes collections de photos numériques et les post-traiter.';
 $lang['The Piwigo publish Plug-in allows you to export and synchronize photos from Lightroom directly to your Piwigo photo gallery.'] = 'Le plugin de publication Piwigo pour Lightroom vous permet d\'exporter et synchroniser vos photos de Lightroom vers votre galerie Piwigo.';
@@ -990,3 +977,8 @@ $lang['width & height'] = 'largeur et hauteur';
 $lang['Select tags'] = 'Sélectionner des mots clés';
 $lang['Each email sent will contain its own automatic authentication key on links, valid for %s.'] = 'Chaque courriel envoyé contiendra sa propre clef d\'identification automatique sur les liens, valide %s.';
 $lang['No tag selected, no action possible.'] = 'Aucun mot clé sélectionné, aucune action possible.';
+$lang['checksums to add'] = 'Checksums à ajouter';
+$lang['With no checksum'] = 'Sans checksums';
+$lang['Some checksums are missing.'] = 'Des checksums sont manquants';
+$lang['Compute %d missing checksums'] = 'Calcule %d des checksums manquants';
+$lang['%d checksums were added'] = '%d des checksums ont été ajoutés';
