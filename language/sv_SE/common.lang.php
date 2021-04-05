@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Svenska [SE]
-Version: 2.10.2
+Version: 11.4.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=451
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -414,4 +414,5 @@ $lang['Link: %s'] = 'Länk: %s';
 $lang['Your authentication key is no longer valid.'] = 'Din autenticeringsnyckel är inte längre giltig.';
 $lang['Invalid username or password!'] = 'Ogiltigt användarnamn eller lösenord!';
 $lang['generate random password'] = 'Slumpa fram ett lösenord';
-$lang['Please register'] = 'Registrera eller logga in som användare för att undvika captcha-kod och kunna redigera eller ta bort dina kommentarer';
+$lang['Related albums'] = 'Relaterade album';
+$lang['Password: ********** (no copy by email)'] = 'Lösenord:********** (Ingen kopia via e-post)';

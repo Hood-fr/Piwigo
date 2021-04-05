@@ -1,4 +1,4 @@
 File automatically created from SVN or Git repository.
 
 URL: https://github.com/Piwigo/piwigo-smartpocket 
-Revision: 3c8dc68bfc2eb0126468124f8c29c165c63f8f57 (Wed Jul 3 22:20:25 2019 +0900)
+Revision: 6e45823f36de0a3263a96fb5b9e0d07df6aa7d82 (Sun Jan 24 11:02:51 2021 +0100)
