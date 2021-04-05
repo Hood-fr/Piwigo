@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 
@@ -293,7 +278,7 @@ $lang['private'] = 'privat';
 $lang['public'] = 'offentlig';
 $lang['Purge never used notification feeds'] = 'Tøm aldrig anvendte notificeringsfeeds';
 $lang['Purge sessions'] = 'Tøm sessioner';
-$lang['randomly represented'] = 'tilfældigt albumminiaturebillede';
+$lang['randomly represented'] = 'album har tilfældigt miniaturebillede';
 $lang['registration date'] = 'registreringsdato';
 $lang['clean'] = 'oprydning';
 $lang['Create this site'] = 'Opret dette websted';
@@ -303,7 +288,7 @@ $lang['remove tags'] = 'Fjern tags';
 $lang['Repair and optimize database'] = 'Reparer og optimer database';
 $lang['selection'] = 'udvælgelse';
 $lang['set to'] = 'opsat til';
-$lang['singly represented'] = 'fast albumminiaturebillede';
+$lang['singly represented'] = 'album har fast miniaturebillede';
 $lang['This site already exists'] = 'Dette websted findes allerede';
 $lang['created'] = 'oprettet';
 $lang['delete'] = 'slet';
@@ -602,7 +587,7 @@ $lang['Guest Settings'] = 'Gæsteindstillinger ';
 $lang['Main Page']  =  'Forside';
 $lang['Photo Page'] = 'Fotoside ';
 $lang['Activate Navigation Bar'] = 'Aktiver navigationsbjælke';
-$lang['Activate Navigation Thumbnails'] = 'Aktiver navigeringsminiaturebilleder';
+$lang['Activate Navigation Thumbnails'] = 'Aktiver miniaturebilleder til navigering';
 $lang['Activate icon "%s"'] = 'Aktiver ikonen \'%s\'';
 $lang['Photo Properties'] = 'Fotografiegenskaber';
 $lang['Allow user customization']  =  'Tillad brugertilpasning';
@@ -651,7 +636,7 @@ $lang['new'] = 'ny';
 $lang['No file was uploaded'] = 'Ingen filer blev uploadet';
 $lang['No photo in the current set.'] = 'Ingen fotografier i det aktuelle sæt.';
 $lang['No photo selected, %d photos in current set'] = 'Ingen fotografier valgt, %d fotografier i nuværende sæt';
-$lang['No photo selected, no action possible.'] = 'Ingen fotografier valgt, ingen mulige handlinger.';
+$lang['No photos selected, no actions possible.'] = 'Ingen fotografier valgt, ingen mulige handlinger.';
 $lang['No results'] = 'Ingen resultater';
 $lang['on the %d selected photos'] = 'på de %d valgte fotografier';
 $lang['Predefined filter'] = 'Foruddefineret filter';
@@ -673,8 +658,6 @@ $lang['Average rate'] = 'Gennemsnitlig bedømmelse';
 $lang['An error has occured during upgrade.'] = 'Der opstod en fejl under opgraderingen.';
 $lang['An error has occured during extract. Please check files permissions of your piwigo installation.<br><a href="%s">Click here to show log error</a>.'] = 'Der opstod en fejl under udpakningen. Tjek filrettigheder i din Piwigo-installation.<br><a href="%s">Klik her for at se fejlloggen</a>.';
 $lang['Piwigo cannot retrieve upgrade file from server'] = 'Piwigo kan ikke modtage opgraderingsfiler fra serveren';
-$lang['Include history data (Warning: server memory limit may be exceeded)'] = 'Medtag historiske data (Advarsel: Hukommelsesbegrænsning på serveren kan blive overskredet)';
-$lang['Unable to dump database.'] = 'Kunne ikke udføre databasedump.';
 $lang['Update in progress... Please wait.'] = 'Opdateringen er i gang... Vent venligst.';
 $lang['Update to Piwigo %s'] = 'Opdater til Piwigo %s';
 $lang['Two updates are available'] = 'Der er to opdateringer til rådighed';
@@ -728,7 +711,6 @@ $lang['Crop'] = 'Beskær';
 $lang['Default comments order'] = 'Standardkommentarrækkefølge';
 $lang['display'] = 'vis';
 $lang['Do you want to activate anyway?'] = 'Vil du aktivere alligevel?';
-$lang['Dump Database'] = 'Dump database';
 $lang['ERROR'] = 'FEJL';
 $lang['ERROR: THIS PLUGIN IS MISSING BUT IT IS INSTALLED! UNINSTALL IT NOW.'] = 'FEJL: DENNE PLUGIN MANGLER, MEN ER INSTALLERET! AFINSTILLER NU.';
 $lang['Extensions Update'] = 'Opdater udvidelser';
@@ -843,6 +825,7 @@ $lang['Automatic sort order'] = 'Automatisk sorteringsrækkefølge';
 $lang['List'] = 'Liste';
 $lang['Piwigo export plugin for Aperture'] = 'Piwigo-eksportplugin til Aperture';
 $lang['Piwigo export plugin for iPhoto'] = 'Piwigo-eksportplugin til iPhoto';
+$lang['Piwigo for Android'] = 'Piwigo for Android';
 $lang['You can activate only one mobile theme.'] = 'Du kan kun aktivere et mobiltema';
 $lang['apply automatic sort order'] = 'Aktiver automatisk sorteringsrækkefølge';
 $lang['cancel manual order'] = 'afbryd manuel rækkefølge';
@@ -858,6 +841,7 @@ $lang['visitors need to login and have the appropriate permissions to see this a
 $lang['The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form'] = 'Filstørrelsen på den uploadede fil overstiger MAX_FILE_SIZE-definitionen, som er angivet i HTML-formularen';
 $lang['Multiple Size'] = 'Flere størrelser';
 $lang['%u users have automatic permission because they belong to a granted group.'] = '%u brugere har automatisk tilladelse, fordi de tilhører en gruppe med tilladelser.';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = 'App\'en <em>Piwigo for Android</em> giver dig mulighed for at forbinde en Android-mobiltelelfon eller -tablet med dit Piwigo-galleri, oprette albummer og uploade flere fotografier på én gang.';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom er et fotografiprogram beregnet til at håndtere store mængder digitale billeder og foretage efterbehandling.';
 $lang['Aperture is a powerful tool to refine images and manage massive libraries on Mac.'] = 'Aperture er et ydedygtigt værktøj til at forfine billeder og administrere store biblioteker på en Mac.';
 $lang['Aperture is designed for professional photographers with iPhoto simplicity.'] = 'Aperture er udviklet til professionelle fotografer med iPhoto-enkelhed.';
@@ -932,7 +916,7 @@ $lang['between %d and %d pixels'] = 'mellem %d og %d pixels';
 $lang['Duplicate'] = 'Kopier';
 $lang['Manage the members'] = 'Medlemshåndtering';
 $lang['Merge selected groups'] = 'Læg valgte grupper sammen';
-$lang['No group selected, no action possible.'] = 'Ingen grupper valgt, handling ikke mulig.';
+$lang['No groups selected, no actions possible.'] = 'Ingen grupper valgt, handling ikke mulig.';
 $lang['No members to manage'] = 'Der er ingen medlemmer at håndtere';
 $lang['Please select at least two groups'] = 'Vælg mindst to grupper';
 $lang['Rename'] = 'Omdøb';
@@ -955,7 +939,7 @@ $lang['Last visit on %s, %s.'] = 'Seneste besøg kl. %s den %s.';
 $lang['Loading...'] = 'Indlæser ...';
 $lang['No matching user found'] = 'Ingen brugere fundet som opfylder kriteriet';
 $lang['No user selected of %d users'] = 'Ingen bruger valgt ud af %d brugere';
-$lang['No user selected, no action possible.'] = 'Ingen bruger valgt, ingen handling er mulig.';
+$lang['No users selected, no actions possible.'] = 'Ingen bruger valgt, ingen handling er mulig.';
 $lang['Password updated'] = 'Adgangskoden er opdateret';
 $lang['Registered on %s, %s.'] = 'Registreret kl. %s den %s.';
 $lang['Show %s users'] = 'Vis %s brugere';
@@ -995,7 +979,7 @@ $lang['Running on an up-to-date Piwigo is important for security.'] = 'Det er af
 $lang['Select tags'] = 'Vælg tags';
 $lang['Share / Send your photos directly from your Mac Os X (10.10 and following) to Piwigo'] = 'Del/send dine fotografier direkte fra macOS (10.10 og nyere) til Piwigo';
 $lang['delete album and all %d photos, even the %d associated to other albums'] = 'slet album og alle %d fotografier, selv de %d tilknyttet andre albummer';
-$lang['No tag selected, no action possible.'] = 'Intet tag valgt, ingen handling mulig.';
+$lang['No tags selected, no actions possible.'] = 'Intet tag valgt, ingen handling mulig.';
 $lang['Dashboard'] = 'Instrumentbræt';
 $lang['delete only album, not photos'] = 'slet kun album, ikke fotografier';
 $lang['orphans to delete'] = 'forældreløse der skal slettes';
@@ -1012,3 +996,129 @@ $lang['Storage used'] = 'Lagerplads anvendt';
 $lang['Time has come to update your Piwigo with version %s, go to %s'] = 'Det er blevet tid til at opdatere din Piwigo med version %s, gå til %s';
 $lang['checksum'] = 'kontrolsum';
 $lang['delete album and the %d orphan photos'] = 'slet album og de %d forældreløse fotografier';
+$lang['... or hide this link'] = '... eller skjul dette link';
+$lang['Compute %d missing checksums'] = 'Beregn %d manglende kontrolsummer';
+$lang['Create a first album'] = 'Opret et første album';
+$lang['Deletion in progress'] = 'Sletning i gang';
+$lang['Display album date period'] = 'Vis datointervallet som hvert album dækker, fx "fra 12. til 15. juli 2018"';
+$lang['Display category date'] = 'Vis albums dato';
+$lang['Piwigo requires an album to add photos.'] = 'Piwigo kræver et album for at der kan tilføjes fotografier.';
+$lang['Some checksums are missing.'] = 'Nogle kontrolsummer mangler.';
+$lang['Synchronization in progress'] = 'Synkronisering i gang';
+$lang['Visit'] = 'Besøg';
+$lang['Welcome!'] = 'Velkommen!';
+$lang['With no checksum'] = 'Uden kontrolsum';
+$lang['checksums to add'] = 'kontrolsummer at tilføje';
+$lang['or'] = 'eller';
+$lang['%d checksums were added'] = '%d kontrolsummer blev tilføjet';
+$lang['At least 2 selected tags are needed to merge'] = 'Der skal vælges mindst to tags for at sammenflette';
+$lang['Choose which tag to merge these tags into'] = 'Vælg hvilket tag, som disse tags skal flettes ind i';
+$lang['Merge'] = 'Flet';
+$lang['Tag(s) \{%s1\} succesfully merged into "%s2"'] = 'Tag(s) \{%s1\} flettet ind i "%s2"';
+$lang['Tags \{%s\} succesfully deleted'] = 'Tags \{%s\} slettet';
+$lang['The %d tags on this page are selected'] = 'De %d tags på denne side er valgt';
+$lang['The other tags will be removed'] = 'De andre tags vil blive slettet';
+$lang['Yes, I am sure'] = 'Ja, jeg er sikker';
+$lang['Yes, delete'] = 'Ja, slet';
+$lang['You have %d orphan tags %s'] = 'Du har %d forældreløse tags %s';
+$lang['You have %s1 orphan : %s2'] = 'Du har %s1 forældreløse: %s2';
+$lang['and %s others'] = 'og %s andre';
+$lang['in administration'] = 'i administration';
+$lang['in gallery'] = 'i galleri';
+$lang['no photo'] = 'intet fotografiQ';
+$lang['Select all %d tags'] = 'Vælg alle %d tags';
+$lang['No, I have changed my mind'] = 'Nej, jeg har ombestemt mig';
+$lang['Open in gallery'] = 'Åbn i galleri';
+$lang['Please upgrade your PHP version before any update.'] = 'Upgrader din PHP-version før du opdaterer.';
+$lang['Portraits'] = 'Portrætter';
+$lang['Posted %s'] = 'Indsendte %s';
+$lang['Promote mobile app on mobile devices'] = 'Reklamér for mobilapp på mobile enheder';
+$lang['Requires PHP %s'] = 'Kræver PHP %s';
+$lang['Review'] = 'Gennemse';
+$lang['Search albums'] = 'Gennemsøg albummer';
+$lang['Search tips'] = 'Søgetips';
+$lang['Select'] = 'Vælg';
+$lang['Selection mode'] = 'Valgtilstand';
+$lang['Tag "%s" created'] = 'Tag\'et "%s" oprettet';
+$lang['Tag "%s" succesfully deleted'] = 'Tag\'et \"%s\" slettet';
+$lang['Tag "%s1" renamed in "%s2"'] = 'Tag\'et \"%s1\" omdøbt i \"%s2\"';
+$lang['Tag Manager'] = 'Taghåndtering';
+$lang['Are you sure you want to restore the plugin "%s"?'] = 'Er du sikker på, at du vil gendanne plugin\'en "%s"?';
+$lang['Are you sure you want to restore this plugin?'] = 'Er du sikker på, at du vil gendanne denne plugin?';
+$lang['Are you sure you want to restore to default settings?'] = 'Er du sikker på, at du vil gendanne til standardindstillinger?';
+$lang['Are you sure you want to update all extensions?'] = 'Er du sikker på, at du vil opdatere alle udvidelser?';
+$lang['Clear Selection'] = 'Nulstil valgte';
+$lang['Delete album'] = 'Slet album';
+$lang['Delete orphan tags ?'] = 'Slet forældreløse tags?';
+$lang['Delete tag "%s"?'] = 'Slet tag\'et "%s"?';
+$lang['Delete tags \{%s\}?'] = 'Slet tag\'ene \{%s\}?';
+$lang['Delete them'] = 'Slet dem';
+$lang['Display'] = 'Vis';
+$lang['Displays a banner to install or open the official Piwigo app'] = 'Viser et banner til installering eller åbning af den officielle Piwigo-app';
+$lang['File type: %s'] = 'Filtype: %s';
+$lang['Keep them'] = 'Behold dem';
+$lang['Manage album photos'] = 'Håndter albummets fotografier';
+$lang['Manage sub-albums'] = 'Håndter underalbummer';
+$lang['No tag found'] = 'Intet tag fundet';
+$lang[' (copy %s)'] = '(kopier %s)';
+$lang[' (copy)'] = '(kopier)';
+$lang['%d photos'] = '%d fotografier';
+$lang['%s GB used'] = '%s GB anvendt';
+$lang['%s MB used'] = '%s MB anvendt';
+$lang['%s other tags available..'] = '%s andre tilgængelige tags ...';
+$lang['<b>%d</b> tag found'] = '<b>%d</b> tag fundet';
+$lang['<b>%d</b> tag selected'] = '<b>%d</b> tag valgt';
+$lang['<b>%d</b> tags found'] = '<b>%d</b> tags fundet';
+$lang['Are you sure you want to delete all sizes?'] = 'Er du sikker på, at du vil slette alle størrelser?';
+$lang['Are you sure you want to delete the language "%s"?'] = 'Er du sikker på, at du vil slette sproget "%s"?';
+$lang['Are you sure you want to delete the plugin "%s"?'] = 'Er du sikker på, at du vil slette plugin\'en "%s"?';
+$lang['Are you sure you want to delete the ratings of the user "%s"?'] = 'Er du sikker på, at du vil slette alle bedømmelser foretaget af brugeren "%s"?';
+$lang['Are you sure you want to delete the theme "%s"?'] = 'Er du sikker på, at du vil slette temaet "%s"?';
+$lang['Are you sure you want to delete the user "%s"?'] = 'Er du sikker på, at du vil slette brugeren "%s"?';
+$lang['Are you sure you want to delete this site?'] = 'Er du sikker på, at du vil slette dette websted?';
+$lang['Are you sure you want to delete this theme?'] = 'Er du sikker på, at du vil slette dette tema?';
+$lang['Are you sure you want to delete this?'] = 'Er du sikker på, at du vil slette dette?';
+$lang['Are you sure you want to install the plugin "%s"?'] = 'Er du sikker på, at du vil installere plugin\'en "%s"?';
+$lang['Are you sure you want to lock the gallery?'] = 'Er du sikker på, at du vil låse galleriet?';
+$lang['Activity peak in the last weeks'] = 'Aktivitetshøjdepunkt i de seneste uger';
+$lang['Unset as group for new users'] = 'Fjern som gruppe til nye brugere';
+$lang['User "%s" dissociated from this group'] = 'Brugeren "%s" er ikke længere knyttet til denne gruppe';
+$lang['Videos'] = 'Videoer';
+$lang['You don\'t have access to this photo'] = 'Du har ikke adgang til dette fotografi';
+$lang['You have %s inactive plugins'] = 'Du har %s inaktive plugins';
+$lang['Group(s) \{%s1\} succesfully merged into "%s2"'] = 'Gruppen/-erne \{%s1\} blev kombineret med "%s2"';
+$lang['Groups \{%s\} succesfully deleted'] = 'Grupperne \{%s\} blev slettet';
+$lang['Manage users with user manager'] = 'Håndter brugere med brugerhåndteringen';
+$lang['Name is already taken'] = 'Navnet er allerede i brug';
+$lang['No albums found'] = 'Ingen albummer fundet';
+$lang['No plugins found'] = 'Ingen plugins fundet';
+$lang['Other'] = 'Andet';
+$lang['Page Visited'] = 'Side besøgt';
+$lang['Page Visited in %s'] = 'Side besøgt i %s';
+$lang['Refresh thumbnail'] = 'Genopfrisk miniaturebillede';
+$lang['Set as default'] = 'Sæt som standard';
+$lang['Set as group for new users'] = 'Sæt som gruppe til nye brugere';
+$lang['Show inactive plugins'] = 'Vis inaktive plugins';
+$lang['Showing %s users out of %s'] = 'Viser %s brugere ud af %s';
+$lang['Storage'] = 'Lager';
+$lang['This is already the default theme'] = 'Dette er allerede standardtemaet';
+$lang['User associated'] = 'Bruger tilknyttet';
+$lang['%d Activities'] = '%d Aktiviteter';
+$lang['%d Activity'] = '%d Aktivitet';
+$lang['%d sub-albums'] = '%d underalbummer';
+$lang['%s file type'] = '%s filtype';
+$lang['<b>%d</b> albums found'] = '<b>%d</b> albummer fundet';
+$lang['<b>1</b> album found'] = '<b>1</b> album fundet';
+$lang['Album search tool'] = 'Album-søgeværktøj';
+$lang['Are you sure you want to delete group "%s"?'] = 'Er du sikker på, at du vil slette gruppen "%s"?';
+$lang['Associate User'] = 'Tilknyt bruger';
+$lang['Average last 12 months'] = 'Gennemsnit de seneste 12 måneder';
+$lang['Cache'] = 'Cache';
+$lang['Compare mode'] = 'Sammenligningstilstand';
+$lang['Created on %s'] = 'Oprettet den %s';
+$lang['Dissociate user from this group'] = 'Fjern brugers tilknytning til denne gruppe';
+$lang['Edited on %s'] = 'Redigeret den %s';
+$lang['Formats'] = 'Formater';
+$lang['Group "%s" succesfully deleted'] = 'Gruppen "%s" blev slettet';
+$lang['Group added'] = 'Gruppe tilføjet';
+$lang['Group renamed'] = 'Gruppe omdøbt';

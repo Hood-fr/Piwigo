@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 $lang['Zoom'] = 'Томруулах';
 $lang['add a new watermark'] = 'шинээр усан хээ нэмэх';
@@ -332,6 +317,7 @@ $lang['Save order'] = 'Эрэмбийг хадгалах';
 $lang['Restore'] = 'Сэргээх';
 $lang['Restore default configuration. You will lose your plugin settings!'] = 'Үндсэн тохиргоог сэргээх. Тохиргоонууд алдагдах болно.';
 $lang['Repair and optimize database'] = 'Мэдээллийн санг засаж, цэгцэлэх';
+$lang['Piwigo for Android'] = 'Android-д зориулсан Piwigo';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'iOS (iPhone, iPad, iPod Touch)-д зориулсан Piwigo';
 $lang['Permalink'] = 'Холбоос хаяг (permalink)';
 $lang['Permalinks'] = 'Холбоос хаяг (permalink)';
@@ -441,8 +427,8 @@ $lang['global mode'] = 'ерөнхий хэсэг';
 $lang['Support'] = 'Тусламж дэмжлэг';
 $lang['Choose an action'] = 'Үйлдэлээ сонгоно уу';
 $lang['Action'] = 'Үйлдэл';
-$lang['No user selected, no action possible.'] = 'Хэрэглэгч сонгоогүй байна';
-$lang['No photo selected, no action possible.'] = 'Зураг огт сонгоогүй байна';
+$lang['No users selected, no actions possible.'] = 'Хэрэглэгч сонгоогүй байна';
+$lang['No photos selected, no actions possible.'] = 'Зураг огт сонгоогүй байна';
 $lang['Remove all filters'] = 'Бүх сонголтыг цуцлах';
 $lang['Refresh photo set'] = 'Сэргээх';
 $lang['No photo selected, %d photos in current set'] = 'Зураг огт сонгоогүй байна, энэ хэсэгт нийт %d зураг байна.';
@@ -464,7 +450,7 @@ $lang['on the %d selected photos'] = '(сонгосон %d зурагт хэрэ
 $lang['Apply action'] = 'Гүйцэтгэх';
 $lang['Actions'] = 'Үйлдэл';
 $lang['An error occured during extraction (%s).'] = 'Файлыг (%s) задлах үед алдаа гарлаа.';
-$lang['No group selected, no action possible.'] = 'Нэг ч бүлэг сонгоогүй байна';
+$lang['No groups selected, no actions possible.'] = 'Нэг ч бүлэг сонгоогүй байна';
 $lang['Pages seen'] = 'Үзсэн хуудас';
 $lang['hide details'] = 'товч мэдээлэл';
 $lang['Impossible to deactivate this language, first set another language as default.'] = 'Уучлаарай, Тухайн хэлийг идэвхгүй болгохын тулд өөр хэлийг үндсэн хэлээр сонгоно уу';

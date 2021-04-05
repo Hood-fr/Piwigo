@@ -1,28 +1,13 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Français [QC]
-Version: 2.9.5
+Version: 11.4.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=420
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -37,8 +22,8 @@ $lang_info['zero_plural'] = false;
 $lang_info['parent']= "fr_FR";
 
 $lang['%d Kb'] = '%d Ko';
-$lang['%d album updated'] = '%d catégorie mise à jour';
-$lang['%d albums updated'] = '%d catégories mises à jour';
+$lang['%d album updated'] = '%d album mise à jour';
+$lang['%d albums updated'] = '%d albums mises à jour';
 $lang['%d comment to validate'] = '%d commentaire utilisateur à valider';
 $lang['%d comments to validate'] = '%d commentaires utilisateurs à valider';
 $lang['%d new comment'] = '%d nouveau commentaire utilisateur';
@@ -367,7 +352,7 @@ $lang['Here are your connection settings'] = 'Voici vos identifiants';
 $lang['Password: %s'] = 'Mot de passe : %s';
 $lang['Username: %s'] = 'Nom d\'utilisateur : %s';
 $lang['Email: %s'] = 'Email: %s';
-$lang['If you think you\'ve received this email in error, please contact us at %s'] = 'Si vous pensez avoir reçu cet email par erreur, veuillez nous contacter %s';
+$lang['If you think you\'ve received this email in error, please contact us at %s'] = 'Si vous pensez avoir reçu cet courriel par erreur, veuillez nous contacter %s';
 $lang['Successfully registered, you will soon receive an email with your connection settings. Welcome!'] = 'Inscription réussie, vous recevrez bientôt un courriel avec vos identifiants. Bienvenue !';
 $lang['Send my connection settings by email'] = 'Recevoir mes identifiants par courriel';
 $lang['Edit'] = 'Éditer';
@@ -433,4 +418,4 @@ $lang['Photo title'] = 'Titre de la photo';
 $lang['generate random password'] = 'générer un mot de passe aléatoire';
 $lang['Your authentication key is no longer valid.'] = 'Voter clef d\'identification n\'est plus valide';
 $lang['Invalid username or password!'] = 'Nom d\'utilisateur ou mot de passe invalide !';
-$lang['Please register'] = 'Enregistrez-vous ou connectez-vous comme utilisateur pour éviter les codes captcha et pouvoir modifier ou supprimer vos commentaires';
+$lang['Password: ********** (no copy by email)'] = 'Mot de passe : ********** (pas de copie par email)';

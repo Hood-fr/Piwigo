@@ -1,28 +1,13 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Norwegian nynorsk [NO]
-Version: 2.9.5
+Version: 11.4.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=689
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -306,8 +291,8 @@ $lang['%d photo'] = '%d bilete';
 $lang['%d comments to validate'] = '%d kommentarar for godkjenning';
 $lang['%d comment to validate'] = '%d kommentar for godkjenning';
 $lang['%d comment'] = '%d kommentar';
-$lang['%d albums updated'] = '%d album er oppdatera';
-$lang['%d album updated'] = '%d album er oppdatera';
+$lang['%d albums updated'] = '%d album er oppdatert';
+$lang['%d album updated'] = '%d album er oppdatert';
 $lang['Search by date'] = 'databasekall på';
 $lang['Search for Author'] = 'Søk';
 $lang['Someone requested that the password be reset for the following user account:'] = 'Søk i stikkord';
@@ -425,3 +410,8 @@ $lang['Photo title'] = 'Bilettittel';
 $lang['Album name, A &rarr; Z'] = 'Albumnamn, A &rarr; &Aring;';
 $lang['Album name, Z &rarr; A'] = 'Albumnamn, &Aring; &rarr; A';
 $lang['Link: %s'] = 'Lenke: %s';
+$lang['Related albums'] = 'Liknande album';
+$lang['generate random password'] = 'generer tilfeldig passord';
+$lang['Your authentication key is no longer valid.'] = 'Din autentiserings nykel er ikkje lenger gyldig ';
+$lang['Password: ********** (no copy by email)'] = 'Passord: ********** (ingen kopi per e-post)';
+$lang['Invalid username or password!'] = 'Ugyldig brukernamn og passord';
