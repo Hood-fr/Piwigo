@@ -1,28 +1,13 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Dansk [DK]
-Version: 2.9.5
+Version: 11.5.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=415
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -121,7 +106,7 @@ $lang['Webmaster'] = 'Webmaster';
 $lang['Week %d'] = 'Uge %d';
 $lang['About Piwigo'] = 'Om Piwigo';
 $lang['You are not authorized to access the requested page'] = 'Du har ikke tilladelse til at besøge denne side';
-$lang['add this photo to your favorites'] = 'tilføj dette foto til dine favoritter';
+$lang['add this photo to your favorites'] = 'tilføj dette fotografi til dine favoritter';
 $lang['Administration'] = 'Administration';
 $lang['all'] = 'alle';
 $lang['ascending'] = 'stigende';
@@ -270,7 +255,7 @@ $lang['stop the slideshow'] = 'stop slideshow';
 $lang['Specials'] = 'Særligt';
 $lang['SQL queries in'] = 'SQL-forespørgsler på';
 $lang['display only recently posted photos'] = 'vis kun nyligt tilføjede fotografier';
-$lang['return to the display of all photos'] = 'tilbage til alle fotoer';
+$lang['return to the display of all photos'] = 'tilbage til alle fotografier';
 $lang['the beginning'] = 'begyndelsen';
 $lang['Thumbnails'] = 'Miniaturebilleder';
 $lang['Menu'] = 'Menu';
@@ -302,7 +287,7 @@ $lang['Repeat the slideshow'] = 'Gentag slideshow';
 $lang['Not repeat the slideshow'] = 'Gentag ikke slideshow';
 $lang['Reduce diaporama speed'] = 'Nedsæt slideshowhastighed';
 $lang['Accelerate diaporama speed'] = 'Forøg slideshowhastighed';
-$lang['Submit'] = 'Send';
+$lang['Submit'] = 'Udfør';
 $lang['Yes'] = 'Ja';
 $lang['No'] = 'Nej';
 $lang['%d photo'] = '%d fotografi';
@@ -431,4 +416,9 @@ $lang['Link: %s'] = 'Link: %s';
 $lang['Your authentication key is no longer valid.'] = 'Din autentifikationsnøgle er ikke længere gyldig.';
 $lang['Invalid username or password!'] = 'Ugyldigt brugernavn eller adgangskode!';
 $lang['generate random password'] = 'generer tilfældig adgangskode';
+<<<<<<< HEAD
 $lang['Please register'] = 'Registrer eller log ind som bruger for at undgå captcha kode, og at kunne redigere eller slette dine kommentarer';
+=======
+$lang['Password: ********** (no copy by email)'] = 'Adgangskode: ********** (ingen kopi via mail)';
+$lang['Related albums'] = 'Relaterede albummer';
+>>>>>>> Hood-fr-PWG-plugins

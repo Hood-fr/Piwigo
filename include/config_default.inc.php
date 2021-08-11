@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 /**
@@ -199,10 +184,6 @@ $conf['header_notes']  = array();
 // show_thumbnail_caption : on thumbnails page, show thumbnail captions ?
 $conf['show_thumbnail_caption'] = true;
 
-// display_fromto: display the date creation bounds of a
-// category.
-$conf['display_fromto'] = false;
-
 // allow_random_representative : do you wish Piwigo to search among
 // categories elements a new representative at each reload ?
 //
@@ -289,6 +270,9 @@ $conf['update_notify_reminder_period'] = 7*24*60*60;
 // should the album description be displayed on all pages (value=true) or
 // only the first page (value=false)
 $conf['album_description_on_all_pages'] = false;
+
+// Number of years displayed in the history compare mode (for the years chart)
+$conf['stat_compare_year_displayed'] = 5;
 
 // +-----------------------------------------------------------------------+
 // |                                 email                                 |
@@ -635,6 +619,14 @@ $conf['full_tag_cloud_items_number'] = 200;
 // cloud in the menubar. Only the most represented tags will be shown
 $conf['menubar_tag_cloud_items_number'] = 20;
 
+// menubar_tag_cloud_content: 'always_all', 'current_only' or 'all_or_current'
+// For the tag cloud in the menubar.
+// 'always_all': tag cloud always displays all tags available to the user
+// 'current_only': tag cloud always displays the tags from the current pictures
+// 'all_or_current': when pictures are displayed, tag cloud shows their tags, but 
+// when none are displayed, all the tags available to the user are shown.
+$conf['menubar_tag_cloud_content'] = 'all_or_current';
+
 // content_tag_cloud_items_number: number of related tags to show in the tag
 // cloud on the content page, when the current section is not a set of
 // tags. Only the most represented tags will be shown
@@ -650,6 +642,19 @@ $conf['tags_default_display_mode'] = 'cloud';
 
 // tag_letters_column_number: how many columns to display tags by letter
 $conf['tag_letters_column_number'] = 4;
+
+// +-----------------------------------------------------------------------+
+// | Related albums                                                        |
+// +-----------------------------------------------------------------------+
+
+// beyond this limit, do not try to find related albums. If there are too
+// many items, the SQL query will be slow and the results irrelevant,
+// because showing too many related albums.
+$conf['related_albums_maximum_items_to_compute'] = 1000;
+
+// once found the related albums, how many to show in the menubar? We take
+// the heaviest (with more relations).
+$conf['related_albums_display_limit'] = 20;
 
 // +-----------------------------------------------------------------------+
 // | Notification by mail                                                  |
@@ -703,6 +708,17 @@ $conf['ws_max_users_per_page'] = 1000;
 
 // Display a link to subscribe to Piwigo Announcements Newsletter
 $conf['show_newsletter_subscription'] = true;
+
+// Check for available updates on Piwigo or extensions, performed each time
+// the dashboard is displayed
+$conf['dashboard_check_for_updates'] = true;
+
+// Number Weeks displayed on activity chart on the dashboard
+$conf['dashboard_activity_nb_weeks'] = 4;
+
+// On album mover page, number of seconds before auto openning album when
+// dragging an album. In milliseconds. 3 seconds by default.
+$conf['album_move_delay_before_auto_opening'] = 3*1000;
 
 // +-----------------------------------------------------------------------+
 // | Filter                                                                |
@@ -851,6 +867,15 @@ $conf['batch_manager_images_per_page_global'] = 20;
 // batch manager: how many images should Piwigo display by default on the
 // unit mode. Must be among values {5, 10, 50}
 $conf['batch_manager_images_per_page_unit'] = 5;
+
+// how many missing md5sum should Piwigo compute at once.
+$conf['checksum_compute_blocksize'] = 50;
+
+// quicksearch engine: include all photos from sub-albums of any matching
+// album. For example, if search is "bear", then we display photos from
+// "bear/grizzly". When value changed, delete database cache files in
+// _data/cache directory
+$conf['quick_search_include_sub_albums'] = false;
 
 // +-----------------------------------------------------------------------+
 // |                                 log                                   |

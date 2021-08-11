@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 $lang['%d association'] = '%d שיוך';
@@ -678,7 +663,7 @@ $lang['Refresh photo set'] = 'רענן את סט התמונות';
 $lang['The whole page'] = 'העמוד המלא';
 $lang['The whole set'] = 'הסט המלא';
 $lang['No photo in the current set.'] = 'אין תמונות בסט הנוכחי.';
-$lang['No photo selected, no action possible.'] = 'אף תמונה לא נבחרה, אין פעולות אפשריות.';
+$lang['No photos selected, no actions possible.'] = 'אף תמונה לא נבחרה, אין פעולות אפשריות.';
 $lang['Choose an action'] = 'בחר פעולה';
 $lang['remove author'] = 'הסר יוצר';
 $lang['Type here the author name'] = 'כתוב כאן את שם היוצר';
@@ -810,6 +795,7 @@ $lang['Apply watermark if width is bigger than'] = 'הוסף חותמת מים(w
 $lang['Automatic sort order'] = 'מיון אוטומטי';
 $lang['Available on'] = 'זמין על';
 $lang['%d physicals'] = '%d פיזי';
+$lang['Piwigo for Android'] = 'piwigo לאנדרואיד';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'piwigo לios (איפון, איפד, איפוד ואיפוד טאצ)';
 $lang['Posted %s on %s'] = 'פורסם %s ב %s';
 $lang['Resize after upload'] = 'שנה גודל אחרי טעינה';
@@ -909,7 +895,7 @@ $lang['Rename'] = 'שנה שם';
 $lang['Duplicate'] = 'שכפל';
 $lang['Manage the members'] = 'נהל את החברים';
 $lang['Merge selected groups'] = 'מזג את הקבוצות שנבחרו';
-$lang['No group selected, no action possible.'] = 'אף קבוצה לא נבחרה, אין פעולות אפשריות.';
+$lang['No groups selected, no actions possible.'] = 'אף קבוצה לא נבחרה, אין פעולות אפשריות.';
 $lang['No members to manage'] = 'אין חברים לנהל';
 $lang['Notify administrators when a comment is'] = 'עדכן אדמינים כאשר תגובה היא';
 $lang['Piwigo cannot retrieve upgrade file from server'] = 'Piwigo לא יכולה לטעון את קבצי השדרוג מהשרת';
@@ -945,7 +931,8 @@ $lang['Open user details'] = 'פתח פרטי משתמש';
 $lang['Numeric identifier : %d'] = 'מזהה מספרי: %d';
 $lang['On your Linux, simply install Shotwell with your package manager and the activate Piwigo publishing option.'] = 'במערכת הלינוקס שלך, פשוט התקן Shotwell עם מנהל החבילות ואז את הפעל את אפשרות הפרסום של Piwigo.';
 $lang['No user selected of %d users'] = 'לא נבחר משתמש מתוך %d משתמשים';
-$lang['No user selected, no action possible.'] = 'לא נבחר משתמש, אין אפשרות לבצע אף פעולה.';
+$lang['No users selected, no actions possible.'] = 'לא נבחר משתמש, אין אפשרות לבצע אף פעולה.';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em> אפליקציית Piwigo עבור אנדרואיד</em>  מאפשרת לך להתחבר מטלפון האנדרואיד או הטאבלט שלך לגלריית Piwigo, ליצור אלבומים ולהעלות מספר תמונות בו זמנית ';
 $lang['Last visit on %s, %s.'] = 'ביקור אחרון ב- %s, %s.';
 $lang['Mail theme'] = 'ערכת נושא דואר';
 $lang['No matching user found'] = 'לא נמצא משתמש מתאים';
@@ -1009,7 +996,22 @@ $lang['First photo added'] = 'תמונה ראשונה נוספה';
 $lang['For security reason, authentication keys do not work for administrators.'] = 'מפתחות אימות לא עובדים עבור אדמינים מסיבות אבטחה.';
 $lang['It only takes a few clicks.'] = 'זה רק מצריך מספר לחיצות.';
 $lang['No filter on album. Select one or type to search'] = 'אין סינון על האלבום. בחר אחד או הקלד לחיפוש';
-$lang['No tag selected, no action possible.'] = 'לא נבחרה תגית, לא ניתן לבצע שום פעולה.';
+$lang['No tags selected, no actions possible.'] = 'לא נבחרה תגית, לא ניתן לבצע שום פעולה.';
 $lang['No user is permitted to see this private album'] = 'לאף משתמש אין הרשאה לצפות באלבום פרטי זה';
 $lang['Orphans'] = 'יתומים';
 $lang['Piwigo %s is available, please update'] = 'פיוויגו %s זמין, אנא עדכן';
+$lang['%d checksums were added'] = 'התווספו %d צ\'קסאמים';
+$lang['... or hide this link'] = '... או הסתירו קישור זה';
+$lang['Compute %d missing checksums'] = 'חשבו %d צ\'קסאמים חסרים';
+$lang['Create a first album'] = 'צרו אלבום ראשון';
+$lang['Deletion in progress'] = 'מתבצעת מחיקה';
+$lang['Display album date period'] = 'הציגו את התקופה המשוייכת לכל אלבום, לדוגמא: "מ-12 עד ה-15 ליולי, 2018"';
+$lang['Display category date'] = 'הציגו את תאריך הקטגוריה';
+$lang['Piwigo requires an album to add photos.'] = 'פיוויגו זקוק לאלבום כדי להוסיף תמונות';
+$lang['Some checksums are missing.'] = 'מספר צ\'קסאמים חסרים.';
+$lang['Synchronization in progress'] = 'מתבצע סינכרון';
+$lang['Visit'] = 'ביקור';
+$lang['Welcome!'] = 'ברוכים הבאים!';
+$lang['With no checksum'] = 'ללא צ\'קסאם';
+$lang['checksums to add'] = 'צ\'קסאמים להוספה';
+$lang['or'] = 'או';

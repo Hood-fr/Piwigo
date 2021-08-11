@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 $lang['%d association'] = '%d associació';
@@ -197,7 +182,7 @@ $lang['jump to album'] = 'Salta a l\'àlbum';
 $lang['jump to photo'] = 'Salta a la foto';
 $lang['leave'] = 'Deixa';
 $lang['Lock'] = 'Bloquejos';
-$lang['Locked'] = 'Bloquejat';
+$lang['Locked'] = 'Bloquejada';
 $lang['manage album photos'] = 'Gestiona les fotos de l\'àlbum';
 $lang['manage sub-albums'] = 'gestiona els sub-àlbums';
 $lang['Manage'] = 'Gestiona';
@@ -649,7 +634,7 @@ $lang['Error on file "%s" : %s'] = 'Error a l\'arxiu "%s": %s';
 $lang['automatic order'] = 'Ordre automàtic';
 $lang['manual order'] = 'ordre manual';
 $lang['Albums automatically sorted'] = 'Àlbums ordenats automàticament';
-$lang['Batch Manager'] = 'Gestor de pocessamet per lots';
+$lang['Batch Manager'] = 'Gestor de processament per lots';
 $lang['include child albums'] = 'incloure els sub-àlbums';
 $lang['Selection'] = 'Selecció';
 $lang['Action'] = 'Acció';
@@ -668,7 +653,7 @@ $lang['Refresh photo set'] = 'Actualitza les fotos del conjunt';
 $lang['The whole page'] = 'La pàgina sencera';
 $lang['The whole set'] = 'Tot el conjunt';
 $lang['No photo in the current set.'] = 'No hi ha fotos en aquest conjunt.';
-$lang['No photo selected, no action possible.'] = 'No es pot realitzar cap acció ja que no hi ha cap foto seleccionada.';
+$lang['No photos selected, no actions possible.'] = 'No es pot realitzar cap acció ja que no hi ha cap foto seleccionada.';
 $lang['Choose an action'] = 'Seleccioneu una acció';
 $lang['remove author'] = 'elimina l\'autor';
 $lang['Type here the author name'] = 'Escriviu aquí el nom de l\'autor';
@@ -733,9 +718,6 @@ $lang['This is a major update, with <a href="%s">new exciting features</a>.'] = 
 $lang['Some themes and plugins may be not available yet.'] = 'Alguns temes i connectors poden no estar disponibles.';
 $lang['You can update to Piwigo %s directly, without upgrading to Piwigo %s (recommended).'] = 'Podeu actualitzar a Piwigo %s directament, sense necessitat d\'actualitzar a Piwigo %s (recomanat).';
 $lang['Save Template Directory'] = 'Desa el directori de plantilles';
-$lang['Dump Database'] = 'Abocar la base de dades';
-$lang['Include history data (Warning: server memory limit may be exceeded)'] = 'Inclou la informació de l\'historial. (Advertència: es pot superar el limit de memòria del servidor)';
-$lang['Unable to dump database.'] = 'No és possible abocar la base de dades.';
 $lang['Some upgrades are available for extensions.'] = 'Hi ha actualitzacions disponibles per a algunes extensions';
 $lang['Ignore All'] = 'Ignora tot';
 $lang['Crop'] = 'Retalla';
@@ -798,6 +780,7 @@ $lang['Original Size'] = 'Mida original';
 $lang['Permission granted for groups'] = 'Permisos atorgats a grups';
 $lang['Permission granted for users'] = 'Permís atorgat a usuaris';
 $lang['Photo name'] = 'Nom de la foto';
+$lang['Piwigo for Android'] = 'Piwigo per Android';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo per iOS (iPhone, iPad, iPod Touch)';
 $lang['Predefined filter'] = 'Filtre predeterminat';
 $lang['Resize after upload'] = 'Redimensionar després de penjar la foto al servidor';
@@ -830,6 +813,7 @@ $lang['registered users'] = 'usuaris registrats';
 $lang['%d group'] = '%d grup';
 $lang['%d groups'] = '%d grups';
 $lang['%u users have automatic permission because they belong to a granted group.'] = '%u usuaris han obtingut permisos automàticament perquè pertanyen a un grup que li han atorgat el permís.';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = '<em>Piwigo per Android</em> Aquesta aplicació us permet connectar a la vostra galeria Piwigo des d\'un dispositiu Android, crear nous àlbums i penjar vàries fotos a la vegada.';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = '<em>Piwigo per iOS</em> Aquesta aplicació us permet connectar a la vostra galeria Piwigo des d\'un iPhone, iPad o iPod Touch, crear àlbums i penjar vàries fotos a la vegada.';
 $lang['Add group'] = 'Afegeix grup';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Adobe Photoshop Lightroom és un programari de fotografia dissenyat per a gestionar grans quantitats d\'imatges digitals i realitzar tasques de postproducció.';
@@ -938,7 +922,7 @@ $lang['between %.2f and %.2f'] = 'entre %.2f i %.2f';
 $lang['between %d and %d pixels'] = 'entre %d i %d píxels';
 $lang['Duplicate'] = 'Duplica';
 $lang['Merge selected groups'] = 'Fusiona els grups seleccionats';
-$lang['No group selected, no action possible.'] = 'No hi ha cap grup seleccionat, l\'acció no s\'ha pogut dur a terme.';
+$lang['No groups selected, no actions possible.'] = 'No hi ha cap grup seleccionat, l\'acció no s\'ha pogut dur a terme.';
 $lang['No members to manage'] = 'No existeixen membres per a gestionar';
 $lang['Please select at least two groups'] = 'Heu de selecciona almenys dos grups';
 $lang['Rename'] = 'Canvia de nom';
@@ -951,7 +935,7 @@ $lang['The picture dimensions will be reduced to %dx%d pixels.'] = 'Es reduiran 
 $lang['Resize after upload disabled due to the use of GD as graphic library'] = 'Redimensionar després de penjar la foto al servidor deshabilitat degut a l\'ús de la llibreria gràfica GD';
 $lang['Select at least one tag'] = 'Seleccioneu almenys una etiqueta';
 $lang['Last visit on %s, %s.'] = 'L\'última visita el %s, %s.';
-$lang['No user selected, no action possible.'] = 'No hi ha usuaris seleccionats, l\'acció no ha estat possible';
+$lang['No users selected, no actions possible.'] = 'No hi ha usuaris seleccionats, l\'acció no ha estat possible';
 $lang['Registered on %s, %s.'] = 'Registrat el %s, %s';
 $lang['Show %s users'] = 'Mostra %s usuaris';
 $lang['Users modified'] = 'Usuaris que s\'han modificat';
@@ -1016,6 +1000,146 @@ $lang['delete album and all %d photos, even the %d associated to other albums'] 
 $lang['Dashboard'] = 'Consola';
 $lang['Delete album "%s" and its %d sub-albums.'] = 'Elimina l\'àlbum "%s" i els seus %d sub-àlbums';
 $lang['No filter on album. Select one or type to search'] = 'No hi ha cap filtre a l\'àlbum, Seleccioneu-ne un o escriviu per cercar-ne';
-$lang['No tag selected, no action possible.'] = 'No s\'ha seleccionat cap etiqueta i no es pot realitzar cap acció';
+$lang['No tags selected, no actions possible.'] = 'No s\'ha seleccionat cap etiqueta i no es pot realitzar cap acció';
 $lang['Storage used'] = 'Emmagatzemament utilitzat';
 $lang['checksum'] = 'suma de verificació';
+$lang['%d checksums were added'] = 's\'han afegit %d checksums';
+$lang['... or hide this link'] = '...o amagueu aquest enllaç';
+$lang['Compute %d missing checksums'] = 'Calcula %d checksums que manquen';
+$lang['Create a first album'] = 'Creeu un primer àlbum';
+$lang['Deletion in progress'] = 'Supressió en curs';
+$lang['Display album date period'] = 'Mostra el periode de dates associat amb cada àlbum, p.ex. «del 12 de al 15 de juliol de 2018»';
+$lang['Display category date'] = 'Mostra la data de la categoria';
+$lang['Piwigo requires an album to add photos.'] = 'Piwigo necessita un àlbum per afegir-hi fotos.';
+$lang['Some checksums are missing.'] = 'Manquen alguns checksums.';
+$lang['Synchronization in progress'] = 'Sincronització en curs';
+$lang['Visit'] = 'Visiteu';
+$lang['Welcome!'] = 'Benvinguts!';
+$lang['With no checksum'] = 'Sense checksum';
+$lang['checksums to add'] = 'Checksums per afegir';
+$lang['or'] = 'o';
+$lang['Search tips'] = 'Consells de cerca';
+$lang['Are you sure you want to delete all sizes?'] = 'Segur que voleu eliminar totes les mides?';
+$lang['Are you sure you want to delete the language "%s"?'] = 'Segur que voleu eliminar l\'idioma "%s"?';
+$lang['Are you sure you want to delete the plugin "%s"?'] = 'Segur que voleu eliminar el connector "%s"? ';
+$lang['Are you sure you want to delete the ratings of the user "%s"?'] = 'Segur que voleu eliminar les valoracions de l\'usuari "%s"?';
+$lang['Are you sure you want to delete the theme "%s"?'] = 'Segur que voleu eliminar el tema "%s"? ';
+$lang['Are you sure you want to delete the user "%s"?'] = 'Segur que voleu eliminar l\'usuari "%s"? ';
+$lang['Are you sure you want to delete this site?'] = 'Segur que voleu eliminar aquest lloc?';
+$lang['Are you sure you want to delete this theme?'] = 'Segur que voleu eliminar aquest tema?';
+$lang['Are you sure you want to delete this?'] = 'Segur que voleu eliminar això?';
+$lang['Are you sure you want to install the plugin "%s"?'] = 'Segur que voleu instal·lar el connector "%s"?';
+$lang['Are you sure you want to lock the gallery?'] = 'Segur que voleu bloquejar la galeria?';
+$lang['Are you sure you want to restore the plugin "%s"?'] = 'Segur que voleu restaurar el connector "%s"?';
+$lang['Are you sure you want to restore this plugin?'] = 'Segur que voleu restaurar aquest connector?';
+$lang['Are you sure you want to restore to default settings?'] = 'Segur que voleu revertir a la configuració per defecte?';
+$lang['Are you sure you want to update all extensions?'] = 'Segur que voleu actualitzar totes les extensions?';
+$lang['At least 2 selected tags are needed to merge'] = 'Es necessiten almenys 2 etiquetes seleccionades per fusionar-les';
+$lang['Choose which tag to merge these tags into'] = 'Escolliu en quina etiqueta voleu fusionar aquestes etiquetes';
+$lang['Clear Selection'] = 'Neteja la selecció';
+$lang['Delete album'] = 'Elimina l\'àlbum';
+$lang['Delete orphan tags ?'] = 'Elimino les etiquetes òrfenes?';
+$lang['Delete tag "%s"?'] = 'Elimino l\'etiqueta "%s"?';
+$lang['Delete tags \{%s\}?'] = 'Elimino les etiquetes \{%s\}?';
+$lang['Delete them'] = 'Elimina-les';
+$lang['Display'] = 'Mostra';
+$lang['Displays a banner to install or open the official Piwigo app'] = 'Mostra un bàner per instal·lar o obrir l\'aplicació oficial de Piwigo';
+$lang['File type: %s'] = 'Tipus de fitxer: %s';
+$lang['Keep them'] = 'Manten-les';
+$lang['Manage album photos'] = 'Gestiona àlbums de fotos';
+$lang['Manage sub-albums'] = 'Gestiona sub-àlbums';
+$lang['Merge'] = 'Fusiona';
+$lang['No tag found'] = 'No s\'ha trobat cap etiqueta';
+$lang['No, I have changed my mind'] = 'No, he canviat d\'opinió';
+$lang['Open in gallery'] = 'Obre a la galeria';
+$lang['Please upgrade your PHP version before any update.'] = 'Actualitzeu la vostra versió de PHP abans de fer cap actualització.';
+$lang['Portraits'] = 'Retrats';
+$lang['Posted %s'] = 'Publicada %s';
+$lang['Promote mobile app on mobile devices'] = 'Promou l\'app mòbil en dispositius mòbils';
+$lang['Requires PHP %s'] = 'Requereix PHP %s';
+$lang['Review'] = 'Revisa';
+$lang['Search albums'] = 'Cerca àlbums';
+$lang['Select'] = 'Selecciona';
+$lang['Select all %d tags'] = 'Selecciona totes les etiquetes (%d)';
+$lang['Selection mode'] = 'Mode de selecció';
+$lang['Tag "%s" created'] = 'S\'ha creat l\'etiqueta "%s"';
+$lang['Tag "%s" succesfully deleted'] = 'S\'ha suprimit amb èxit l\'etiqueta \"%s\"';
+$lang['Tag "%s1" renamed in "%s2"'] = 'S\'ha reanomenat l\'etiqueta \"%s1\" com a \"%s2\"';
+$lang['Tag Manager'] = 'Gestor d\'etiquetes';
+$lang['Tag(s) \{%s1\} succesfully merged into "%s2"'] = 'S\'ha fusionat amb èxit l\'etiqueta \"%s1\" a \"%s2\"';
+$lang['Tags \{%s\} succesfully deleted'] = 'Les etiquetes \{%s\} s\'han eliminat amb èxit';
+$lang['The %d tags on this page are selected'] = 'S\'han seleccionat les %d etiquetes d\'aquesta pàgina';
+$lang['The other tags will be removed'] = 'La resta d\'etiquetes s\'eliminaran';
+$lang['Yes, I am sure'] = 'Si, segur';
+$lang['Yes, delete'] = 'Si, elimina';
+$lang['You have %d orphan tags %s'] = 'Teniu %d etiquetes orfes %s';
+$lang['You have %s1 orphan : %s2'] = 'Teniu %s1 orfe: %s2';
+$lang['and %s others'] = 'i %s d\'altres';
+$lang['in administration'] = 'a l\'administració';
+$lang['in gallery'] = 'a la galeria';
+$lang['no photo'] = 'No hi ha cap foto';
+$lang[' (copy %s)'] = '(còpia %s)';
+$lang[' (copy)'] = '(còpia)';
+$lang['%d photos'] = '%d fotos';
+$lang['%s GB used'] = '%s GB utilitzats';
+$lang['%s MB used'] = '%s MB utilitzats';
+$lang['%s other tags available..'] = '%s etiquetes més disponibles.';
+$lang['<b>%d</b> tag found'] = '<b>%d</b> etiqueta trobada';
+$lang['<b>%d</b> tag selected'] = '<b>%d</b> etiqueta seleccionada';
+$lang['<b>%d</b> tags found'] = '<b>%d</b> etiquetes trobades';
+$lang['Group(s) \{%s1\} succesfully merged into "%s2"'] = 'Grup o grups \{%s1\} fusionats amb èxit a "%s2"';
+$lang['Groups \{%s\} succesfully deleted'] = 'Grups \{%s\} suprimits amb èxit';
+$lang['Manage users with user manager'] = 'Gestionar usuaris amb el gestor d\'usuaris';
+$lang['Name is already taken'] = 'El nom ja s\'està utilitzant';
+$lang['No albums found'] = 'No s\'ha trobat cap àlbum';
+$lang['No plugins found'] = 'No s\'ha trobat cap connector';
+$lang['Other'] = 'Altre';
+$lang['Page Visited'] = 'Pàgina visitada';
+$lang['Page Visited in %s'] = 'Pàgina visitada el %s';
+$lang['Refresh thumbnail'] = 'Actualitza miniatura';
+$lang['Set as default'] = 'Defineix per defecte';
+$lang['Set as group for new users'] = 'Defineix com a grup per als nous usuaris';
+$lang['Show inactive plugins'] = 'Mostra els connectors inactius';
+$lang['Showing %s users out of %s'] = 'Mostrant %s usuaris d\'un total de %s';
+$lang['Storage'] = 'Emmagatzenament';
+$lang['This is already the default theme'] = 'Aquest ja és el tema per defecte';
+$lang['Unset as group for new users'] = 'Treu la definició com a grup per als nous usuaris';
+$lang['User "%s" dissociated from this group'] = 'L\'usuari "%s" s\'ha dissociat d\'aquest grup';
+$lang['User associated'] = 'Usuari associat';
+$lang['Videos'] = 'Vídeos';
+$lang['You don\'t have access to this photo'] = 'No teniu accés a aquesta foto';
+$lang['You have %s inactive plugins'] = 'Teniu %s connectors inactius';
+$lang['%d Activities'] = '%d activitats';
+$lang['%d Activity'] = '%d activitat';
+$lang['%d sub-albums'] = '%d sub-àlbums';
+$lang['%s file type'] = '%s tipus de fitxer';
+$lang['<b>%d</b> albums found'] = 'S\'han trobat <b>%d</b> àlbums';
+$lang['<b>1</b> album found'] = 'S\'ha trobat <b>1</b> àlbum';
+$lang['Activity peak in the last weeks'] = 'Pic d\'activitat en les darreres setmanes';
+$lang['Album search tool'] = 'Eina de cerca en àlbums';
+$lang['Are you sure you want to delete group "%s"?'] = 'Segur que voleu suprimir el grup "%s"?';
+$lang['Associate User'] = 'Associa l\'usuari';
+$lang['Average last 12 months'] = 'Mitjana dels darrers 12 mesos';
+$lang['Cache'] = 'Cau';
+$lang['Compare mode'] = 'Mode de comparació';
+$lang['Created on %s'] = 'Creat el %s';
+$lang['Dissociate user from this group'] = 'Dissocia l\'usuari d\'aquest grup';
+$lang['Edited on %s'] = 'Editat el %s';
+$lang['Formats'] = 'Formats';
+$lang['Group "%s" succesfully deleted'] = 'S\'ha esborrat amb èxit el grup "%s"';
+$lang['Group added'] = 'Grup afegit';
+$lang['Group renamed'] = 'Grup reanomenat';
+$lang['<b>%d+</b> albums found, try to refine the search'] = 'S\'han trobat <b>%d+</b> àlbums; proveu a afinar la cerca';
+$lang['Add Album'] = 'Afegeix un àlbum';
+$lang['Apply an automatic order to root albums'] = 'Aplica un ordre automàtic als àlbums arrel';
+$lang['Apply to direct sub-albums'] = 'Aplica als sub-àlbums directes';
+$lang['Apply to the whole hierarchy'] = 'Aplica a la jerarquia sencera';
+$lang['Compact View'] = 'Vista compacta';
+$lang['Drag and drop to reorder albums'] = 'Arrossegueu i deixeu anar per reordenar els àlbums';
+$lang['Hide sub-albums'] = 'Amaga els sub-àlbums';
+$lang['Line View'] = 'Vista en línies';
+$lang['Name field must not be empty'] = 'El camp del nom no pot quedar buit';
+$lang['Root'] = 'Arrel';
+$lang['Select an album... or type it!'] = 'Seleccioneu un àlbum... o escriviu-lo!';
+$lang['Show sub-albums'] = 'Mostra els sub-àlbums';
+$lang['Tile View'] = 'Vista en rajoles';

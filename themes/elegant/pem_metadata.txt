@@ -1,4 +1,4 @@
 File automatically created from SVN or Git repository.
 
-URL: https://github.com/Piwigo/Piwigo/tags/2.9.5/themes/elegant 
-Revision: 13335
+URL: https://github.com/Piwigo/piwigo-elegant 
+Revision: 33f845423aa836135e622d131df8d8de1e930e3c (Fri Apr 23 10:08:59 2021 +0200)

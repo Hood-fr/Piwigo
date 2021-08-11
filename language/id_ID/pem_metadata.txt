@@ -1,4 +1,4 @@
 File automatically created from SVN or Git repository.
 
-URL: https://github.com/Piwigo/Piwigo/tags/2.9.5/language/id_ID 
-Revision: 13335
+URL: https://github.com/Piwigo/Piwigo/tags/11.5.0/language/id_ID 
+Revision: 14800

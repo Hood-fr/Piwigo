@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 if (!defined('PHPWG_ROOT_PATH'))
@@ -124,9 +109,9 @@ if (isset($_POST['submit']))
      
   if ($conf['activate_comments'])
   {
-    $data['commentable'] = isset($_POST['commentable'])?$_POST['commentable']:'false';
+    $data['commentable'] = isset($_POST['commentable'])? 'true':'false';
   }
-  
+
   single_update(
     CATEGORIES_TABLE,
     $data,
@@ -146,13 +131,15 @@ UPDATE '.CATEGORIES_TABLE.'
   // retrieve cat infos before continuing (following updates are expensive)
   $cat_info = get_cat_info($_GET['cat_id']);
 
-  if ($_POST['visible']=='true_sub')
+  $visible = false;
+  if (!isset($_POST['locked']))
   {
-    set_cat_visible(array($_GET['cat_id']), true, true);
+    $visible = true;
   }
-  elseif ($cat_info['visible'] != get_boolean( $_POST['visible'] ) )
+
+  if ($visible !== $cat_info['visible'])
   {
-    set_cat_visible(array($_GET['cat_id']), $_POST['visible']);
+    set_cat_visible(array($_GET['cat_id']), $visible);
   }
 
   // in case the use moves his album to the gallery root, we force
@@ -170,6 +157,7 @@ UPDATE '.CATEGORIES_TABLE.'
   }
 
   $_SESSION['page_infos'][] = l10n('Album updated successfully');
+  pwg_activity('album', $_GET['cat_id'], 'edit');
   $redirect = true;
 }
 
@@ -219,7 +207,7 @@ $category['nb_images_associated_outside'] = 0;
 if ($category['nb_images_recursive'] > 0)
 {
   // if we don't have "too many" photos, it's faster to compute the orphans with MySQL
-  if ($category['nb_images_recursive'] < 30000)
+  if ($category['nb_images_recursive'] < 1000)
   {
     $query = '
 SELECT
@@ -289,7 +277,7 @@ $template->assign(
     'CAT_ID'             => $category['id'],
     'CAT_NAME'           => @htmlspecialchars($category['name']),
     'CAT_COMMENT'        => @htmlspecialchars($category['comment']),
-    'CAT_VISIBLE'       => boolean_to_string($category['visible']),
+    'IS_LOCKED' => !get_boolean($category['visible']),
 
     'U_JUMPTO' => make_index_url(
       array(
@@ -331,7 +319,7 @@ SELECT
 
   if ($min_date == $max_date)
   {
-    $intro = l10n(
+    $info_title = l10n(
       'This album contains %d photos, added on %s.',
       $image_count,
       format_date($min_date)
@@ -339,18 +327,63 @@ SELECT
   }
   else
   {
-    $intro = l10n(
+    $info_title = l10n(
       'This album contains %d photos, added between %s and %s.',
       $image_count,
       format_date($min_date),
       format_date($max_date)
       );
   }
+  $info_photos = l10n('%d photos', $image_count);
+
+  $template->assign(
+    array(
+      'INFO_PHOTO' => $info_photos,
+      'INFO_TITLE' => $info_title
+      )
+    );
+
 }
-else
-{
-  $intro = l10n('This album contains no photo.');
+
+// date creation
+$query = '
+SELECT occured_on
+  FROM `'.ACTIVITY_TABLE.'`
+  WHERE object_id = '.$category['id'].' 
+    AND object = "album"
+    AND action = "add"
+';
+$result = query2array($query);
+
+if (count($result) > 0) {
+  $template->assign(
+    array(
+      'INFO_CREATION' => l10n('Created on %s',format_date($result[0]['occured_on'], array('day', 'month','year')))
+      )
+    );
 }
+
+// Sub Albums
+$query = '
+SELECT COUNT(*)
+  FROM `'.CATEGORIES_TABLE.'`
+  WHERE id_uppercat = '.$category['id'].'
+';
+$result = query2array($query);
+
+if ($result[0]['COUNT(*)'] > 0) {
+  $template->assign(
+    array(
+      'INFO_DIRECT_SUB' => l10n('%d sub-albums',$result[0]['COUNT(*)'])
+      )
+    );
+}
+
+$template->assign(array(
+  'INFO_ID' => l10n('Numeric identifier : %d',$category['id']),
+  'INFO_LAST_MODIFIED'=> l10n('Edited on %s',format_date($category['lastmodified'], array('day', 'month','year')))
+    )
+  );
 
 // info for deletion
 $template->assign(
@@ -363,10 +396,7 @@ $template->assign(
     )
   );
 
-$intro.= '<br>'.l10n('Numeric identifier : %d', $category['id']);
-
 $template->assign(array(
-  'INTRO' => $intro,
   'U_MANAGE_RANKS' => $base_url.'element_set_ranks&amp;cat_id='.$category['id'],
   'CACHE_KEYS' => get_admin_client_cache_keys(array('categories')),
   ));
@@ -407,11 +437,11 @@ if ($category['has_images'] or !empty($category['representative_picture_id']))
   // representant ?
   if (!empty($category['representative_picture_id']))
   {
-    $tpl_representant['picture'] = get_category_representant_properties($category['representative_picture_id']);
+    $tpl_representant['picture'] = get_category_representant_properties($category['representative_picture_id'], IMG_SMALL);
   }
 
   // can the admin choose to set a new random representant ?
-  $tpl_representant['ALLOW_SET_RANDOM'] = ($category['has_images']) ? true : false;
+  $tpl_representant['ALLOW_SET_RANDOM'] = ($category['has_images'] ? true : false);
 
   // can the admin delete the current representant ?
   if (

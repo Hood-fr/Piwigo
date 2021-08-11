@@ -1,24 +1,9 @@
 <?php
 // +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2016 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
+// | This file is part of Piwigo.                                          |
 // |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
+// | For copyright and license information, please view the COPYING.txt    |
+// | file that was distributed with this source code.                      |
 // +-----------------------------------------------------------------------+
 
 $lang['%d association'] = '%d hozzárendelés (fizikai és virtuális)';
@@ -679,7 +664,7 @@ $lang['Refresh photo set'] = 'Képek frissítése';
 $lang['The whole page'] = 'Összes kép az oldalon';
 $lang['The whole set'] = 'A teljes képkészlet';
 $lang['No photo in the current set.'] = 'Nem található a feltételnek megfelelő kép.';
-$lang['No photo selected, no action possible.'] = 'Nincs kép kiválasztva, nem lehet műveletet végezni.';
+$lang['No photos selected, no actions possible.'] = 'Nincs kép kiválasztva, nem lehet műveletet végezni.';
 $lang['Choose an action'] = 'Művelet kiválasztása';
 $lang['remove author'] = 'szerző törlése';
 $lang['Type here the author name'] = 'Írja be a szerző nevét';
@@ -740,9 +725,6 @@ $lang['This is a major update, with <a href="%s">new exciting features</a>.'] = 
 $lang['Some themes and plugins may be not available yet.'] = 'Lehet, hogy néhány téma és bővítmény még nem áll rendelkezésre.';
 $lang['You can update to Piwigo %s directly, without upgrading to Piwigo %s (recommended).'] = 'Lehetőség van közvetlenül frissíteni a Piwigo %s verziójára, kihagyva a Piwigo %s verzióját (ajánlott).';
 $lang['Save Template Directory'] = 'Template könyvtár mentése';
-$lang['Dump Database'] = 'Adatbázis mentése';
-$lang['Include history data (Warning: server memory limit may be exceeded)'] = 'Előzmények mentése (Figyelem: lehet, hogy a szerver beállított memória limitjét túllépi)';
-$lang['Unable to dump database.'] = 'Nem lehet biztonsági másolatot készíteni az adatbázisról.';
 $lang['Some upgrades are available for extensions.'] = 'Frissítéseket találtam egyes kiterjesztésekhez.';
 $lang['Ignore All'] = 'Összes mellőzése';
 $lang['Crop'] = 'Körbevágás';
@@ -851,6 +833,7 @@ $lang['X Repeat'] = 'X ismétlődés';
 $lang['Y Position'] = 'Y pozíció';
 $lang['Available on'] = 'Elérhető';
 $lang['add a new watermark'] = 'új vízjel hozzáadása';
+$lang['<em>Piwigo for Android</em> application empowers you to connect your Android phone or table to your Piwigo gallery, create some albums and upload several photos at once.'] = 'A <em>Piwigo for Android</em> alkalmazás segítségével csatlakozhat Piwigo galériájához telefonjával vagy táblagépével, létrehozhat új albumokat, feltölthet képeket (egyszerre akár többet is) képgalériájába.';
 $lang['<em>Piwigo for iOS</em> application empowers you to connect to your Piwigo gallery from your iPhone, iPad or iPod Touch, create some albums and upload several photos at once.'] = 'A <em>Piwigo for iOS</em> alkalmazás segítségével csatlakozhat Piwigo galériájához iPhone, iPad vagy iPod Touch eszközével, létrehozhat új albumokat, feltölthet képeket (egyszerre akár többet is) képgalériájába.';
 $lang['Adobe Photoshop Lightroom is a photography software designed to manage large quantities of digital images and doing post production work.'] = 'Az Adobe Photoshop Lightroom egy képkezelő program, melyet nagy mennyiségű digitális kép utómunkálataihoz és kezeléséhez terveztek.';
 $lang['Features include gallery browsing, album creation and photo upload.'] = 'Jellemzői: galéria böngészés, album létrehozás, képek feltöltése.';
@@ -859,6 +842,7 @@ $lang['No group is permitted to see this private album'] = 'Nincs engedélyezett
 $lang['On your Linux, simply install Shotwell with your package manager and the activate Piwigo publishing option.'] = 'Egyszerűen telepítheti a Linux csomagkezelője segítségével, majd könnyedén beállíthatja Piwigo galériájának eléréséhez.';
 $lang['Piwigo Publish plugin for Lightroom'] = 'Piwigo Lightroom feltöltő';
 $lang['Piwigo export plugin for iPhoto'] = 'Piwigo iPhoto feltöltő';
+$lang['Piwigo for Android'] = 'Piwigo Androidon';
 $lang['Piwigo for iOS (iPhone, iPad, iPod Touch)'] = 'Piwigo iOS-en (iPhone, iPad, iPod Touch)';
 $lang['Piwigo publish plugin for Shotwell'] = 'Piwigo Shotwell feltöltő';
 $lang['Piwigo publish plugin for digiKam'] = 'Piwigo digiKam feltöltő';
@@ -931,7 +915,7 @@ $lang['between %d and %d pixels'] = '%d és %d pixel között';
 $lang['Duplicate'] = 'Másolat';
 $lang['Manage the members'] = 'Tagok kezelése';
 $lang['Merge selected groups'] = 'Kiválasztott csoportok egyesítése';
-$lang['No group selected, no action possible.'] = 'Nincs kiválasztott csoport, művelet nem lehetséges.';
+$lang['No groups selected, no actions possible.'] = 'Nincs kiválasztott csoport, művelet nem lehetséges.';
 $lang['No members to manage'] = 'Nem tagok kezelése';
 $lang['Please select at least two groups'] = 'Jelöljön ki legalább két csoport';
 $lang['Rename'] = 'Átnevezés';
@@ -953,7 +937,7 @@ $lang['Change password'] = 'Jelszó módosítása';
 $lang['Change username'] = 'Felhasználónév módosítása';
 $lang['Loading...'] = 'Töltés...';
 $lang['No matching user found'] = 'Felhasználó nem található';
-$lang['No user selected, no action possible.'] = 'Választott felhasználó nem található, művelet nem lehetséges';
+$lang['No users selected, no actions possible.'] = 'Választott felhasználó nem található, művelet nem lehetséges';
 $lang['Password updated'] = 'Jelszó frissítve';
 $lang['Update user'] = 'Felhasználó frissítése';
 $lang['User %s added'] = '%s felhasználó hozzáadva';
@@ -1009,7 +993,51 @@ $lang['Display form'] = 'kérdőív megjelenítése';
 $lang['First photo added'] = 'Az első fotó hozzáadva';
 $lang['It only takes a few clicks.'] = 'Csak néhány kattintás.';
 $lang['No filter on album. Select one or type to search'] = 'Nincs az albumon szűrő. Válassz egyet, vagy írj be valamit, a kereséshez';
-$lang['No tag selected, no action possible.'] = 'Nincs cimke választva, nincs mit tenni.';
+$lang['No tags selected, no actions possible.'] = 'Nincs cimke választva, nincs mit tenni.';
 $lang['Piwigo %s is available, please update'] = 'Piwigo %s már elérhető, kérlek, frissíts';
 $lang['Running on an up-to-date Piwigo is important for security.'] = 'A legfrisebb Piwigo-t futtatni biztonsági okok miatt fontos.';
 $lang['Select tags'] = 'Válassz cimkéket';
+$lang['Synchronization in progress'] = 'Zajlik a szinkronizálás';
+$lang['Visit'] = 'Látogatás';
+$lang['Welcome!'] = 'Helló!';
+$lang['With no checksum'] = 'Ellenőrzőszám nélkül';
+$lang['checksums to add'] = 'ellenőrzőszámokat kell hozzáadni';
+$lang['or'] = 'vagy';
+$lang['%d checksums were added'] = '%d ellenőrzőszám került hozzáadásra';
+$lang['... or hide this link'] = '... vagy rejtsük el ezt a hivatkozást (linket)';
+$lang['Compute %d missing checksums'] = 'Számítsuk ki a %d hiányzó ellenőrzőszámot';
+$lang['Create a first album'] = 'Készítsük el az első albumot';
+$lang['Deletion in progress'] = 'A törlés folyamatban van';
+$lang['Display album date period'] = 'Mutasd minden albumnál a hozzá tartozó dátumokat, pl. "2018 július 12-től 15-ig"';
+$lang['Display category date'] = 'Mutasd a kategória dátumát';
+$lang['Piwigo requires an album to add photos.'] = 'Piwigo-nak szükséges van egy albumra, hogy képeket lehessen hozzáadni.';
+$lang['Some checksums are missing.'] = 'Néhány ellenőrzőszám hiányzik.';
+$lang['Add Album'] = 'Album hozzáadása';
+$lang['Album search tool'] = 'Album kereső eszköz';
+$lang['Are you sure you want to delete all sizes?'] = 'Biztosan törölni akarsz minden méretet?';
+$lang['Are you sure you want to delete group "%s"?'] = 'Biztosan törölni akarod ezt a csoportot: %s?';
+$lang['Are you sure you want to delete the language "%s"?'] = 'Biztosan törölni akarod ezt a nyelvet: %s?';
+$lang['Are you sure you want to delete the plugin "%s"?'] = 'Biztosan törölni akarod ezt a bővítményt: %s?';
+$lang['Are you sure you want to delete the user "%s"?'] = 'Biztosan törölni akarod ezt a felhasználót: %s?';
+$lang['Are you sure you want to delete this site?'] = 'Biztosan törölni akarod ezt a site-ot?';
+$lang['Are you sure you want to delete this theme?'] = 'Biztosan törölni akarod ezt a sablont (theme)?';
+$lang['Are you sure you want to delete this?'] = 'Biztosan törölni akarod ezt?';
+$lang['%d sub-albums'] = '%d al-albumok';
+$lang['%s GB used'] = '%s GB felhasználva';
+$lang['%s MB used'] = '%s MB felhasználva';
+$lang['%s file type'] = '%s file típus';
+$lang['%s other tags available..'] = '%s további elérhető címkék';
+$lang['<b>%d+</b> albums found, try to refine the search'] = '<b>%d+</b> albumot találtunk, próbáld finomítani a keresést';
+$lang['<b>%d</b> albums found'] = '<b>%d</b> albumot találtunk';
+$lang[' (copy %s)'] = '(másold %s)';
+$lang[' (copy)'] = '(másold)';
+$lang['%d Activities'] = '%d Események';
+$lang['%d Activity'] = '%d Esemény';
+$lang['%d photos'] = '%d fotók';
+$lang['Are you sure you want to delete the ratings of the user "%s"?'] = 'Biztosan törölni akarod "%s" fejeznek felhasználó értékeléseit?';
+$lang['Are you sure you want to delete the theme "%s"?'] = 'Biztosan törölni akarod "%s" sablont?';
+$lang['Are you sure you want to install the plugin "%s"?'] = 'Biztosan telepíteni akarod "%s" bővítményt?';
+$lang['Are you sure you want to lock the gallery?'] = 'Biztosan blokkolni akarod a galériát?';
+$lang['<b>%d</b> tag found'] = '<b>%d</b> címkét találtunk';
+$lang['<b>%d</b> tag selected'] = '<b>%d</b> címke van kiválasztva';
+$lang['<b>%d</b> tags found'] = '<b>%d</b> címkét találtunk';
