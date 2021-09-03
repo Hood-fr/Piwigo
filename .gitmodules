@@ -118,3 +118,6 @@
 [submodule "themes/stripped_responsive"]
 	path = themes/stripped_responsive
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/themes/stripped-responsive
+[submodule "themes/smartpocket"]
+	path = themes/smartpocket
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/themes/smartpocket
