@@ -27,10 +27,6 @@ var lang = {
   generateMsg: "{'Generate multiple size images'|@translate}"
 };
 
-var conf = {
-  checksum_compute_blocksize: {$conf_checksum_compute_blocksize},
-};
-
 jQuery(document).ready(function() {
 
   {* <!-- TAGS --> *}
@@ -403,7 +399,7 @@ var sliders = {
           <span id="duplicates_options" style="{if !isset($filter.prefilter) or $filter.prefilter ne 'duplicates'}display:none{/if}">
             {'based on'|translate}
             <label class="font-checkbox"><span class="icon-check"></span><input type="checkbox" name="filter_duplicates_filename" {if isset($filter.duplicates_filename)}checked="checked"{/if}> {'file name'|translate}</label>
-            <label class="font-checkbox" title="md5sum"><span class="icon-check"></span><input type="checkbox" name="filter_duplicates_checksum" {if isset($filter.duplicates_checksum)}checked="checked"{/if}> {'checksum'|translate}</label>
+            <label class="font-checkbox" title="md5sum"><span class="icon-check"></span><input type="checkbox" name="filter_duplicates_checksum" {if isset($filter.duplicates_checksum)}checked="checked"{/if}> {'checksum'|translate} <i class="icon-help-circled tiptip" title="translated md5sum definition here !"> </i></label>
             <label class="font-checkbox"><span class="icon-check"></span><input type="checkbox" name="filter_duplicates_date" {if isset($filter.duplicates_date) or (isset($filter.prefilter) and $filter.prefilter ne 'duplicates')}checked="checked"{/if}> {'date & time'|translate}</label>
             <label class="font-checkbox"><span class="icon-check"></span><input type="checkbox" name="filter_duplicates_dimensions" {if isset($filter.duplicates_dimensions)}checked="checked"{/if}> {'width & height'|translate}</label>
           </span>
@@ -810,5 +806,30 @@ UL.thumbnails SPAN.wrap2 {ldelim}
 #action_associate .selectize-input {
   min-width: 500px;
   height: 44px;
+}
+
+#action_add_tags .item,
+#action_add_tags .item.active {
+  background-image:none;
+  background-color: #ffa646;
+  border-color: transparent;
+  color: black;
+
+  border-radius: 20px;
+}
+
+#action_add_tags .item .remove,
+#action_add_tags .item .remove {
+  background-color: transparent;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: black;
+  
+  border-left: 1px solid transparent;
+
+}
+#action_add_tags .item .remove:hover,
+#action_add_tags .item .remove:hover {
+  background-color: #ff7700;
 }
 </style>

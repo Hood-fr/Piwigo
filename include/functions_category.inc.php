@@ -569,6 +569,7 @@ FROM '.CATEGORIES_TABLE.' as c
       }
     }
   }
+
   return $cats;
 }
 
@@ -758,6 +759,7 @@ SELECT
   {
     $index_of_cat[ $cat['id'] ] = $idx;
     $cats[$idx]['LEVEL'] = substr_count($cat['global_rank'], '.') + 1;
+    $cats[$idx]['name'] = trigger_change('render_category_name', $cat['name'], $cat);
 
     // if the category is directly linked to the items, we add an URL + counter
     if (isset($common_cats[ $cat['id'] ]))

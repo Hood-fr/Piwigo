@@ -21,7 +21,7 @@ jQuery(document).ready(function(){
 <div class="categoryContainer">
   <div class="addAlbum">
     <div class="addAlbumHead">
-      <span class="icon-plus-circled icon-blue"></span>
+      <span class="icon-plus-circled icon-blue icon-blue-full"></span>
       <p>{"Add Album"|@translate}
     </div>
     <form action="{$F_ACTION}" method="post">
@@ -56,6 +56,7 @@ jQuery(document).ready(function(){
     <div class="albumActions">
       <a href="{$category.U_EDIT}" class="actionEdit" {*title="{'Edit'|@translate}"*}><span class="icon-pencil tiptip" title="{'Edit'|@translate}"></span><span class="iconLegend">{'Edit'|@translate}</span></a>
       <a href="{$category.U_CHILDREN}" class="actionTitle" {*title="{'sub-albums'|@translate}"*}><span class="icon-sitemap tiptip" title="{'sub-albums'|@translate}"></span><span class="iconLegend">{'sub-albums'|@translate}</span></a>
+      <a href="{$category.U_MOVE}" class="actionMove"><span class="icon-move tiptip" title="{'Move'|@translate}"></span><span class="iconLegend">{'Move'|@translate}</span></a>
       {if cat_admin_access($category.ID)}
       <a href="{$category.U_JUMPTO}" class="actionGalery" {*title="{'Visit Gallery'|@translate}"*}><span class="icon-eye tiptip" title="{'Visit Gallery'|@translate}"></span><span class="iconLegend">{'Visit Gallery'|@translate}</span></a>
       {else}
@@ -141,6 +142,10 @@ jQuery(document).ready(function(){
  *  Tiles display
  */
 
+.tile_add.addAlbum form input::placeholder {
+  color: transparent !important;
+}
+
 .albumTop {
   display: flex;
   flex-direction: row;
@@ -154,11 +159,7 @@ jQuery(document).ready(function(){
 .categoryBox, .addAlbum{
   display: flex;
   flex-direction: column;
-  max-height: 200px;
   flex-grow: 1;
-
-  /* Potential Animation */
-  /* transition: 1s linear; */
 }
 
 .albumIcon span{
@@ -166,12 +167,6 @@ jQuery(document).ready(function(){
   width: 27px;
   padding: 10px;
   border-radius: 30px;
-}
-
-.albumIconLineHover {
-  background: #f98100! important;
-  color: #ffd7ad;
-  transition: 0.5s ease;
 }
 
 .albumInfos {
@@ -214,7 +209,6 @@ jQuery(document).ready(function(){
 
 .addAlbum form input {
   border: none;
-  box-shadow: 0px 2px 3px #00000024;
   border-radius: 5px;
 
   margin: 0px 10px;

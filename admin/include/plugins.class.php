@@ -74,6 +74,10 @@ class plugins
     $file_to_include = PHPWG_PLUGINS_PATH . $plugin_id . '/maintain';
     $classname = $plugin_id.'_maintain';
 
+    // piwigo-videojs and piwigo-openstreetmap unfortunately have a "-" in their folder
+    // name (=plugin_id) and a class name can't have a "-". So we have to replace with a "_"
+    $classname = str_replace('-', '_', $classname);
+
     // 2.7 pattern (OO only)
     if (file_exists($file_to_include.'.class.php'))
     {
@@ -238,7 +242,7 @@ DELETE FROM '. PLUGINS_TABLE .'
         {
           break;
         }
-
+        include_once(PHPWG_ROOT_PATH.'admin/include/functions.php');
         deltree(PHPWG_PLUGINS_PATH . $plugin_id, PHPWG_PLUGINS_PATH . 'trash');
         break;
     }

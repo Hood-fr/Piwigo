@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Српски [SR]
-Version: 11.5.0
+Version: auto
 Language URI: http://piwigo.org/ext/extension_view.php?eid=458
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -417,3 +417,5 @@ $lang['Invalid username or password!'] = 'Погрешно корисничко 
 $lang['generate random password'] = 'направи насумичну лозинку';
 $lang['Password: ********** (no copy by email)'] = 'Лозинка: ********** (без копирања из е-поште)';
 $lang['Related albums'] = 'Повезани албуми';
+$lang['Album name, 1 &rarr; 5 &rarr; 10 &rarr; 100'] = 'Име албума, 1 &rarr; 5 &rarr; 10 &rarr; 100';
+$lang['Album name, 100 &rarr; 10 &rarr; 5 &rarr; 1'] = 'Име албума, 100 &rarr; 10 &rarr; 5 &rarr; 1';

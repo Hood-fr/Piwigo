@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Norsk bokmål [NO]
-Version: 11.5.0
+Version: auto
 Language URI: http://piwigo.org/ext/extension_view.php?eid=483
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -414,3 +414,5 @@ $lang['generate random password'] = 'generere tilfeldig passord';
 $lang['Password: ********** (no copy by email)'] = 'Passord: ********** (ingen kopi på e-post)';
 $lang['Related albums'] = 'Beslektede album';
 $lang['display only recently posted photos'] = 'vis kun bilder som nylig er lagt ut';
+$lang['Album name, 1 &rarr; 5 &rarr; 10 &rarr; 100'] = 'Albumnavn, 1 &rarr; 5 &rarr; 10 &rarr; 100';
+$lang['Album name, 100 &rarr; 10 &rarr; 5 &rarr; 1'] = 'Albumnavn, 100 &rarr; 10 &rarr; 5 &rarr; 1';

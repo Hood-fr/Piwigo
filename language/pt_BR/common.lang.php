@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Brasil [BR]
-Version: 11.5.0
+Version: auto
 Language URI: http://piwigo.org/ext/extension_view.php?eid=431
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -417,3 +417,5 @@ $lang['Invalid username or password!'] = 'Senha ou nome de usuário inválido!';
 $lang['generate random password'] = 'gerar senha aleatória';
 $lang['Password: ********** (no copy by email)'] = 'Senha: ********** (sem cópia por e-mail)';
 $lang['Related albums'] = 'Álbuns relacionados';
+$lang['Album name, 1 &rarr; 5 &rarr; 10 &rarr; 100'] = 'Nome do Album, 1 &rarr; 5 &rarr; 10 &rarr; 100';
+$lang['Album name, 100 &rarr; 10 &rarr; 5 &rarr; 1'] = 'Nome do Album, 100 &rarr; 10 &rarr; 5 &rarr; 1';

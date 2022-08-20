@@ -433,6 +433,17 @@ $conf['session_gc_probability'] = 1;
 // |                            debug/performance                          |
 // +-----------------------------------------------------------------------+
 
+// number of photos beyond which individual photos are added in the
+// lounge, a temporary zone where photos wait before being "launched".
+// 50k photos by default.
+$conf['lounge_activate_threshold'] = 1;
+
+// Lounge is automatically emptied (photos are being pushed to their
+// albums) when the oldest one reaches this duration. Lounge can be emptied
+// before, either manually or at the end of the upload. In seconds.
+// 5 minutes by default.
+$conf['lounge_max_duration'] = 5*60;
+
 // show_queries : for debug purpose, show queries and execution times
 $conf['show_queries'] = false;
 
@@ -719,6 +730,9 @@ $conf['dashboard_activity_nb_weeks'] = 4;
 // On album mover page, number of seconds before auto openning album when
 // dragging an album. In milliseconds. 3 seconds by default.
 $conf['album_move_delay_before_auto_opening'] = 3*1000;
+
+// This variable is used to show or hide the template tab in the side menu
+$conf['show_template_in_side_menu'] = false;
 
 // +-----------------------------------------------------------------------+
 // | Filter                                                                |
