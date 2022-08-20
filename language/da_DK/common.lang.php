@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Dansk [DK]
-Version: 11.5.0
+Version: 12.3.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=415
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -418,3 +418,5 @@ $lang['Invalid username or password!'] = 'Ugyldigt brugernavn eller adgangskode!
 $lang['generate random password'] = 'generer tilfældig adgangskode';
 $lang['Password: ********** (no copy by email)'] = 'Adgangskode: ********** (ingen kopi via mail)';
 $lang['Related albums'] = 'Relaterede albummer';
+$lang['Album name, 1 &rarr; 5 &rarr; 10 &rarr; 100'] = 'Albumnavn, 1 &rarr; 5 &rarr; 10 &rarr; 100';
+$lang['Album name, 100 &rarr; 10 &rarr; 5 &rarr; 1'] = 'Albumnavn, 100 &rarr; 10 &rarr; 5 &rarr; 1';

@@ -51,6 +51,18 @@ var delay_autoOpen = {$delay_before_autoOpen}
 
         <label class="font-checkbox">
           <span class="icon-dot-circled"> </span>
+          <input type="radio" value="natural_order ASC" name="order">
+          {'Album name, 1 &rarr; 5 &rarr; 10 &rarr; 100'|@translate}
+        </label>
+        
+        <label class="font-checkbox">
+          <span class="icon-dot-circled"> </span>
+          <input type="radio" value="natural_order DESC" name="order">
+          {'Album name, 100 &rarr; 10 &rarr; 5 &rarr; 1'|@translate}
+        </label>
+        
+        <label class="font-checkbox">
+          <span class="icon-dot-circled"> </span>
           <input type="radio" value="date_creation DESC" name="order">
           {'Date created, new &rarr; old'|@translate}
         </label>
@@ -85,3 +97,43 @@ var delay_autoOpen = {$delay_before_autoOpen}
 </div>
 
 <div class='tree'> </div>
+
+<style>
+
+.animateFocus {
+  position: relative;
+  border-left: 4px solid #ff7700;
+}
+
+.animateFocus .icon-grip-vertical-solid {
+  color: #ff7700;
+}
+
+.animateFocus:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  animation: ripples .8s ease-out 0.3s  ;
+  opacity: 0;
+  border-radius: 5px;
+}
+
+.jqtree_element {
+  transition: 1s;
+}
+
+@keyframes ripples {
+  0% {
+      border: 0px solid #ff7700;
+      opacity: 0.7;
+  }
+  100% {
+      border: 20px solid #ff7700;
+      opacity: 0;
+  }
+}
+</style>

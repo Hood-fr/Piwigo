@@ -15,9 +15,10 @@ function setDisplayCompact() {
             color : "#848484",
         });
     });
-
+    $(".categoryBox").removeClass("line_cat").removeClass("tile_cat");
+    $(".addAlbum").removeClass("tile_add");
     $(".categoryBox").css({
-        minWidth: "230px",
+        minWidth: "250px",
         maxWidth: "350px",
         flexDirection: "column",
         maxHeight: "180px",
@@ -50,7 +51,11 @@ function setDisplayCompact() {
         padding: "8px"
     });
 
-    $(".albumInfos p").css("margin", "0");
+    $(".albumInfos p").css({
+        margin: "0",
+        textAlign: "center",
+        whiteSpace: "normal"
+    });
     $(".albumInfos p:last-child").css({
         width: "auto"
     });
@@ -66,7 +71,7 @@ function setDisplayCompact() {
     $(".albumTitle").css("padding", "0 15px");
 
     $(".addAlbum").css({
-        minWidth : "230px",
+        minWidth : "250px",
         maxWidth: "350px",
         flexDirection: "column",
         maxHeight: "180px",
@@ -79,10 +84,11 @@ function setDisplayCompact() {
 
      $(".addAlbumHead").css({
          flexDirection: "column",
-         transform: "translateY(75px)",
+         transform: "translateY(55px)",
          alignItems: "center",
          marginTop: "-10px",
-         transition: "0.4s ease"
+         transition: "0.4s ease",
+         marginBottom: "0px"
     });
 
     $(".addAlbum form").css("flex-direction", "column");
@@ -115,6 +121,10 @@ function setDisplayCompact() {
         flexDirection : "row",
         marginTop: "auto",
         width: "100%"
+    });
+
+    $(".albumActions a").css({
+      minWidth : "0px"
     });
 
     $(".albumActions a:first-child").css("margin-left", "35px");
@@ -163,7 +173,8 @@ function setDisplayLine() {
     });
 
     /************************************/
-
+    $(".categoryBox").addClass("line_cat").removeClass("tile_cat");
+    $(".addAlbum").removeClass("tile_add");
     $(".categoryBox").css({
         minWidth: "90%",
         maxWidth: "100%",
@@ -199,7 +210,8 @@ function setDisplayLine() {
 
     $(".albumInfos p").css({
         textAlign: "right",
-        margin: "0"
+        margin: "0",
+        whiteSpace: "nowrap"
     });
 
     $(".albumInfos p:last-child").css({
@@ -233,7 +245,8 @@ function setDisplayLine() {
         transform: "translateY(0)",
         alignItems: "center",
         marginTop: "0",
-        transform: "translateX(200px)"
+        transform: "translateX(200px)",
+        marginBottom: "0"
     });
 
     $(".addAlbum form").css({
@@ -258,6 +271,10 @@ function setDisplayLine() {
         flexDirection : "row",
         margin: "auto 0px",
         width: "300px",
+    });
+
+    $(".albumActions a").css({
+      minWidth : "30px"
     });
 
     $(".albumActions a:first-child").css("margin-left", "35px");
@@ -287,12 +304,13 @@ function setDisplayTile() {
     $(".addAlbum.input-mode form").css({
         transitionDelay: "0s",
     });
-
+    $(".categoryBox").removeClass("line_cat").addClass("tile_cat");
+    $(".addAlbum").addClass("tile_add");
     $(".categoryBox").css({
         minWidth: "220px",
         maxWidth: "280px",
         flexDirection: "column",
-        maxHeight: "300px",
+        maxHeight: "320px",
         alignItems: "center",
         margin: "15px"
     });
@@ -311,6 +329,11 @@ function setDisplayTile() {
 
     $(".albumInfos p:last-child").css({
         width: "auto"
+    });
+    $(".albumInfos p").css({
+        margin: "0",
+        textAlign: "center",
+        whiteSpace: "normal"
     });
 
     $(".albumIcon").css({
@@ -336,7 +359,7 @@ function setDisplayTile() {
         minWidth: "220px",
         maxWidth: "280px",
         flexDirection: "column",
-        maxHeight: "300px",
+        maxHeight: "320px",
         margin: "15px"
     });
 
@@ -345,7 +368,8 @@ function setDisplayTile() {
         transform: "translateY(75px)",
         alignItems: "center",
         marginTop: "10px",
-        transition: "0.4s ease"
+        transition: "0.4s ease",
+        marginBottom: "0"
     });
 
     $(".addAlbum form").css({
@@ -361,7 +385,7 @@ function setDisplayTile() {
 
     $(".addAlbum form label").css({
         display: "flex",
-        margin: "-20px 0 0 10px"
+        margin: "-25px 0 0 15px"
     });
 
     $(".addAlbumHead p").css("margin-left", "0");
@@ -374,6 +398,10 @@ function setDisplayTile() {
     });
 
     $(".albumInfos p").css("margin", "0");
+
+    $(".albumActions a").css({
+      minWidth : "0px"
+    });
 
     $(".albumActions a:first-child").css("margin-left", "5px");
     $(".albumActions a:last-child").css("margin-left", "5px");
