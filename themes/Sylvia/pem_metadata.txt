@@ -1,4 +1,4 @@
 File automatically created from SVN or Git repository.
 
-URL: https://github.com/Piwigo/Piwigo/tags/2.9.5/themes/Sylvia 
-Revision: 13335
+URL: https://github.com/Piwigo/piwigo-Sylvia 
+Revision: 8ca637d24f7f7109dc953db301d1d54ef21d3587 (Tue Dec 7 12:04:09 2021 +0100)

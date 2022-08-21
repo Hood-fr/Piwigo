@@ -1,4 +1,4 @@
 File automatically created from SVN or Git repository.
 
-URL: https://github.com/Piwigo/Piwigo/tags/2.9.5/themes/clear 
-Revision: 13335
+URL: https://github.com/Piwigo/piwigo-clear 
+Revision: 5b70cefc0a8127b1e74cf8f56e0485e50e5ab222 (Tue Jun 4 17:13:51 2019 +0200)

@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Norwegian nynorsk [NO]
-Version: 11.5.0
+Version: 12.3.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=689
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -415,3 +415,5 @@ $lang['generate random password'] = 'generer tilfeldig passord';
 $lang['Your authentication key is no longer valid.'] = 'Din autentiserings nykel er ikkje lenger gyldig ';
 $lang['Password: ********** (no copy by email)'] = 'Passord: ********** (ingen kopi per e-post)';
 $lang['Invalid username or password!'] = 'Ugyldig brukernamn og passord';
+$lang['Album name, 1 &rarr; 5 &rarr; 10 &rarr; 100'] = 'Albumnavn, 1 &rarr; 5 &rarr; 10 &rarr; 100';
+$lang['Album name, 100 &rarr; 10 &rarr; 5 &rarr; 1'] = 'Albumnavn, 100 &rarr; 10 &rarr; 5 &rarr; 1';
