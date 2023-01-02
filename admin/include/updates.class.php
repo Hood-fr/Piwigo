@@ -463,12 +463,15 @@ class updates
       redirect(get_root_url().'admin.php?page=plugin-'.basename(dirname(__FILE__)));
     }
 
+    $obsolete_list = null;
+
     if ($step == 2)
     {
       $code = get_branch_from_version(PHPWG_VERSION).'.x_to_'.$upgrade_to;
       $dl_code = str_replace(array('.', '_'), '', $code);
       $remove_path = $code;
-      $obsolete_list = 'obsolete.list';
+      // no longer try to delete files on a minor upgrade
+      // $obsolete_list = 'obsolete.list';
     }
     else
     {
@@ -542,7 +545,11 @@ class updates
 
           if (empty($error))
           {
-            self::process_obsolete_list($obsolete_list);
+            if (!empty($obsolete_list))
+            {
+              self::process_obsolete_list($obsolete_list);
+            }
+
             deltree(PHPWG_ROOT_PATH.$conf['data_location'].'update');
             invalidate_user_cache(true);
             if ($step == 2)
@@ -552,6 +559,7 @@ class updates
               // changes. Anyway, a compiled template purge will be performed
               // by upgrade.php
               $template->delete_compiled_templates();
+              conf_delete_param('fs_quick_check_last_check');
 
               $page['infos'][] = l10n('Update Complete');
               $page['infos'][] = $upgrade_to;

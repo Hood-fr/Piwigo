@@ -341,7 +341,7 @@ $lang['Welcome to your Piwigo photo gallery!'] = 'Bienvenue sur votre galerie ph
 $lang['Welcome'] = 'Bienvenue';
 $lang['wrong date'] = 'date erronée';
 $lang['Yes'] = 'Oui';
-$lang['You are not authorized to access the requested page'] = 'Vous n\'êtes pas autorisé à accéder à la page demandée';
+$lang['You are not authorized to access the requested page'] = 'Vous n\'avez pas l\'autorisation pour accéder à la page demandée';
 $lang['You will receive a link to create a new password via email.'] = 'Par email, vous recevrez un lien à cliquer pour renouveler votre mot de passe.';
 $lang['Your comment has been registered'] = 'Votre commentaire a été enregistré';
 $lang['Your comment has NOT been registered because it did not pass the validation rules'] = 'Votre commentaire n\'a pas été enregistré parce qu\'il ne satisfait aux règles de validation';
@@ -417,4 +417,4 @@ $lang['Related albums'] = 'Albums liés';
 $lang['Password: ********** (no copy by email)'] = 'Mot de passe : ********** (pas de copie par email)';
 $lang['Album name, 1 &rarr; 5 &rarr; 10 &rarr; 100'] = 'Nom d\'album, 1 &rarr; 5 &rarr; 10 &rarr; 100';
 $lang['Album name, 100 &rarr; 10 &rarr; 5 &rarr; 1'] = 'Nom d\'album, 100 &rarr; 10 &rarr; 5 &rarr; 1';
-
+$lang['Start-Date'] = 'Date de début';

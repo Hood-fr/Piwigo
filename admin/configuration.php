@@ -327,6 +327,8 @@ switch ($page['section'])
 
     function order_by_is_local()
     {
+      $conf = array();
+      include(PHPWG_ROOT_PATH . 'include/config_default.inc.php');
       @include(PHPWG_ROOT_PATH. 'local/config/config.inc.php');
       if (isset($conf['local_dir_site']))
       {
@@ -350,7 +352,7 @@ switch ($page['section'])
     {
       $out = array();
       $order_by = trim($conf['order_by_inside_category']);
-      $order_by = str_replace('ORDER BY ', null, $order_by);
+      $order_by = str_replace('ORDER BY ', false, $order_by);
       $order_by = explode(', ', $order_by);
     }
 
@@ -608,6 +610,7 @@ switch ($page['section'])
 }
 
 $template->assign('isWebmaster', (is_webmaster()) ? 1 : 0);
+$template->assign('ADMIN_PAGE_TITLE', l10n('Configuration'));
 
 //----------------------------------------------------------- sending html code
 $template->assign_var_from_handle('ADMIN_CONTENT', 'config');
