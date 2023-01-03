@@ -70,6 +70,9 @@
 [submodule "plugins/PersoFavicon"]
 	path = plugins/PersoFavicon
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/PersoFavicon
+[submodule "plugins/phpcaptchapiwigo"]
+	path = plugins/phpcaptchapiwigo
+	url=/Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/phpcaptchapiwigo
 [submodule "plugins/plugin_lang_analysis"]
 	path = plugins/plugin_lang_analysis
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/plugin_lang_analysis
@@ -121,3 +124,4 @@
 [submodule "themes/smartpocket"]
 	path = themes/smartpocket
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/themes/smartpocket
+
