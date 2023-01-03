@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Estonian [EE]
-Version: 12.3.0
+Version: 13.4.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=569
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -436,11 +436,9 @@ $lang['Link: %s'] = 'Link: %s';
 $lang['Your authentication key is no longer valid.'] = 'Teie autentimise võti enam ei kehti';
 $lang['Invalid username or password!'] = 'Vale kasutajanimi või salasõna!';
 $lang['generate random password'] = 'Genereeri juhuslik salasõna';
-<<<<<<< HEAD
-$lang['Please register'] = 'Registreeruge või kasutage kasutajanimega, et vältida captcha-koodi ning saate oma kommentaare redigeerida või kustutada';
-=======
+$lang['Start-Date'] = 'Alguskuupäev';
 $lang['Password: ********** (no copy by email)'] = 'Parool: ********** (pole e-posti koopia)';
 $lang['Related albums'] = 'Seotud albumid';
 $lang['Album name, 100 &rarr; 10 &rarr; 5 &rarr; 1'] = 'Albumi nimi, 100 &rarr; 10 &rarr; 5 &rarr; 1';
 $lang['Album name, 1 &rarr; 5 &rarr; 10 &rarr; 100'] = 'Albumi nimi, 1 &rarr; 5 &rarr; 10 &rarr; 100';
->>>>>>> Hood-fr-PWG-plugins
+$lang['Please register'] = 'Registreeruge või kasutage kasutajanimega, et vältida captcha-koodi ning saate oma kommentaare redigeerida või kustutada';
