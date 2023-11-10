@@ -38,6 +38,14 @@ const filtered_users = '{'<b>%d</b> filtered users'|@translate|escape:javascript
 const filtered_user = '{'<b>%d</b> filtered user'|@translate|escape:javascript}';
 const history_base_url = "{$U_HISTORY}";
 
+const status_to_str = {
+  'webmaster': "{'user_status_webmaster'|translate}",
+  'admin': "{'user_status_admin'|translate}",
+  'normal': "{'user_status_normal'|translate}",
+  'generic': "{'user_status_generic'|translate}",
+  'guest': "{'user_status_guest'|translate}",
+}
+
 const view_selector = '{$view_selector}';
 const pagination = '{$pagination}';
 
@@ -90,6 +98,10 @@ $(".icon-help-circled").tipTip({
 });
 
 $(document).ready(function() {
+  // Only webmaster can set admin or webmaster to others users
+  if (connected_user_status !== 'webmaster') {
+    $('select[name="status"] option[value="webmaster"], select[name="status"] option[value="admin"]').attr("disabled", true);
+  }
   // We set the applyAction btn click event here so plugins can add cases to the list 
   // which is not possible if this JS part is in a JS file
   // see #1571 on Github
@@ -410,7 +422,7 @@ $(document).ready(function() {
           <div id="action_group_associate" class="bulkAction">
             <div class="user-action-select-container">
               <select class="user-action-select" name="associate">
-                {html_options options=$association_options selected=$associate_selected}
+                {html_options options=$association_options}
               </select>
             </div>
           </div>
@@ -419,7 +431,7 @@ $(document).ready(function() {
           <div id="action_group_dissociate" class="bulkAction">
             <div class="user-action-select-container">
               <select class="user-action-select" name="dissociate">
-                {html_options options=$association_options selected=$dissociate_selected}
+                {html_options options=$association_options}
               </select>
             </div>
           </div>
@@ -543,7 +555,7 @@ $(document).ready(function() {
             <input id="applyAction" class="submit" type="submit" value="{'Apply action'|@translate}" name="submit"> <span id="applyOnDetails"></span></input>
             <span id="applyActionLoading" style="display:none"><img src="themes/default/images/ajax-loader-small.gif"></span>
             <br />
-            <span class="infos icon-ok" style="display:inline-block;display:none;max-width:100%;margin:0;margin-top:30px;min-height:0;border-left: 2px solid #00FF00;">{'Users modified'|translate}</span>
+            <span class="infos icon-ok icon-green" style="display:inline-block;display:none;max-width:100%;margin:0;margin-top:30px;min-height:0;">{'Users modified'|translate}</span>
           </p>
         </div> {* #permitActionUserList *}
       </fieldset>
@@ -1058,16 +1070,9 @@ $(document).ready(function() {
   font-weight:bold;
 }
 
-#AddUserSuccess span {
-  color: #0a0;
-}
-
 #AddUserSuccess label {
   padding: 10px;
-  background-color:  #c2f5c2;
-  border-left: 2px solid #00FF00;
   cursor: default;
-  color: #0a0;
 }
 
 #AddUserSuccess .edit-now {
@@ -1707,9 +1712,6 @@ $(document).ready(function() {
 .update-user-success {
     padding:10px;
     display:none;
-    background-color:#c2f5c2;
-    color: #0a0;
-    border-left: 2px solid #00FF00;
 }
 
 .update-user-fail {
@@ -2434,5 +2436,29 @@ Advanced filter
   position: absolute;
   right: 770px;
   line-height: 38px;
+}
+
+@media (max-width: 1550px) {
+  #user_search {
+    width: 120px;
+  }
+  .advanced-filter-btn {
+    right: 570px;
+  }
+  .filtered-users {
+    right: 690px;
+  }
+}
+
+@media (max-width: 1465px) {
+  #user_search {
+    width: 70px;
+  }
+  .advanced-filter-btn {
+    right: 520px;
+  }
+  .filtered-users {
+    right: 640px;
+  }
 }
 </style>

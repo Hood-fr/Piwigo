@@ -389,6 +389,7 @@ function ws_session_getStatus($params, &$service)
   list($dbnow) = pwg_db_fetch_row(pwg_query('SELECT NOW();'));
   $res['current_datetime'] = $dbnow;
   $res['version'] = PHPWG_VERSION;
+  $res['save_visits'] = do_log();
 
   // Piwigo Remote Sync does not support receiving the available sizes
   $piwigo_remote_sync_agent = 'Apache-HttpClient/';
@@ -446,23 +447,24 @@ SELECT
     occured_on,
     details,
     user_agent
-  FROM '.ACTIVITY_TABLE;
+  FROM '.ACTIVITY_TABLE.'
+  WHERE object != \'system\'';
 
   if (isset($param['uid']))
   {
     $query.= '
-  WHERE performed_by = '.$param['uid'];
+    AND performed_by = '.$param['uid'];
   }
   elseif ('none' == $conf['activity_display_connections'])
   {
     $query.= '
-  WHERE action NOT IN (\'login\', \'logout\')';
+    AND action NOT IN (\'login\', \'logout\')';
   }
   elseif ('admins_only' == $conf['activity_display_connections'])
   {
     include_once(PHPWG_ROOT_PATH.'admin/include/functions.php');
     $query.= '
-  WHERE NOT (action IN (\'login\', \'logout\') AND object_id NOT IN ('.implode(',', get_admins()).'))';
+    AND NOT (action IN (\'login\', \'logout\') AND object_id NOT IN ('.implode(',', get_admins()).'))';
   }
 
   $query.= '
@@ -613,7 +615,21 @@ function ws_history_log($params, &$service)
     $page['tag_ids'] = explode(',', $params['tags_string']);
   }
 
-  pwg_log($params['image_id'], 'picture');
+  // when visiting a photo (which is currently, in version 14, the only event registered
+  // by pwg.history.log) we should also increment images.hit
+  if (!empty($params['image_id']))
+  {
+    include_once(PHPWG_ROOT_PATH.'include/functions_picture.inc.php');
+    increase_image_visit_counter($params['image_id']);
+  }
+
+  $image_type = 'picture';
+  if ($params['is_download'])
+  {
+    $image_type = 'high';
+  }
+
+  pwg_log($params['image_id'], $image_type);
 }
 
 /**
@@ -911,6 +927,7 @@ SELECT
       continue;
     }
 
+    $user_name = '#unknown';
     $user_string = '';
     if (isset($username_of[$line['user_id']]))
     {
@@ -1007,6 +1024,7 @@ SELECT
         'SECTION'    => $line['section'],
         'FULL_CATEGORY_PATH'   => isset($full_cat_path[$line['category_id']]) ? strip_tags($full_cat_path[$line['category_id']]) : l10n('Root').$line['category_id'],
         'CATEGORY'   => isset($name_of_category[$line['category_id']]) ? $name_of_category[$line['category_id']] : l10n('Root').$line['category_id'],
+        'SEARCH_ID'  => $line['search_id'] ?? null,
         'TAGS'       => explode(",",$tag_names),
         'TAGIDS'     => explode(",",$tag_ids),
       )

@@ -648,9 +648,9 @@ function advanced_filter_hide() {
 let months = [];
 
 function getDateStr(date) {
-    let date_arr = date.split(' ');
-    let curr_month = months[parseInt(date_arr[0]) - 1];
-    return curr_month + " " + date_arr[1]
+    let date_arr = date.split('-');
+    let curr_month = months[parseInt(date_arr[1]) - 1];
+    return curr_month + " " + date_arr[0]
 }
 
 function setupRegisterDates(register_dates) {
@@ -963,7 +963,7 @@ function fill_container_user_info(container, user_index) {
     container.attr('key', user_index);
     container.find(".user-container-username span").html(user.username);
     container.find(".user-container-initials span").html(get_initials(user.username)).addClass(color_icons[user.id % 5]);
-    container.find(".user-container-status span").html(user.status);
+    container.find(".user-container-status span").html(status_to_str[user.status]);
     container.find(".user-container-email span").html(user.email);
     generate_groups(container, user.groups);
     container.find(".user-container-registration-date").html(registration_dates[0]);
@@ -1097,6 +1097,7 @@ function fill_user_edit_update(user_to_edit, pop_in) {
     pop_in.find('.delete-user-button').unbind("click").click(function () {
         $.confirm({
             title: title_msg.replace('%s', user_to_edit.username),
+            content: "",
             buttons: {
                 confirm: {
                     text: confirm_msg,
@@ -1407,6 +1408,11 @@ function update_user_info() {
             } else if (data.stat === 'fail') {
                 $("#UserList .update-user-fail").html(data.message);
                 $("#UserList .update-user-fail").fadeIn();
+                $(".update-user-button i").addClass("icon-floppy").removeClass("icon-spin6 animate-spin");
+                $(".update-user-button").removeClass("unclickable");
+                setTimeout(() => {
+                  $("#UserList .update-user-fail").fadeOut();
+                }, 5000);
             }
         }
     });
@@ -1481,7 +1487,7 @@ function update_guest_info() {
 function update_user_list() {
     let update_data = {
         display: "all",
-        order: "id",
+        order: "id DESC", // We want the most recent user first
         page: actual_page - 1,
         per_page: per_page,
         exclude: [guest_id]
