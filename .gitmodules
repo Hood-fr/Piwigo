@@ -124,4 +124,6 @@
 [submodule "themes/smartpocket"]
 	path = themes/smartpocket
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/themes/smartpocket
-
+[submodule "themes/elegant"]
+	path = themes/elegant
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/themes/elegant
