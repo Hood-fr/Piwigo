@@ -1344,5 +1344,3 @@ $lang['This album is currently locked, visible only to administrators.'] = 'Dett
 $lang['Unlock it'] = 'Lås den opp';
 $lang['Unlocked album'] = 'Ulåst album';
 $lang['%d files'] = '%d filer';
-$lang['Expand'] = 'Utvide';
-$lang['Shrink'] = 'Krympe';

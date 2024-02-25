@@ -1346,5 +1346,3 @@ $lang['This album is currently locked, visible only to administrators.'] = 'Tent
 $lang['Unlock it'] = 'Odomknite ho';
 $lang['Unlocked album'] = 'Odomknutý album';
 $lang['%d files'] = '%d súborov';
-$lang['Expand'] = 'Rozšíriť';
-$lang['Shrink'] = 'Zmenšovanie';

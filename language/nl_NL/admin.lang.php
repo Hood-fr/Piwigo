@@ -1348,5 +1348,3 @@ $lang['All admins'] = 'Alle beheerders';
 $lang['%d including sub-albums'] = '%d inclusief subalbums';
 $lang['%d in whole branch'] = '%d in hele tak';
 $lang['%d files'] = '%d bestanden';
-$lang['Expand'] = 'Uitbreiden';
-$lang['Shrink'] = 'Krimpen';
