@@ -367,6 +367,15 @@ function lineConstructor(line, id, imageDisplay) {
       newLine.find(".detail-item-1").html(str_list).addClass('icon-dice-solid');
       newLine.find(".type-id").hide();
       break;
+    case "search":
+      newLine.find(".type-name").html(line.SECTION);
+      newLine.find(".type-id").html("#" + line.SEARCH_ID);
+      if (!line.SEARCH_ID)
+      {
+        newLine.find(".type-id").hide();
+      }
+      newLine.find(".detail-item-1").hide();
+      break;
     case "favorites":
       newLine.find(".type-name").html(str_favorites);
       newLine.find(".detail-item-1").html(str_favorites).addClass('icon-heart');
@@ -411,6 +420,8 @@ function lineConstructor(line, id, imageDisplay) {
     newLine.find(".type-name").html(line.IMAGENAME);
     newLine.find(".type-icon").html(line.IMAGE);
     newLine.find(".type-id").html("#" + line.IMAGEID);
+    newLine.find(".type-icon").attr("href", line.EDIT_IMAGE).removeClass("no-img")
+    newLine.find(".type-icon img").attr("title", str_edit_img).addClass("tiptip")
     newLine.find(".type-id").show();
   } else {
     newLine.find(".type-icon .icon-file-image").removeClass("icon-file-image");

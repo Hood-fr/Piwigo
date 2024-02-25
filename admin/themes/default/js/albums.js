@@ -303,10 +303,16 @@ $(document).ready(() => {
 function createAlbumNode(node, li) {
   icon = "<span class='%icon%'></span>";
   title = '<span data-id="'+node.id+'" class="move-cat-title-container ';
-  if (node.status == 'private') {
+  if (node.status == 'private' || node.parent.status == 'private') {
+    node.status = 'private';
     title += 'icon-lock';
   }
-  title += '"><p class="move-cat-title" title="'+node.name+'">%name%</p> <span class="icon-pencil"></span> </span>';
+  title += '">';
+  if (node.visible == 'false' || node.parent.visble == 'false') {
+    node.visble = 'false';
+    title += '<span class="tiptip icon-cone" title="'+ tiptip_locked_album +'" style="font-size: 16px"></span>';
+  }
+  title += '<p class="move-cat-title" title="'+node.name+'">%name%</p> <span class="icon-pencil"></span> </span>';
   toggler_cont = "<div class='move-cat-toogler' data-id=%id%>%content%</div>";
   toggler_close = "<span class='icon-left-open'></span>";
   toggler_open = "<span class='icon-down-open'></span>";

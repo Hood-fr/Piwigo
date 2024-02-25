@@ -2103,6 +2103,43 @@ SELECT
 }
 
 /**
+ * Dissociate a list of images from a category.
+ *
+ * @param int[] $images
+ * @param int $categories
+ */
+function dissociate_images_from_category($images, $category)
+{
+  // physical links must not be broken, so we must first retrieve image_id
+  // which create virtual links with the category to "dissociate from".
+  $query = '
+SELECT id
+  FROM '.IMAGE_CATEGORY_TABLE.'
+    INNER JOIN '.IMAGES_TABLE.' ON image_id = id
+  WHERE category_id ='.$category.'
+    AND id IN ('.implode(',', $images).')
+    AND (
+      category_id != storage_category_id
+      OR storage_category_id IS NULL
+    )
+;';
+  $dissociables = array_from_query($query, 'id');
+
+  if (!empty($dissociables))
+  {
+    $query = '
+DELETE
+  FROM '.IMAGE_CATEGORY_TABLE.'
+  WHERE category_id = '.$category.'
+    AND image_id IN ('.implode(',', $dissociables).')
+';
+    pwg_query($query);
+  }
+
+  return count($dissociables);
+}
+
+/**
  * Dissociate images from all old categories except their storage category and
  * associate to new categories.
  * This function will preserve ranks.
@@ -2206,6 +2243,7 @@ UPDATE '.USER_CACHE_TABLE.'
   SET need_update = \'true\';';
     pwg_query($query);
   }
+  conf_delete_param('count_orphans');
   trigger_notify('invalidate_user_cache', $full);
 }
 
@@ -2590,6 +2628,17 @@ function delete_groups($group_ids)
   {
     trigger_error('There is no group to delete', E_USER_WARNING);
     return false;
+  }
+
+  if (preg_match('/^group:(\d+)$/', conf_get_param('email_admin_on_new_user', 'undefined'), $matches))
+  {
+    foreach ($group_ids as $group_id)
+    {
+      if ($group_id == $matches[1])
+      {
+        conf_update_param('email_admin_on_new_user', 'all', true);
+      }
+    }
   }
 
   $group_id_string = implode(',', $group_ids);
@@ -3258,6 +3307,33 @@ SELECT path
   return count($ids);
 }
 
+function count_orphans()
+{
+  if (is_null(conf_get_param('count_orphans')))
+  {
+    // we don't care about the list of image_ids, we only care about the number
+    // of orphans, so let's use a faster method than calling count(get_orphans())
+    $query = '
+SELECT
+    COUNT(*)
+  FROM '.IMAGES_TABLE.'
+;';
+    list($image_counter_all) = pwg_db_fetch_row(pwg_query($query));
+
+    $query = '
+SELECT
+    COUNT(DISTINCT(image_id))
+  FROM '.IMAGE_CATEGORY_TABLE.'
+;';
+    list($image_counter_in_categories) = pwg_db_fetch_row(pwg_query($query));
+
+    $counter = $image_counter_all - $image_counter_in_categories;
+    conf_update_param('count_orphans', $counter, true);
+  }
+
+  return conf_get_param('count_orphans');
+}
+
 /**
  * Return the list of image ids associated to no album
  *
@@ -3537,46 +3613,43 @@ SELECT
 }
 
 /**
- * Return news from piwigo.org.
+ * Return latest news from piwigo.org.
  *
  * @since 13
- * @param int $start
- * @param int $count
  */
-function get_piwigo_news($start, $count)
+function get_piwigo_news()
 {
-  global $lang_info, $conf;
+  global $lang_info;
 
-  $all_news = null;
+  $news = null;
 
-  $cache_path = PHPWG_ROOT_PATH.$conf['data_location'].'cache/piwigo_news-'.$lang_info['code'].'.cache.php';
+  $cache_path = PHPWG_ROOT_PATH.conf_get_param('data_location').'cache/piwigo_latest_news-'.$lang_info['code'].'.cache.php';
   if (!is_file($cache_path) or filemtime($cache_path) < strtotime('24 hours ago'))
   {
-    $forum_url = PHPWG_URL.'/forum';
-    $url = $forum_url.'/news.php?format=json&limit='.$count;
+    $url = PHPWG_URL.'/ws.php?method=porg.news.getLatest&format=json';
 
     if (fetchRemote($url, $content))
     {
       $all_news = array();
 
-      $topics = json_decode($content, true);
+      $porg_news_getLatest = json_decode($content, true);
 
-      foreach ($topics as $idx => $topic)
+      if (isset($porg_news_getLatest['result']))
       {
+        $topic = $porg_news_getLatest['result'];
+
         $news = array(
           'id' => $topic['topic_id'],
           'subject' => $topic['subject'],
           'posted_on' => $topic['posted_on'],
           'posted' => format_date($topic['posted_on']),
-          'url' => $forum_url.'/viewtopic.php?id='.$topic['topic_id'],
+          'url' => $topic['url'],
         );
-
-        $all_news[] = $news;
       }
 
       if (mkgetdir(dirname($cache_path)))
       {
-        file_put_contents($cache_path, serialize($all_news));
+        file_put_contents($cache_path, serialize($news));
       }
     }
     else
@@ -3585,15 +3658,10 @@ function get_piwigo_news($start, $count)
     }
   }
 
-  if (is_null($all_news))
+  if (is_null($news))
   {
-    $all_news = unserialize(file_get_contents($cache_path));
+    $news = unserialize(file_get_contents($cache_path));
   }
 
-  $news_slice = array_slice($all_news, $start, $count);
-
-  return array(
-    'total_count' => count($all_news),
-    'topics' => $news_slice,
-  );
+  return $news;
 }

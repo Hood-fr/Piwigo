@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Русский [RU]
-Version: 13.4.0
+Version: 14.1.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=434
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -419,3 +419,6 @@ $lang['Invalid username or password!'] = 'Неверное имя пользов
 $lang['generate random password'] = 'генерирование случайного пароля';
 $lang['Password: ********** (no copy by email)'] = 'Пароль: **********  (без копии по электронной почте)';
 $lang['Related albums'] = 'Похожие альбомы';
+$lang['Start-Date'] = 'Дата начала';
+$lang['Album name, 100 &rarr; 10 &rarr; 5 &rarr; 1'] = 'Имя альбома, 100 &rarr; 10 &rarr; 5 &rarr; 1';
+$lang['Album name, 1 &rarr; 5 &rarr; 10 &rarr; 100'] = 'Имя альбома, 1 &rarr; 5 &rarr; 10 &rarr; 100';

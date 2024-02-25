@@ -17,7 +17,7 @@ var light_album_manager = {$light_album_manager};
 
 var x_nb_subcats = "{'%d sub-albums'|@translate}";
 var x_nb_images = "{'%d photos'|@translate}";
-var x_nb_sub_photos = "{'%d lineage pictures'|@translate}";
+var x_nb_sub_photos = "{'%d pictures in sub-albums'|@translate}";
 
 var delay_autoOpen = {$delay_before_autoOpen}
 {/footer_script}
@@ -49,6 +49,7 @@ str_album_name_empty = '{'Album name must not be empty'|@translate|escape:javasc
 
 const add_album_root_title = '{'Create a new album at root'|@translate|escape:javascript}';
 const add_sub_album_of = '{'Create a sub-album of "%s"'|@translate|escape:javascript}';
+const tiptip_locked_album = "{'Locked album'|translate|escape:javascript}";
 {/footer_script}
 
 {combine_script id='jquery.tipTip' load='footer' path='themes/default/js/plugins/jquery.tipTip.minified.js'}
@@ -542,10 +543,6 @@ input[name="position"] {
     display: none;
 }
 
-.badge-container .nb-sub-photos::before {
-  margin-right: 6px;
-}
-
 .badge-container:hover .badge-dropdown {
   display: flex;
 }
@@ -554,7 +551,6 @@ input[name="position"] {
   position: absolute;
   display: none;
   flex-direction: column;
-  background: linear-gradient(130deg, white 0%, white 100%);
   right: 50%;
   top: 30px;
   width: max-content;
@@ -573,7 +569,6 @@ input[name="position"] {
   transform: rotate(0);
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent white transparent;
 }
 
 .badge-dropdown span {
@@ -583,7 +578,8 @@ input[name="position"] {
   margin: 5px 0;
 }
 .badge-dropdown span::before {
-  margin: 0 5px 0 0;
+  margin: 0 8px 0 0;
+  width: 20px;
 }
 
 @media (max-width: 1415px) { 
