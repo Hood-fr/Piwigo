@@ -124,4 +124,12 @@
 [submodule "themes/smartpocket"]
 	path = themes/smartpocket
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/themes/smartpocket
-
+[submodule "themes/elegant"]
+	path = themes/elegant
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/themes/elegant
+[submodule "plugins/check_uploads"]
+	path = plugins/check_uploads
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/check_uploads
+[submodule "plugins/piwigo-openstreetmap"]
+	path = plugins/piwigo-openstreetmap
+	url = git@github.com:Hood-fr/piwigo-openstreetmap.git
