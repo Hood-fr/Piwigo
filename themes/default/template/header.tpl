@@ -6,18 +6,21 @@
 {/if}
 <meta charset="{$CONTENT_ENCODING}">
 <meta name="generator" content="Piwigo (aka PWG), see piwigo.org">
+    
 
-{if isset($meta_ref)} 
 {if isset($INFO_AUTHOR)}
-<meta name="author" content="{$INFO_AUTHOR|strip_tags:false|replace:'"':' '}">
+<meta name="author" content="{$INFO_AUTHOR|@strip_tags:false|@replace:'"':' '}">
 {/if}
 {if isset($related_tags)}
 <meta name="keywords" content="{foreach from=$related_tags item=tag name=tag_loop}{if !$smarty.foreach.tag_loop.first}, {/if}{$tag.name}{/foreach}">
 {/if}
-{if isset($COMMENT_IMG)}
-<meta name="description" content="{$COMMENT_IMG|strip_tags:false|replace:'"':' '}{if isset($INFO_FILE)} - {$INFO_FILE}{/if}">
+{if isset($PLUG_META)}
+<meta name="description" content="{$GALLERY_TITLE} - {$PLUG_META|@strip_tags:false|@replace:'"':''|@replace:'/':'-'}">
 {else}
-<meta name="description" content="{$PAGE_TITLE}{if isset($INFO_FILE)} - {$INFO_FILE}{/if}">
+{if isset($COMMENT_IMG)}
+<meta name="description" content="{$GALLERY_TITLE} - {$PAGE_TITLE}, {$COMMENT_IMG|@strip_tags:false|@replace:'"':''|@replace:'/':'-'}">
+{else}
+<meta name="description" content="{$GALLERY_TITLE} - {$PAGE_TITLE}">
 {/if}
 {/if}
 
