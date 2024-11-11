@@ -646,7 +646,7 @@ foreach (array('first','previous','next','last', 'current') as $which_image)
       );
   }
 }
-if ($conf['picture_download_icon'] and !empty($picture['current']['download_url']))
+if ($conf['picture_download_icon'] and !empty($picture['current']['download_url']) and $user['enabled_high']=='true')
 {
   $template->append('current', array('U_DOWNLOAD' => $picture['current']['download_url']), true);
 
@@ -969,6 +969,15 @@ SELECT id, name, permalink
     }
     $template->append('related_categories', get_cat_display_name($cats) );
   }
+}
+
+if (in_array(strtolower(get_extension($picture['current']['file'])), array('pdf'))) {
+  $template->assign(
+    array(
+      'PDF_VIEWER_FILESIZE_THRESHOLD' => $conf['pdf_viewer_filesize_threshold']*1024,
+      'PDF_NB_PAGES' => count_pdf_pages($picture['current']['path'])
+    )
+  );
 }
 
 // maybe someone wants a special display (call it before page_header so that
