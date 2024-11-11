@@ -10,4 +10,3 @@ else if (isset($_GET['v']) and $_GET['v'] == 4)
   include_once( PHPWG_ROOT_PATH. 'plugins/piwigo-openstreetmap/osmmap4.php');
 else
   include_once( PHPWG_ROOT_PATH. 'plugins/piwigo-openstreetmap/osmmap3.php');
-?>
