@@ -45,9 +45,9 @@ const mainUserUpgradeWebmaster = "{'This user must first be defined as the webma
 const errorStr = "{'an error happened'|@translate|escape:javascript}";
 const copyLinkStr = "{'Copied link'|@translate|escape:javascript}";
 const cantCopy = "{'You cannot copy the password if the connection to this site is not secure.'|@translate|escape:javascript}";
-const validLinkMail = "{'An activation link valid for 1 hour has been sent to "%s". If the user doesn\'t receive the link, you can generate and copy a new one by editing the user and managing her password.'|@translate|escape:javascript}";
+const validLinkMail = "{'An activation link valid for %s has been sent to "%s". If the user doesn\'t receive the link, you can generate and copy a new one by editing the user and managing her password.'|@translate|escape:javascript}";
 const validLinkWithoutMail = "{'Copy the link below and send it to the user so the password can be set.'|@translate|escape:javascript}";
-const errorMailSentMsg = "{'An activation link valid for 1 hour was created but could not be sent. You can now copy the link below and send it to the user.'|@translate|escape:javascript}";
+const errorMailSentMsg = "{'An activation link valid for %s was created but could not be sent. You can now copy the link below and send it to the user.'|@translate|escape:javascript}";
 
 const registered_str = '{"Registered"|@translate|escape:javascript}';
 const last_visit_str = '{"Last visit"|@translate|escape:javascript}';
@@ -1413,6 +1413,10 @@ $(document).ready(function() {
     width:70px;
 }
 
+.user-container-initials .small {
+  font-size: 1em !important;
+}
+
 .user-header-username{
   width: 20%;
   max-width: 195px;
@@ -1966,6 +1970,10 @@ $(document).ready(function() {
     font-weight:bold;
 }
 
+.user-property-initials .small {
+  font-size: 3em !important;
+}
+
 .user-property-username {
     font-weight:bold;
     margin-bottom:45px;
@@ -2223,6 +2231,7 @@ $(document).ready(function() {
     max-width: 200px;
     overflow-x: hidden;
     text-overflow: ellipsis;
+    text-wrap: nowrap;
 }
 
 .edit-username-specifier {
@@ -2578,7 +2587,7 @@ $(document).ready(function() {
     background-color:white;
     padding:30px;
     width:745px;
-    height: 630px;
+    height: 635px;
     flex-direction:column;
     border-radius:15px;
 }
