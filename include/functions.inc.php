@@ -603,6 +603,23 @@ function pwg_activity($object, $object_id, $action, $details=array())
     $user_agent = strip_tags($_SERVER['HTTP_USER_AGENT']);
   }
 
+  // we want to know if the login is automatic with remember_me (auto_login)
+  // or with an authentication key provided in the URL (auth_key_login)
+  if ('user' == $object and 'login' == $action)
+  {
+    if (function_exists('debug_backtrace'))
+    {
+      $called_functions = array_flip(array_column(debug_backtrace(), 'function'));
+      foreach (array('auto_login', 'auth_key_login') as $auth_function)
+      {
+        if (isset($called_functions[$auth_function]))
+        {
+          $details['auth_function'] = $auth_function;
+        }
+      }
+    }
+  }
+
   if ('photo' == $object and 'add' == $action and !isset($details['sync']))
   {
     $details['added_with'] = 'app';
@@ -2742,6 +2759,32 @@ SELECT
   foreach ($activities as $activity)
   {
     @$piwigo_infos['activities'][ $activity['object'] ][ $label_for_system_object_id[ $activity['object_id'] ] ?? 'undefined' ][ $activity['action'] ] = $activity['counter'];
+  }
+
+  $query = '
+SELECT
+    action,
+    occured_on,
+    details
+  FROM '.ACTIVITY_TABLE.'
+  WHERE object = \'system\'
+    AND object_id = '.ACTIVITY_SYSTEM_CORE.'
+    AND action IN (\'update\', \'autoupdate\')
+  ORDER BY activity_id ASC
+;';
+  $updates = query2array($query);
+  foreach ($updates as $update)
+  {
+    $details = safe_unserialize($update['details']);
+    if (isset($details['from_version']) and isset($details['to_version']))
+    {
+      @$piwigo_infos['updates'][] = array(
+        'action' => $update['action'],
+        'occured_on' => $update['occured_on'],
+        'from_version' => $details['from_version'],
+        'to_version' => $details['to_version'],
+      );
+    }
   }
 
   $watermark = ImageStdParams::get_watermark();

@@ -76,13 +76,16 @@ function process_password_request()
     return false;
   }
 
-  $generate_link = generate_reset_password_link($user_id);
+  $generate_link = generate_password_link($user_id);
   
-  $userdata['activation_key'] = $generate_link['activation_key'];
+  // $userdata['activation_key'] = $generate_link['activation_key'];
 
-  $email_params = pwg_generate_reset_password_mail($userdata['username'], $generate_link['reset_password_link'], $conf['gallery_title']);
+  switch_lang_to($userdata['language']);
+  $email_params = pwg_generate_reset_password_mail($userdata['username'], $generate_link['password_link'], $conf['gallery_title'], $generate_link['time_validation']);
+  $send_email = pwg_mail($userdata['email'], $email_params);
+  switch_lang_back();
 
-  if (pwg_mail($userdata['email'], $email_params))
+  if ($send_email)
   {
     $page['infos'][] = l10n('Check your email for the confirmation link');
     return true;
@@ -231,7 +234,7 @@ if (isset($_GET['key']) and !isset($_POST['submit']))
     $userdata = getuserdata($user_id, false);
     $page['username'] = $userdata['username'];
     $template->assign('key', $_GET['key']);
-    $first_login = first_connexion($user_id);
+    $first_login = has_already_logged_in($user_id);
 
     if (!isset($page['action']))
     {

@@ -1330,7 +1330,14 @@ function fill_container_user_info(container, user_index) {
         kingToDisplay.tipTip();
         container.find(".user-container-username").append(kingToDisplay);
     }
-    container.find(".user-container-initials span").html(get_initials(user.username)).addClass(color_icons[user.id % 5]);
+    const initial_to_fill = get_initials(user.username);
+    const initialSpan = container.find(".user-container-initials span");
+    initialSpan.html(initial_to_fill).addClass(color_icons[user.id % 5]);
+    if (initial_to_fill.length > 1) {
+        initialSpan.addClass('small');
+    } else {
+        initialSpan.removeClass('small');
+    }
     container.find(".user-container-status span").html(status_to_str[user.status]);
     container.find(".user-container-email span").html(user.email);
     generate_groups(container, user.groups);
@@ -1397,10 +1404,16 @@ function fill_user_edit_summary(user_to_edit, pop_in, isGuest) {
     if (isGuest) {
       pop_in.find('.user-property-initials span').removeClass(color_icons.join(' ')).addClass(color_icons[user_to_edit.id % 5]);
     } else {
-      pop_in.find('.user-property-initials span').html(get_initials(user_to_edit.username)).removeClass(color_icons.join(' ')).addClass(color_icons[user_to_edit.id % 5]);
+        const initial_to_fill = get_initials(user_to_edit.username);
+        const initialSpan = pop_in.find('.user-property-initials span');
+        initialSpan.html(initial_to_fill).removeClass(color_icons.join(' ')).addClass(color_icons[user_to_edit.id % 5]);
+        if (initial_to_fill.length > 1) {
+            initialSpan.addClass('small');
+        } else {
+            initialSpan.removeClass('small');
+        }
     }
-    pop_in.find('.user-property-username span:first').html(user_to_edit.username); 
-    
+    pop_in.find('.user-property-username span:first').html(user_to_edit.username).tipTip({content: user_to_edit.username});
     
     if (user_to_edit.id === connected_user || user_to_edit.id === 1) {
         pop_in.find('.user-property-username .edit-username-specifier').show();
@@ -2215,8 +2228,9 @@ function send_new_user_password(user_id, mail) {
     $.ajax({
         url: "ws.php?format=json",
         dataType: "json",
+        type: "POST",
         data:{
-            method: 'pwg.users.generateResetPasswordLink',
+            method: 'pwg.users.generatePasswordLink',
             user_id: user_id,
             send_by_mail: send_by_mail,
             pwg_token: pwg_token
@@ -2228,12 +2242,14 @@ function send_new_user_password(user_id, mail) {
                 $('#AddUserFieldContainer').hide();
                 $('#AddUserSuccessContainer').fadeIn();
                 $('#AddUserPasswordLink').val(response.result.generated_link).trigger('focus');
-                $('#AddUserTextField').html(send_by_mail ? sprintf(validLinkMail, `<b>${mail}</b>`) : validLinkWithoutMail);
+                $('#AddUserTextField').html(send_by_mail 
+                    ? sprintf(validLinkMail, response.result.time_validation, `<b>${mail}</b>`) 
+                    : sprintf(validLinkWithoutMail, response.result.time_validation));
 
                 if(send_by_mail && !response.result.send_by_mail) {
                     $('#AddUserUpdated').removeClass('icon-green border-green icon-ok').addClass('icon-red-error icon-cancel');
                     $('#AddUserUpdatedText').html(errorMailSent);
-                    $('#AddUserTextField').html(errorMailSentMsg);
+                    $('#AddUserTextField').html(sprintf(errorMailSentMsg, response.result.time_validation));
                 } else if (send_by_mail && response.result.send_by_mail) {
                     password_container.hide();
                 }
@@ -2316,8 +2332,9 @@ function send_link_password(email, username, user_id, send_by_mail) {
     $.ajax({
         url: "ws.php?format=json",
         dataType: "json",
+        type: "POST",
         data: {
-            method: 'pwg.users.generateResetPasswordLink',
+            method: 'pwg.users.generatePasswordLink',
             user_id: user_id,
             send_by_mail: send_by_mail,
             pwg_token: pwg_token
@@ -2329,7 +2346,10 @@ function send_link_password(email, username, user_id, send_by_mail) {
                     if(response.result.send_by_mail) {
                         $('#result_send_mail').removeClass('update-password-fail icon-red').addClass('update-password-success icon-green');
                         $('#icon_password_msg_result_mail').removeClass('icon-cancel').addClass('icon-ok');
-                        $('#password_msg_result_mail').html(sprintf(mailSentAt, username, email));
+                        const curr_mail = $('.user-property-email .user-property-input').val().length 
+                            ? $('.user-property-email .user-property-input').val() 
+                            : email;
+                        $('#password_msg_result_mail').html(sprintf(mailSentAt, username, curr_mail));
                     } else {
                         $('#result_send_mail').removeClass('update-password-success icon-green').addClass('update-password-fail icon-red');
                         $('#icon_password_msg_result_mail').removeClass('icon-ok').addClass('icon-cancel');

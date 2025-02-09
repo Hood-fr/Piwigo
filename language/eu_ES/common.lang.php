@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Euskara [ES]
-Version: 2.9.4
+Version: 15.3.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=725
 Author: Piwigo team
 Author URI: http://piwigo.org
