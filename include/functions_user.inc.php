@@ -724,6 +724,8 @@ SELECT *
       unset($cache['default_user']['user_id']);
       unset($cache['default_user']['status']);
       unset($cache['default_user']['registration_date']);
+      unset($cache['default_user']['last_visit']);
+      unset($cache['default_user']['last_visit_from_history']);
     }
     else
     {
@@ -1738,14 +1740,19 @@ function deactivate_password_reset_key($user_id)
  *
  * @since 15
  * @param int $user_id
- * @param string $user_email
- * @return array activation_key and reset password link 
+ * @param boolean $first_login
+ * @return array time_validation and password link 
  */
-function generate_reset_password_link($user_id)
+function generate_password_link($user_id, $first_login=false)
 {
+  global $conf;
+
   $activation_key = generate_key(20);
 
-  list($expire) = pwg_db_fetch_row(pwg_query('SELECT ADDDATE(NOW(), INTERVAL 1 HOUR)'));
+  $duration = $first_login
+  ? $conf['password_activation_duration'] 
+  : $conf['password_reset_duration'];
+  list($expire) = pwg_db_fetch_row(pwg_query('SELECT ADDDATE(NOW(), INTERVAL '. $duration .' SECOND)'));
 
   single_update(
     USER_INFOS_TABLE,
@@ -1758,13 +1765,20 @@ function generate_reset_password_link($user_id)
 
     set_make_full_url();
 
-    $reset_password_link = get_root_url().'password.php?key='.$activation_key;
+    $password_link = get_root_url().'password.php?key='.$activation_key;
 
     unset_make_full_url();
 
+    $time_validation = time_since(
+      strtotime('now -'.$duration.' second'),
+      'second',
+      null,
+      false
+    );
+
     return array(
-      'activation_key' => $activation_key,
-      'reset_password_link' => $reset_password_link,
+      'time_validation' => $time_validation,
+      'password_link' => $password_link,
     );
 }
 
@@ -1913,7 +1927,7 @@ function userprefs_get_param($param, $default_value=null)
  * @param int $user_id
  * @return bool true if first connexion else false 
  */
-function first_connexion($user_id)
+function has_already_logged_in($user_id)
 {
   $query = '
 SELECT COUNT(*)
