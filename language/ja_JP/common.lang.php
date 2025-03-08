@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: 日本語 [JP]
-Version: 15.3.0
+Version: 15.4.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=425
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -427,3 +427,6 @@ $lang['Album description'] = 'アルバムの説明';
 $lang['Album title'] = 'アルバムのタイトル';
 $lang['Clear'] = '条件を初期化';
 $lang['Search in :'] = '以下から検索する';
+$lang['Empty filters'] = 'フィルターをクリア';
+$lang['You can try to edit your filters and perform a new search.'] = 'フィルターを変更して新たに検索を行うことができます。';
+$lang['No results are available.'] = '見つかりませんでした。';
