@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Nederlands [NL]
-Version: 15.4.0
+Version: 15.5.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=429
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -473,3 +473,4 @@ $lang['Custom dates'] = 'Aangepaste data';
 $lang['There are no authors available for the photos currently filtered'] = 'Er zijn momenteel geen auteurs beschikbaar voor de gefilterde foto\'s';
 $lang['There are no creation dates available for the photos currently filtered'] = 'Er zijn momenteel geen aanmaakdata beschikbaar voor de gefilterde foto\'s';
 $lang['There are no tags available for the photos currently filtered'] = 'Er zijn momenteel geen tags beschikbaar voor de gefilterde foto\'s';
+$lang['Set your password below.'] = 'Maak je wachtwoord hieronder';
