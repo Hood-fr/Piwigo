@@ -2228,7 +2228,12 @@ function pwg_URL()
  */
 function invalidate_user_cache($full = true)
 {
-  global $persistent_cache;
+  global $persistent_cache, $logger;
+
+  if (isset($logger) and gettype($logger) == 'object' and get_class($logger) == 'Logger')
+  {
+    $logger->info(__FUNCTION__.' called');
+  }
 
   if ($full)
   {
