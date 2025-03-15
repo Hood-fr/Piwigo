@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Íslenska [IS]
-Version: 15.4.0
+Version: 15.5.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=518
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -453,3 +453,4 @@ $lang['last 12 months'] = 'Síðustu 12 mánuðir';
 $lang['There are no authors available for the photos currently filtered'] = 'Það eru engir höfundar tiltækir fyrir síuðu myndirnar';
 $lang['There are no creation dates available for the photos currently filtered'] = 'Það eru engar sköpunardagsetningar í boði fyrir síuðu myndirnar';
 $lang['There are no tags available for the photos currently filtered'] = 'Það eru engin merki tiltæk fyrir síuðu myndirnar';
+$lang['Set your password below.'] = 'Stilltu lykilorðið þitt hér að neðan.';

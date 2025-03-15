@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Estonian [EE]
-Version: 15.4.0
+Version: 15.5.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=569
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -475,3 +475,4 @@ $lang['Only the first %d albums are displayed, out of %d.'] = 'Kuvatakse ainult 
 $lang['Custom dates'] = 'Kohandatud kuupäevad';
 $lang['Click here to display it'] = 'Selle kuvamiseks klõpsake siin';
 $lang['Album already selected'] = 'Album on juba valitud';
+$lang['Set your password below.'] = 'Määrake allpool oma parool.';
