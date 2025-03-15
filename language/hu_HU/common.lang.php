@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Magyar [HU]
-Version: 15.4.0
+Version: 15.5.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=423
 Author: Piwigo team
 Author URI: http://piwigo.org
