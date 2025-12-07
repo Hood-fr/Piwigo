@@ -359,7 +359,7 @@ $lang['User status'] = '用戶狀態';
 $lang['user_status_admin'] = '管理員';
 $lang['user_status_generic'] = '一般用戶';
 $lang['user_status_guest'] = '訪客';
-$lang['user_status_normal'] = '使用者';
+
 $lang['user_status_webmaster'] = '網管';
 $lang['Virtual album'] = '虛擬相冊';
 $lang['Waiting'] = '等待';
@@ -1398,3 +1398,17 @@ $lang['This link is valid for %s. After this time, you will need to request a ne
 $lang['To set your password, visit the following address:'] = '若您想修改密碼，請前往以下的地址：';
 $lang['An activation link valid for %s has been sent to "%s". If the user doesn\'t receive the link, you can generate and copy a new one by editing the user and managing her password.'] = '給 %s 的啟用連結已經寄到 "%s" 了。如果該使用者沒有收到，您可以編輯使用者資訊、管理他的密碼，便能重新產生新的連結，然後再複製給他。';
 $lang['A photo library administrator has created the following account for you:'] = '照片庫的管理員為您建立了以下的帳號：';
+$lang['Welcome to %s'] = '歡迎來到 %s';
+$lang['%d photos were moved from the upload lounge to their albums'] = '%d 張照片已從上傳區移至各自的相簿中';
+$lang['Are you sure you want to delete "%d" comments?'] = '您確定要刪除 "%d" 則評論嗎？';
+$lang['Are you sure you want to delete comment #%s?'] = '你確定要刪除 #%s 這則評論嗎？';
+$lang['Empty lounge'] = '清空上傳區';
+$lang['If a photo in this album has the same filename, update the file without changing the photo\'s properties'] = '若此相簿中的照片具有相同檔案名稱，將更新檔案內容，但不會變更照片的屬性';
+$lang['No comments selected, no actions possible.'] = '未選定任何評論，無法執行。';
+$lang['Save all photos'] = '儲存所有照片';
+$lang['The comment has been validated.'] = '已批准此評論。';
+$lang['The comments have been validated.'] = '已批准這些評論。';
+$lang['There is currently %d photos in the lounge (upload buffer)'] = '目前在上傳區中共有 %d 張照片';
+$lang['Use standard Piwigo template for common pages.'] = '套用標準的 Piwigo 模板至一般頁面。';
+$lang['We have found %d duplicate paths. Details provided by plugin Check Uploads'] = '我們發現 %d 個重覆的路徑。Check Uploads 插件將提供更詳細的資訊';
+$lang['When enabled, a common template is used for the login, registration and forgotten password pages, regardless of the theme. Some themes might use these templates even if you uncheck this option'] = '啟用此功能後，登入、註冊及忘記密碼頁面將採用共通模板，不受主題設定影響。部分主題即使您取消勾選此選項，仍可能使用這些模板。';

@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: 简体中文 [CN]
-Version: 15.5.0
+Version: auto
 Language URI: http://piwigo.org/ext/extension_view.php?eid=438
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -136,7 +136,7 @@ $lang['created after %s (%s)'] = '创建于 %s (%s) 之后';
 $lang['created before %s (%s)'] = '创建于 %s (%s) 之前';
 $lang['created between %s (%s) and %s (%s)'] = '创建于 %s (%s) 和 le %s (%s) 之间';
 $lang['created on %s'] = '创建于 %s';
-$lang['Customize'] = '自定义';
+
 $lang['Your Gallery Customization'] = '自定义页标题';
 $lang['day'][0] = '星期日';
 $lang['day'][1] = '星期一';
@@ -165,7 +165,7 @@ $lang['Hello'] = '您好';
 $lang['available for administrators only'] = '需要管理员权限';
 $lang['display this album'] = '显示此相册根目录下的图片';
 $lang['display last user comments'] = '显示最新用户评论';
-$lang['customize the appareance of the gallery'] = '界面个性化设置';
+
 $lang['search'] = '搜索';
 $lang['Home'] = '主页';
 $lang['in this album'] = '在此相册里';
@@ -457,3 +457,84 @@ $lang['Custom dates'] = '自定义日期';
 $lang['There are no authors available for the photos currently filtered'] = '当前筛选的照片没有可用的作者信息';
 $lang['There are no creation dates available for the photos currently filtered'] = '当前筛选的照片没有可用的创建日期';
 $lang['There are no tags available for the photos currently filtered'] = '当前筛选的照片没有可用的标签';
+$lang['Set your password below.'] = '请在下方的输入框中设置密码。';
+$lang['Your API key will expire in %d day.'] = '您的API密钥将在%d天后过期。';
+$lang['Your API key will expire in %d days.'] = '您的API密钥将在%d天后过期。';
+$lang['Your API key will expire soon'] = '您的API密钥即将过期';
+$lang['Your changes have been applied.'] = '您的更改已应用。';
+$lang['Your password was successfully reset'] = '您的密码已重置成功';
+$lang['Your password was successfully set'] = '您的密码已设置成功';
+$lang['must not be empty'] = '不能为空';
+$lang['you must choose a date'] = '您必须选择一个日期';
+$lang['Options'] = '选项';
+$lang['Return to <a href="identification.php" title="Sign in">Sign in</a>'] = '返回 <a href="identification.php" title="Sign in">登录</a>页面';
+$lang['Return to the gallery'] = '返回相册';
+$lang['Revoke'] = '撤销';
+$lang['Revoked'] = '已撤销';
+$lang['Set my password'] = '设置我的密码';
+$lang['Show expired keys'] = '显示已过期密钥';
+$lang['The api key has been successfully created.'] = 'API密钥已成功创建。';
+$lang['The email %s will be used to notify you when your API key is about to expire.'] = '当您的API密钥即将过期时，系统将通过邮箱%s通知您。';
+$lang['The secret key can no longer be displayed.'] = '私钥将无法再次显示。';
+$lang['This API key was manually revoked on %s'] = '此API密钥已于%s被手动撤销';
+$lang['To continue using the API, please renew your key before it expires.'] = '如需继续使用API，请在密钥过期前进行续期。';
+$lang['To manage your API keys, please log in with your username/password.'] = '如需管理您的API密钥，请使用用户名/密码登录。';
+$lang['When enabled, a common template is used for the login and registration pages, regardless of the theme.'] = '启用后，无论使用何种主题，登录和注册页面都将使用通用模板。';
+$lang['You can manage your API keys in your <a href="%s">account settings.</a>'] = '您可以在 <a href="%s">账户设置</a>中管理您的API密钥。';
+$lang['You have no email address, so you will not be notified when your API key is about to expire.'] = '您未设置邮箱地址，因此当您的API密钥即将过期时，系统将无法通知您。';
+$lang['Custom date'] = '自定义日期';
+$lang['Do you really want to revoke the "%s" API key?'] = '您确定要撤销"%s" 这个API密钥吗？';
+$lang['Don\'t have an account yet ?'] = '还没有账户？';
+$lang['Done'] = '完成';
+$lang['Duration'] = '持续时间';
+$lang['Edit API Key'] = '编辑API密钥';
+$lang['Expert mode'] = '专家模式';
+$lang['Expired'] = '已过期';
+$lang['Expired on'] = '过期于';
+$lang['Expires in'] = '过期时间';
+$lang['Generate API Key'] = '生成API密钥';
+$lang['Generate key'] = '生成秘钥';
+$lang['Hello <em>%s</em>, enter your new password below.'] = '您好 <em>%s</em>, 请在下方输入您的新密码。';
+$lang['Hide expired keys'] = '隐藏已过期的密钥';
+$lang['Impossible to copy automatically. Please copy manually.'] = '无法自动复制，请手动复制。';
+$lang['Last use'] = '最后使用时间';
+$lang['Manage your account'] = '最后使用时间';
+$lang['Never'] = '永不';
+$lang['New API Key'] = '新API密钥';
+$lang['No expiration'] = '永不过期';
+$lang['3xlarge'] = '3XL - 超大';
+$lang['4xlarge'] = '4XL - 巨大';
+$lang['API Key has been successfully edited.'] = 'API密钥已成功编辑。';
+$lang['API Key has been successfully revoked.'] = 'API密钥已成功撤销。';
+$lang['API Key name'] = 'API密钥名称';
+$lang['API Key not found'] = '未找到API密钥';
+$lang['API Keys'] = 'API密钥';
+$lang['Account'] = '账户';
+$lang['Already have an account ?'] = '已有账户？';
+$lang['An email has been sent with a link to reset your password'] = '已发送一封包含重置密码链接的电子邮件';
+$lang['An error has occured please got back to <a href="identification.php" title="Sign in">Sign in</a> or <a href="register.php">Register</a>'] = '发生错误，请返回 <a href="identification.php" title="Sign in">登录</a> or <a href="register.php">注册</a>';
+$lang['Change your password'] = '更改密码';
+$lang['Check your inbox'] = '查看您的收件箱';
+$lang['Choose how you want to see your gallery'] = '选择您想要查看相册的方式';
+$lang['Confirm my new password'] = '确认我的新密码';
+$lang['Confirm new password'] = '确认新密码';
+$lang['Create API Keys to secure your acount'] = '创建API密钥以保护您的账户安全';
+$lang['Create a new API key to secure your account.'] = '创建一个新的API密钥以保护您的账户安全。';
+$lang['Create an account'] = '创建账户';
+$lang['Created at'] = '创建时间';
+$lang['An email has been sent with a verification code'] = '已发送一封包含验证码的电子邮件';
+$lang['ID copied.'] = 'ID已复制。';
+$lang['If you do not receive the email, please contact your webmaster.'] = '如果您未收到电子邮件，请联系您的网站管理员。';
+$lang['Invalid verification code'] = '验证码无效';
+$lang['Save your ID and secret'] = '保存您的ID和密钥';
+$lang['Secret copied. Keep it in a safe place.'] = '密钥已复制。请将其妥善保管。';
+$lang['The secret will no longer be displayed. You must copy it to continue.'] = '密钥将不再显示。您必须复制它才能继续操作。';
+$lang['Verification code'] = '验证码';
+$lang['Verify'] = '验证';
+$lang['If you changed your password because you think it was stolen, we recommend revoking your %d API keys <a href="%s">in your profile</a>.'] = '如果您因认为密码被盗而更改了密码，我们建议您在<a href="%s">个人资料</a> 中撤销您的%d个API 密钥。';
+$lang['Here is your verification code:'] = '这是您的验证码：';
+$lang['If this wasn\'t you, please change your password immediately or contact your webmaster.'] = '如果不是您本人操作，请立即更改密码或联系网站管理员。';
+$lang['Too many attempts, please try later..'] = '尝试次数过多，请稍后再试。';
+$lang['Verification successful! You can now choose a new password.'] = '验证成功！您现在可以选择一个新密码。';
+$lang['Your verification code'] = '您的验证码';
+$lang['edit user preferences'] = '编辑用户偏好设置';

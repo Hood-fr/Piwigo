@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: English [GB]
-Version: 15.5.0
+Version: 16.1.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=716
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -27,8 +27,8 @@ $lang['All tags'] = 'All tags';
 $lang['About Piwigo'] = 'About Piwigo';
 $lang['An administrator must authorize your comment before it is visible.'] = "An administrator must authorise your comment before it becomes visible.";
 $lang['Any tag'] = 'Any tag';
-$lang['customize the appareance of the gallery'] = "customise the look of the gallery";
-$lang['Customize'] = "Customise";
+
+
 $lang['delete all photos from your favorites'] = "delete all photos from your favourites";
 $lang['delete this photo from your favorites'] = "delete this photo from your favourites";
 $lang['Favorites'] = "Favourites";

@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Bahasa Indonesia [ID]
-Version: 15.5.0
+Version: 16.1.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=707
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -117,7 +117,7 @@ $lang['created after %s (%s)'] = 'dibuat setelah %s (%s)';
 $lang['created before %s (%s)'] = 'dibuat sebelum %s (%s)';
 $lang['created between %s (%s) and %s (%s)'] = 'dibuat diantara %s (%s) dan  %s (%s)';
 $lang['created on %s'] = 'dibuat pada  %s';
-$lang['customize the appareance of the gallery'] = 'kostumisasi tampilan galeri';
+
 $lang['delete all photos from your favorites'] = 'hapus semua foto dari favorit';
 $lang['delete this photo from your favorites'] = 'hapus foto ini dari favorit';
 $lang['descending'] = 'meningkat';
@@ -328,7 +328,7 @@ $lang['File'] = 'Dokumen';
 $lang['File name'] = 'Nama dokumen';
 $lang['Filesize'] = 'Ukuran dokumen';
 $lang['Current password is wrong'] = 'Kata sandi sat ini salah';
-$lang['Customize'] = 'Kostumisasi';
+
 $lang['Delete'] = 'Hapus';
 $lang['Desktop'] = 'Deskop';
 $lang['Dimensions'] = 'Dimensi';

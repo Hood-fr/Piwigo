@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: עברית [IL]
-Version: 15.5.0
+Version: auto
 Language URI: http://piwigo.org/ext/extension_view.php?eid=457
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -133,7 +133,7 @@ $lang['created after %s (%s)'] = 'נוצר אחרי %s (%s)';
 $lang['created before %s (%s)'] = 'נוצר לפני %s (%s)';
 $lang['created between %s (%s) and %s (%s)'] = 'נוצר בין %s (%s) ל %s (%s)';
 $lang['created on %s'] = 'נוצר ב %s';
-$lang['Customize'] = 'התאמה אישית';
+
 $lang['Your Gallery Customization'] = 'התאמה אישית של הגלריה שלך';
 $lang['day'][0] = "יום ראשון";
 $lang['day'][1] = "יום שני";
@@ -162,7 +162,7 @@ $lang['Hello'] = 'שלום';
 $lang['available for administrators only'] = 'זמין לאדמינים בלבד';
 $lang['display this album'] = 'הצג אלבום זה';
 $lang['display last user comments'] = 'הצג את תגובות המשתמשים האחרונות';
-$lang['customize the appareance of the gallery'] = 'התאם אישית את מראה הגלריה';
+
 $lang['search'] = 'חפש';
 $lang['Home'] = 'בית';
 $lang['Identification'] = "הזדהה";
@@ -462,3 +462,83 @@ $lang['Album name, 100 &rarr; 10 &rarr; 5 &rarr; 1'] = 'שם אלבום, 100 &ra
 $lang['Empty filters'] = 'נקה סינון';
 $lang['Validate'] = 'אמת';
 $lang['Set your password below.'] = 'הגדירו סיסמתכם מטה.';
+$lang['Your API key will expire in %d day.'] = 'מפתח ה-API שלך יפוג בעוד %d יום.';
+$lang['Your API key will expire in %d days.'] = 'מפתח ה-API שלך יפוג בעוד %d ימים.';
+$lang['Your API key will expire soon'] = 'מפתח ה-API שלך עומד לפוג בקרוב';
+$lang['Your changes have been applied.'] = 'השינויים שלך הוחלו.';
+$lang['Your password was successfully reset'] = 'הסיסמה שלך אופסה בהצלחה';
+$lang['Your password was successfully set'] = 'הסיסמה שלך הוגדרה בהצלחה';
+$lang['must not be empty'] = 'אסור שיהיה ריק';
+$lang['you must choose a date'] = 'עליך לבחור תאריך';
+$lang['Options'] = 'אפשרויות';
+$lang['Return to <a href="identification.php" title="Sign in">Sign in</a>'] = 'חזור אל<a href="identification.php" title="Sign in">התחברות</a>';
+$lang['Return to the gallery'] = 'חזור לגלריה';
+$lang['Revoke'] = 'בטל הרשאה';
+$lang['Revoked'] = 'בוטלה ההרשאה';
+$lang['Set my password'] = 'קבע את הסיסמה שלי';
+$lang['Show expired keys'] = 'הצג מפתחות שפגו';
+$lang['The api key has been successfully created.'] = 'מפתח ה-API נוצר בהצלחה.';
+$lang['The email %s will be used to notify you when your API key is about to expire.'] = 'הדוא"ל %s ישמש להודעה אליך כאשר מפתח ה-API שלך עומד לפוג.';
+$lang['The secret key can no longer be displayed.'] = 'לא ניתן עוד להציג את מפתח הסוד.';
+$lang['This API key was manually revoked on %s'] = 'מפתח ה-API הזה בוטל ידנית ב-%s';
+$lang['To continue using the API, please renew your key before it expires.'] = 'כדי להמשיך להשתמש ב-API, נא לחדש את מפתחך לפני שיפוג.';
+$lang['To manage your API keys, please log in with your username/password.'] = 'כדי לנהל את מפתחות ה-API שלך, אנא התחבר עם שם המשתמש/סיסמה שלך.';
+$lang['When enabled, a common template is used for the login and registration pages, regardless of the theme.'] = 'כאשר מופעל, תבנית משותפת נמצאת בשימוש עבור דפי ההתחברות וההרשמה, ללא קשר לערכת הנושא.';
+$lang['You can manage your API keys in your <a href="%s">account settings.</a>'] = 'באפשרותך לנהל את מפתחות ה-API שלך ב<a href="%s">הגדרות החשבון שלך.</a>';
+$lang['You have no email address, so you will not be notified when your API key is about to expire.'] = 'אין לך כתובת דוא"ל, ולכן לא תקבל הודעה כאשר מפתח ה-API שלך עומד לפוג.';
+$lang['Custom date'] = 'תאריך מותאם אישית';
+$lang['Do you really want to revoke the "%s" API key?'] = 'האם אתה באמת רוצה לבטל את מפתח ה-API "%s"?';
+$lang['Don\'t have an account yet ?'] = 'עדיין אין לך חשבון?';
+$lang['Done'] = 'גמור';
+$lang['Duration'] = 'משך זמן';
+$lang['Edit API Key'] = 'ערוך מפתח API';
+$lang['Expert mode'] = 'מצב מומחה';
+$lang['Expired'] = 'פג תוקף';
+$lang['Expired on'] = 'פג תוקף בתאריך';
+$lang['Expires in'] = 'פג תוקף בעוד';
+$lang['Generate API Key'] = 'צור מפתח API';
+$lang['Generate key'] = 'צור מפתח';
+$lang['Hello <em>%s</em>, enter your new password below.'] = 'שלום<em>%s</em>, הזן את סיסמתך החדשה למטה.';
+$lang['Hide expired keys'] = 'הסתר מפתחות שפג תוקפם';
+$lang['Impossible to copy automatically. Please copy manually.'] = 'בלתי אפשרי להעתיק אוטומטית. אנא העתק באופן ידני.';
+$lang['Last use'] = 'שימוש אחרון';
+$lang['Manage your account'] = 'נהל את חשבונך';
+$lang['Never'] = 'לעולם';
+$lang['New API Key'] = 'מפתח API חדש';
+$lang['No expiration'] = 'ללא תוקף';
+$lang['3xlarge'] = '3XL - ענק מאוד';
+$lang['4xlarge'] = '4XL - עצום';
+$lang['API Key has been successfully edited.'] = 'מפתח API נערך בהצלחה.';
+$lang['API Key has been successfully revoked.'] = 'מפתח API בוטל בהצלחה.';
+$lang['API Key name'] = 'שם מפתח API';
+$lang['API Key not found'] = 'מפתח API לא נמצא';
+$lang['API Keys'] = 'מפתחות API';
+$lang['Account'] = 'חשבון';
+$lang['Already have an account ?'] = 'כבר יש לך חשבון?';
+$lang['An email has been sent with a link to reset your password'] = 'נשלח אימייל עם קישור לאיפוס הסיסמה שלך';
+$lang['An error has occured please got back to <a href="identification.php" title="Sign in">Sign in</a> or <a href="register.php">Register</a>'] = 'אירעה שגיאה, אנא חזור ל<a href="identification.php" title="Sign in">התחברות</a> או <a href="register.php">הרשמה</a>';
+$lang['Change your password'] = 'שנה את הסיסמה שלך';
+$lang['Check your inbox'] = 'בדוק את תיבת הדואר שלך';
+$lang['Choose how you want to see your gallery'] = 'בחר כיצד ברצונך לראות את הגלריה שלך';
+$lang['Confirm my new password'] = 'אשר את הסיסמה החדשה שלי';
+$lang['Confirm new password'] = 'אשר סיסמה חדשה';
+$lang['Create API Keys to secure your acount'] = 'צור מפתחות API כדי לאבטח את חשבונך';
+$lang['Create a new API key to secure your account.'] = 'צור מפתח API חדש כדי לאבטח את חשבונך.';
+$lang['Create an account'] = 'צור חשבון';
+$lang['Created at'] = 'נוצר בתאריך';
+$lang['An email has been sent with a verification code'] = 'נשלחה הודעת דוא"ל עם קוד אימות';
+$lang['ID copied.'] = 'המזהה הועתק.';
+$lang['If you do not receive the email, please contact your webmaster.'] = 'אם אינך מקבל את הדוא"ל, נא ליצור קשר עם מנהל האתר שלך.';
+$lang['Invalid verification code'] = 'קוד אימות לא חוקי';
+$lang['Save your ID and secret'] = 'שמור את המזהה והסוד שלך';
+$lang['Secret copied. Keep it in a safe place.'] = 'הסוד הועתק. שמור אותו במקום בטוח.';
+$lang['The secret will no longer be displayed. You must copy it to continue.'] = 'הסוד לא יוצג יותר. עליך להעתיק אותו כדי להמשיך.';
+$lang['Verification code'] = 'קוד אימות';
+$lang['Verify'] = 'אמת';
+$lang['Here is your verification code:'] = 'הנה קוד האימות שלך:';
+$lang['If this wasn\'t you, please change your password immediately or contact your webmaster.'] = 'אם זה לא היית אתה, אנא שנה את סיסמתך מיד או צור קשר עם מנהל האתר שלך.';
+$lang['If you changed your password because you think it was stolen, we recommend revoking your %d API keys <a href="%s">in your profile</a>.'] = 'אם שינית את סיסמתך מפני שחשבת שהיא נגנבה, אנו ממליצים לבטל את מפתחות ה-API שלך במספר %d<a href="%s">בפרופיל שלך</a>.';
+$lang['Too many attempts, please try later..'] = 'נעשו יותר מדי ניסיונות, אנא נסה שוב מאוחר יותר.';
+$lang['Verification successful! You can now choose a new password.'] = 'אימות הצליח! כעת תוכל לבחור סיסמה חדשה.';
+$lang['Your verification code'] = 'קוד האימות שלך';
+$lang['edit user preferences'] = 'ערוך העדפות משתמש';
