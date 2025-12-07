@@ -603,6 +603,12 @@ function pwg_activity($object, $object_id, $action, $details=array())
     $user_agent = strip_tags($_SERVER['HTTP_USER_AGENT']);
   }
 
+  if (isset($_SESSION['connected_with']) and 'api_key' === $_SESSION['connected_with'] and isset($_SERVER['HTTP_USER_AGENT']))
+  {
+    $details['connected_with'] = 'api_key';
+    $user_agent = strip_tags($_SERVER['HTTP_USER_AGENT']);
+  }
+
   // we want to know if the login is automatic with remember_me (auto_login)
   // or with an authentication key provided in the URL (auth_key_login)
   if ('user' == $object and 'login' == $action)
@@ -792,15 +798,14 @@ function str2DateTime($original, $format=null)
 }
 
 /**
- * returns a formatted and localized date for display
+ * returns a formatted and localized date for display (LEGACY use format_date)
  *
  * @param int|string timestamp or datetime string
  * @param array $show list of components displayed, default is ['day_name', 'day', 'month', 'year']
- *    THIS PARAMETER IS PLANNED TO CHANGE
  * @param string $format input format respecting date() syntax
  * @return string
  */
-function format_date($original, $show=null, $format=null)
+function format_date_legacy($original, $show=null, $format=null)
 {
   global $lang;
 
@@ -815,8 +820,6 @@ function format_date($original, $show=null, $format=null)
   {
     $show = array('day_name', 'day', 'month', 'year');
   }
-
-  // TODO use IntlDateFormatter for proper i18n
 
   $print = '';
   if (in_array('day_name', $show))
@@ -841,6 +844,53 @@ function format_date($original, $show=null, $format=null)
   }
 
   return trim($print);
+}
+
+/**
+ * returns a formatted and localized date for display
+ *
+ * @param int|string timestamp or datetime string
+ * @param array $show list of components displayed, default is ['day_name', 'day', 'month', 'year']
+ *    THIS PARAMETER IS PLANNED TO CHANGE
+ * @param string $format input format respecting date() syntax
+ * @return string
+ * @since 16
+ */
+function format_date($original, $show=null, $format=null)
+{
+  global $user;
+
+  $date = str2DateTime($original, $format);
+
+  if (!$date)
+  {
+    return l10n('N/A');
+  }
+
+  if ($show === null || $show === true)
+  {
+    $show = array('day_name', 'day', 'month', 'year');
+  }
+
+  // use IntlDateFormatter for proper i18n need pkg php-intl
+  if (class_exists('IntlDateFormatter')
+    and in_array('year', $show)
+    and in_array('month', $show)
+  )
+  {
+    $timeType = in_array('time', $show) ? IntlDateFormatter::MEDIUM : IntlDateFormatter::NONE;
+    $dateType = IntlDateFormatter::FULL;
+
+    if (!in_array('day_name', $show))
+    {
+      $dateType = IntlDateFormatter::LONG;
+    }
+
+    $fmt = new IntlDateFormatter($user['language'], $dateType, $timeType);
+    return $fmt->format($date);
+  }
+
+  return format_date_legacy($original, $show, $format);
 }
 
 /**
@@ -1497,7 +1547,7 @@ INSERT INTO
   ON DUPLICATE KEY UPDATE value = \''.$dbValue.'\'
 ;';
 
-  pwg_query($query, false);
+  pwg_query($query);
 
   if ($updateGlobal)
   {
@@ -2496,7 +2546,7 @@ function send_piwigo_infos()
     'technical' => array(
       'php_version' => PHP_VERSION,
       'piwigo_version' => PHPWG_VERSION,
-      'os_version' => PHP_OS,
+      'os_version' => PHP_OS.((is_in_container()) ? ' (container)' : ''),
       'db_version' => pwg_get_db_version(),
       'php_datetime' => date("Y-m-d H:i:s"),
       'db_datetime' => $db_current_date,
@@ -2802,6 +2852,59 @@ SELECT
     'use_watermark' => !empty($watermark->file) ? 'yes' : 'no',
   );
 
+  // which remote apps have been used?
+  $remote_apps_start_time = get_moment();
+
+  $query = '
+SELECT
+    user_agent,
+    COUNT(*) AS counter,
+    MIN(occured_on) AS first_encounter,
+    MAX(occured_on) AS last_encounter
+  FROM '.ACTIVITY_TABLE.'
+  WHERE user_agent NOT LIKE \'Mozilla/5%\'
+  GROUP BY user_agent
+;';
+  $activities = query2array($query);
+  $apps = array();
+
+  $apps_pattern = array(
+    'Piwigo iOS' => '/^Piwigo\/\d+ CFNetwork/',
+    'Piwigo NG' => '/^Dart\/[\d\.]+ \(dart:io\)$/',
+    'Piwigo Android' => '/^Piwigo-Android/',
+    'Lightroom' => '/Lightroom/',
+    'Piwigo Remote Sync' => '/(PiwigoRemoteSync|Apache-HttpClient)/',
+    'darktable' => '/darktable/',
+    'Piwigo Client' => '/PiwigoClient/',
+    'Aperture' => '/ApertureToPiwigoPlugIn/',
+    'MacShare' => '/MacShareToPiwigo/',
+    'WordPress' => '/WordPress/',
+    'pLoader' => '/pLoader/',
+  );
+
+  foreach ($activities as $activity)
+  {
+    foreach ($apps_pattern as $app_name => $pattern)
+    {
+      if (preg_match($pattern, $activity['user_agent']))
+      {
+        @$apps[$app_name]['counter'] += $activity['counter'];
+
+        if (!isset($apps[$app_name]['first_encounter']) or strtotime($apps[$app_name]['first_encounter']) > strtotime($activity['first_encounter']))
+        {
+          $apps[$app_name]['first_encounter'] = $activity['first_encounter'];
+        }
+
+        if (!isset($apps[$app_name]['last_encounter']) or strtotime($apps[$app_name]['last_encounter']) < strtotime($activity['last_encounter']))
+        {
+          $apps[$app_name]['last_encounter'] = $activity['last_encounter'];
+        }
+      }
+    }
+  }
+
+  $piwigo_infos['apps'] = $apps;
+
   $features = array(
     'activate_comments',
     'rate',
@@ -2909,6 +3012,44 @@ SELECT
 function pwg_unique_exec_ends($token_name)
 {
   conf_delete_param($token_name.'_running');
+}
+
+/**
+ *
+ * Detect if Piwigo is running in a containerized environment
+ * Assume all containers are Linux based
+ * Doesn't differentiate between VMs and bare metal installs
+ *
+ * @since 16
+ *
+ * @return bool
+ */
+function is_in_container()
+{
+	if (strtoupper(substr(PHP_OS, 0, 5)) === 'LINUX')
+	{
+		if (file_exists('/proc/2/sched')) // Check if PID2 exist
+		{
+			$line = file_get_contents('/proc/2/sched'); // Read PID2 name
+			if (false == $line )
+			{
+				return false;
+			}
+			else
+			{
+				// If PID2 name is not kthreadd, piwigo is running in a container
+				return !('kthreadd' === substr( $line, 0, 8 ));
+			}
+		}
+		else
+		{
+			return true;
+		}
+	}
+	else
+	{
+		return false;
+	}
 }
 
 ?>

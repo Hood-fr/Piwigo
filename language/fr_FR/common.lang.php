@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Français [FR]
-Version: 15.5.0
+Version: auto
 Language URI: http://piwigo.org/ext/extension_view.php?eid=421
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -100,8 +100,6 @@ $lang['created on %s'] = 'créée le %s';
 $lang['Created on'] = 'Créée le';
 $lang['Creation date'] = 'Date de création';
 $lang['Current password is wrong'] = 'Erreur sur le mot de passe actuel';
-$lang['customize the appareance of the gallery'] = 'personnaliser l\'apparence de la galerie';
-$lang['Customize'] = 'Personnaliser';
 $lang['Date'] = 'Date';
 $lang['day'][0] = 'Dimanche';
 $lang['day'][1] = 'Lundi';
@@ -455,3 +453,84 @@ $lang['There are no tags available for the photos currently filtered'] = 'Aucun 
 $lang['There are no creation dates available for the photos currently filtered'] = 'Aucune date de création n\'est disponible pour les photos actuellement filtrées';
 $lang['There are no authors available for the photos currently filtered'] = 'Aucun auteur n\'est disponible pour les photos actuellement filtrées';
 $lang['Set your password below.'] = 'Définissez votre mot de passe ci-dessous.';
+$lang['Don\'t have an account yet ?'] = 'Vous n\'avez pas encore de compte?';
+$lang['Create an account'] = 'Créez un compte';
+$lang['Return to the gallery'] = 'Retour à la galerie';
+$lang['Already have an account ?'] = 'Vous avez déjà un compte ?';
+$lang['An error has occured please got back to <a href="identification.php" title="Sign in">Sign in</a> or <a href="register.php">Register</a>'] = 'Une erreur est survenue, veuillez retourner à la page <a href="identification.php" title="Connexion">Connexion</a> ou <a href="register.php">Inscription</a>.';
+$lang['Return to <a href="identification.php" title="Sign in">Sign in</a>'] ='Retour à la page <a href="identification.php" title="Connexion">Connexion</a>';
+$lang['An email has been sent with a link to reset your password'] = 'Un e-mail a été envoyé avec un lien pour réinitialiser votre mot de passe.';
+$lang['Hello <em>%s</em>, enter your new password below.'] = 'Bonjour <em>%s</em>, saisissez votre nouveau mot de passe ci-dessous.';
+$lang['Confirm my new password'] = 'Confirmer mon nouveau mot de passe';
+$lang['Confirm Password'] = 'Confirmer le mot de passe';
+$lang['Confirm new password'] = 'Confirmer le nouveau mot de passe';
+$lang['Set my password'] = 'Définir mon mot de passe';
+$lang['Your password was successfully set'] = 'Votre mot de passe a été défini avec succès';
+$lang['Your password was successfully reset'] = 'Votre mot de passe a été réinitialisé avec succès';
+$lang['Account'] = 'Mon compte';
+$lang['Manage your account'] = 'Gérer votre compte';
+$lang['Choose how you want to see your gallery'] = 'Choisissez comment vous voulez voir votre galerie';
+$lang['Change your password'] = 'Changez votre mot de passe';
+$lang['Options'] = 'Options';
+$lang['Your changes have been applied.'] = 'Vos changements ont été pris en compte.';
+$lang['Create API Keys to secure your acount'] = 'Créez des clés API pour sécuriser votre compte';
+$lang['API Keys'] = 'Clés API';
+$lang['Created at'] = 'Crée le';
+$lang['Last use'] = 'Dernière utilisation';
+$lang['Expires in'] = 'Expire dans';
+$lang['Expired on'] = 'Expiré le';
+$lang['Never'] = 'Jamais';
+$lang['New API Key'] = 'Nouvelle clé API';
+$lang['Show expired keys'] = 'Afficher les clés expirées';
+$lang['Hide expired keys'] = 'Masquer les clés expirées';
+$lang['Generate API Key'] = 'Générer une clé API';
+$lang['Create a new API key to secure your account.'] = 'Créez une nouvelle clé API pour sécuriser votre compte.';
+$lang['API Key name'] = 'Nom de la clé API';
+$lang['Duration'] = 'Durée';
+$lang['Custom date'] = 'Date personnalisée';
+$lang['Generate key'] = 'Générer la clé';
+$lang['Done'] = 'Terminé';
+$lang['Impossible to copy automatically. Please copy manually.'] = 'Impossible de copier automatiquement. Veuillez copier manuellement.';
+$lang['The api key has been successfully created.'] = 'La clé API a été créée avec succès.';
+$lang['API Key not found'] = 'Clé API non trouvée';
+$lang['Expired'] = 'Expirée';
+$lang['API Key has been successfully revoked.'] = 'La clé API a été révoquée avec succès.';
+$lang['API Key has been successfully edited.'] = 'La clé API a été modifiée avec succès.';
+$lang['No expiration'] = 'Pas d’expiration';
+$lang['must not be empty'] = 'ne doit pas être vide';
+$lang['The secret key can no longer be displayed.'] = 'La clé secrète ne peut plus être affichée.';
+$lang['Revoked'] = 'Révoqué';
+$lang['Revoke'] = 'Révoquer';
+$lang['You have no email address, so you will not be notified when your API key is about to expire.'] = 'Vous n\'avez pas d\'adresse email, vous ne serez donc pas notifié lorsque votre clé API sera sur le point d\'expirer.';
+$lang['you must choose a date'] = 'vous devez choisir une date';
+$lang['This API key was manually revoked on %s'] = 'Cette clé API a été révoquée manuellement le %s';
+$lang['Edit API Key'] = 'Modifier la clé API';
+$lang['Do you really want to revoke the "%s" API key?'] = 'Voulez-vous vraiment révoquer la clé API "%s" ?';
+$lang['To manage your API keys, please log in with your username/password.'] = 'Pour gérer vos clés API, veuillez vous connecter avec votre nom d\'utilisateur/mot de passe.';
+$lang['3xlarge'] = '3XL - très énorme';
+$lang['4xlarge'] = '4XL - gigantesque';
+$lang['Your API key will expire soon'] = 'Votre clé API va bientôt expirer';
+$lang['Your API key will expire in %d day.'] = 'Votre clé API expirera dans %d jour.';
+$lang['Your API key will expire in %d days.'] = 'Votre clé API expirera dans %d jours.';
+$lang['To continue using the API, please renew your key before it expires.'] = 'Pour continuer à utiliser l\'API, veuillez renouveler votre clé avant son expiration.';
+$lang['You can manage your API keys in your <a href="%s">account settings.</a>'] = 'Vous pouvez gérer vos clés API dans les <a href="%s">paramètres de votre compte.</a>';
+$lang['Expert mode'] = 'Mode expert';
+$lang['An email has been sent with a verification code'] = 'Un e-mail contenant un code de vérification vous a été envoyé';
+$lang['If you do not receive the email, please contact your webmaster.'] = 'Si vous ne recevez pas cet e-mail, veuillez contacter votre webmaster.';
+$lang['Verification code'] = 'Code de vérification';
+$lang['Verify'] = 'Vérifier';
+$lang['Invalid verification code'] = 'Code de vérification invalide';
+$lang['Save your ID and secret'] = 'Enregistrez votre identifiant et votre secret';
+$lang['The secret will no longer be displayed. You must copy it to continue.'] = 'Le secret ne sera plus affiché. Vous devez le copier pour continuer.';
+$lang['ID copied.'] = 'Identifiant copié.';
+$lang['Secret copied. Keep it in a safe place.'] = 'Secret copié. Gardez-le dans un endroit sûr.';
+$lang['edit user preferences'] = 'modifier les préférences utilisateur';
+$lang['Here is your verification code:'] = 'Voici votre code de vérification :';
+$lang['Your verification code'] = 'Votre code de vérification';
+$lang['If this wasn\'t you, please change your password immediately or contact your webmaster.'] = 'Si ce n\'était pas vous, veuillez changer immédiatement votre mot de passe ou contacter votre webmaster.';
+$lang['If you changed your password because you think it was stolen, we recommend revoking your %d API keys <a href="%s">in your profile</a>.'] = 'Si vous avez changé votre mot de passe car vous pensez qu\'il a été volé, nous vous recommandons de révoquer vos %d clefs d\'API <a href="%s">sur votre profil</a>.';
+$lang['Too many attempts, please try later..'] = 'Trop de tentatives, veuillez réessayer plus tard..';
+$lang['Verification successful! You can now choose a new password.'] = 'Vérification réussie ! Vous pouvez maintenant choisir un nouveau mot de passe.';
+$lang['Check your inbox'] = 'Vérifiez votre boîte de réception.';
+$lang['The email %s will be used to notify you when your API key is about to expire.'] = 'L\'adresse e-mail %s sera utilisée pour vous avertir lorsque votre clé API sera sur le point d\'expirer.';
+$lang['When enabled, a common template is used for the login and registration pages, regardless of the theme.'] = 'Lorsque cette option est activée, un gabarit commun est utilisé pour les pages de connexion et d\'inscription, quel que soit le thème.';

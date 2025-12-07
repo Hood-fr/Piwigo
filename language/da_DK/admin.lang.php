@@ -361,7 +361,7 @@ $lang['User status'] = 'Brugerstatus';
 $lang['user_status_admin']  =  'Administrator';
 $lang['user_status_generic']  =  'Generisk';
 $lang['user_status_guest']  =  'Gæst';
-$lang['user_status_normal']  =  'Bruger';
+
 $lang['user_status_webmaster']  =  'Webmaster';
 $lang['Virtual album'] = 'Virtuelt album';
 $lang['Waiting'] = 'Afventer';
@@ -1405,3 +1405,18 @@ $lang['An activation link valid for %s was created but could not be sent. You ca
 $lang['This link is valid for %s. After this time, you will need to request a new link.'] = 'Linket er gyldigt i %s. Derefter er det nødvendigt at bede om et nyt link.';
 $lang['To set your password, visit the following address:'] = 'For at opsætte adgangskoden, skal du besøge følgende adresse:';
 $lang['Welcome to %s'] = 'Velkommen til %s';
+$lang['We have found %d duplicate paths. Details provided by plugin Check Uploads'] = 'Vi har fundet %d duplikerede stier. Flere oplysninger fås gennem plugin\'en Check Uploads';
+$lang['%d photos were moved from the upload lounge to their albums'] = '%d fotografier blev flyttet fra uploadlounge til deres albummer';
+$lang['Are you sure you want to delete "%d" comments?'] = 'Er du sikker på at du vil slette "%d" kommentarer?';
+$lang['Are you sure you want to delete comment #%s?'] = 'Er du sikker på at du vil slette kommentar #%s?';
+$lang['Empty lounge'] = 'Tøm lounge';
+$lang['If a photo in this album has the same filename, update the file without changing the photo\'s properties'] = 'Hvis et fotografi i dette album har det samme filnavn, så opdater filen uden at ændre fotografiet egenskaber';
+$lang['No comments selected, no actions possible.'] = 'Ingen kommentarer valgt, ingen handlinger mulige';
+$lang['Save all photos'] = 'Gem alle fotografier';
+$lang['The comment has been validated.'] = 'Kommentaren er godkendt';
+$lang['The comments have been validated.'] = 'Kommentarerne er godkendt';
+$lang['There is currently %d photos in the lounge (upload buffer)'] = 'Der er i øjeblikket %d fotografier i loungen (uploadbuffer)';
+$lang['Use standard Piwigo template for common pages.'] = 'Anvend Piwigos standardskabelon til fællessider';
+$lang['When enabled, a common template is used for the login, registration and forgotten password pages, regardless of the theme. Some themes might use these templates even if you uncheck this option'] = 'Når aktiveret, anvendes en fælles skabelon til siderne login, kontooprettelse og glemt adgangskode, uanset om der er et tema eller ej. Nogle temaer kan anvende disse skabeloner, selv hvis du fravælger muligheden her.';
+$lang['Admins only'] = 'Kun administratorer';
+$lang['user_status_normal'] = 'Grundlæggende';

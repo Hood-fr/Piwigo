@@ -363,7 +363,7 @@ $lang['User status'] = "Statut de l'utilisateur";
 $lang['user_status_admin'] = "Administrateur";
 $lang['user_status_generic'] = "Générique";
 $lang['user_status_guest'] = "Invité";
-$lang['user_status_normal'] = "Visiteur";
+$lang['user_status_normal'] = "Basique";
 $lang['user_status_webmaster'] = "Webmestre";
 $lang['Virtual album'] = 'Album virtuel';
 $lang['Waiting'] = "En attente";
@@ -1409,4 +1409,18 @@ $lang['This link is valid for %s. After this time, you will need to request a ne
 $lang['To set your password, visit the following address:'] = 'Pour définir votre mot de passe, rendez-vous à l\'adresse suivante :';
 $lang['A photo library administrator has created the following account for you:'] = 'Un administrateur de la photothèque vous a créé le compte suivant :';
 $lang['Welcome to %s'] = 'Bienvenue sur %s';
+$lang['Save all photos'] = 'Enregistrer toutes les photos';
+$lang['Use standard Piwigo template for common pages.'] = 'Utiliser le modèle standard de Piwigo pour les pages courantes.';
+$lang['When enabled, a common template is used for the login, registration and forgotten password pages, regardless of the theme. Some themes might use these templates even if you uncheck this option'] = 'Lorsque cette option est activée, un modèle commun est utilisé pour les pages de connexion, d\'inscription et de mot de passe oublié, quel que soit le thème. Certains thèmes peuvent utiliser ces modèles même si cette option est décochée.';
+$lang['We have found %d duplicate paths. Details provided by plugin Check Uploads'] = 'Nous avons trouvé %d chemins anormalement dupliqués. À contrôler avec le plugin Check Uploads.';
+$lang['Are you sure you want to delete comment #%s?'] = 'Êtes-vous sûr de vouloir supprimer le commentaire #%s ?';
+$lang['No comments selected, no actions possible.'] = 'Aucun commentaire sélectionné, aucune action possible.';
+$lang['The comment has been validated.'] = 'Le commentaire a été validé.';
+$lang['The comments have been validated.'] = 'Les commentaires ont été validés.';
+$lang['Are you sure you want to delete "%d" comments?'] = 'Êtes-vous sûr de vouloir supprimer "%d" commentaires ?';
+$lang['If a photo in this album has the same filename, update the file without changing the photo\'s properties'] = 'Si une photo de cet album a le même nom de fichier, mettre à jour le fichier sans changer les propriétés de la photo';
+$lang['Empty lounge'] = 'Vider le lounge';
+$lang['There is currently %d photos in the lounge (upload buffer)'] = 'Il y a actuellement %d photos dans le lounge (salle d\'attente des transferts)';
+$lang['%d photos were moved from the upload lounge to their albums'] = '%d photos ont été déplacées du lounge vers leurs albums respectifs';
+$lang['Admins only'] = 'Admins uniquement';
 // Leave this line empty
