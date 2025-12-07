@@ -102,24 +102,17 @@ const str_assoc_album_ab = '{'Associate to album'|translate|escape:javascript}';
       <a class="preview-box icon-zoom-square" href="{$FILE_SRC}" title="{'Zoom'|translate}"></a>
       <a class="icon-download" href="{$U_DOWNLOAD}" title="{'Download'|translate}"></a>
       <a class="icon-signal" href="{$U_HISTORY}" title="{'Visit history'|translate}"></a>
+      <a class="icon-pulse" href="{$U_ACTIVITY}" title="{'Activity'|translate}"></a>
       {if !url_is_remote($PATH)}
       <a class="icon-arrows-cw" href="{$U_SYNC}" title="{'Synchronize metadata'|@translate}"></a>
       <a class="icon-trash" title="{'delete photo'|@translate}" id='action-delete-picture'></a>
       {/if}
     </div>
-    {if isset($U_JUMPTO)}
-      <a class="see-out" href="{$U_JUMPTO}" >
-      <p><i class="icon-left-open"></i>{'Open in gallery'|@translate}</p>
-    {else}
-      <a class="see-out disabled" href="#" >
-      <p class="tiptip" title="{'You don\'t have access to this photo'|translate}" ><i class="icon-left-open"></i>{'Open in gallery'|translate}</p>
-    {/if}
       {if $INTRO.is_svg}
       <img src="{$PATH}" alt="{'Thumbnail'|translate}" class="svg-image other-image-format" style="{if $FORMAT}width:100%; max-height:100%; {else}max-width:100%; height:100%;{/if} object-fit:contain;">
       {else}
       <img src="{$TN_SRC}" alt="{'Thumbnail'|translate}" class="other-image-format" style="{if $FORMAT}width:100%; max-height:100%;{else}max-width:100%; height:100%;{/if} object-fit:contain;">
       {/if}
-    </a>
   </div>
   <div id='picture-content'>
     <div id='picture-infos'>
@@ -181,12 +174,12 @@ const str_assoc_album_ab = '{'Associate to album'|translate|escape:javascript}';
       {/if}
       <br>
       <select class="invisible-related-categories-select" name="associate[]" multiple>
-      {foreach from=$related_categories item=$cat_path key=$key}
+      {foreach from=$related_categories item=cat_path key=key}
         <option selected value="{$key}"></option>
       {/foreach}
       </select>
       <div class="related-categories-container">
-      {foreach from=$related_categories item=$cat_path key=$key}
+      {foreach from=$related_categories item=cat_path key=key}
       <div class="breadcrumb-item"><span class="link-path">{$cat_path['name']}</span>{if $cat_path['unlinkable']}<span id={$key} class="icon-cancel-circled remove-item"></span>{else}<span id={$key} class="icon-help-circled help-item tiptip" title="{'This picture is physically linked to this album, you can\'t dissociate them'|translate}"></span>{/if}</div>
       {/foreach}
       </div>
@@ -212,7 +205,7 @@ const str_assoc_album_ab = '{'Associate to album'|translate|escape:javascript}';
     <p>
       <strong>{'Description'|@translate}</strong>
       <br>
-      <textarea name="description" id="description" class="description">{$DESCRIPTION}</textarea>
+      <textarea name="comment" id="description" class="description">{$DESCRIPTION}</textarea>
     </p>
 
     <p>
@@ -224,10 +217,33 @@ const str_assoc_album_ab = '{'Associate to album'|translate|escape:javascript}';
       </select>
    </p>
 
-    <p>
+   <div class="savebar-footer">
+      <div class="savebar-footer-start">
+        <div class="savebar-footer-block">
+{if isset($U_JUMPTO)}
+          <a class="savebar-see-out" href="{$U_JUMPTO}" ><i class="icon-left-open"></i>{'Open in gallery'|@translate}</a>
+{else}
+          <a class="savebar-see-out tiptip disabled" href="#" title="{'You don\'t have access to this photo'|translate}"><i class="icon-left-open"></i>{'Open in gallery'|translate}</a>
+{/if}
+        </div>
+      </div>
+      <div class="savebar-footer-end">
+
+{if isset($save_success)}
+        <div class="savebar-footer-block">
+          <div class="badge info-message">
+            <i class="icon-ok"></i>{$save_success}
+          </div>
+        </div>
+{/if}
+
+        <div class="savebar-footer-block">
+          <button class="buttonLike"  type="submit" name="submit"><i class="icon-floppy"></i> {'Save Settings'|@translate}</button>
+        </div>
+      </div>
       <input type="hidden" name="pwg_token" value="{$PWG_TOKEN}">
-      <input class="submit" type="submit" value="{'Save Settings'|@translate}" name="submit">
-    </p>
+    </div>
+    
   </div>
 
 </form>

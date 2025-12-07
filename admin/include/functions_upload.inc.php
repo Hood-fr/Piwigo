@@ -227,7 +227,7 @@ SELECT
 
     // compute file path
     $date_string = preg_replace('/[^\d]/', '', $dbnow);
-    $random_string = substr($md5sum, 0, 8);
+    $random_string = substr($md5sum, 0, 4).'%s';
     $filename_wo_ext = $date_string.'-'.$random_string;
     $file_path = $upload_dir.'/'.$filename_wo_ext.'.';
 
@@ -270,6 +270,16 @@ SELECT
     }
 
     prepare_directory($upload_dir);
+
+    $file_path_pattern = $file_path;
+    do
+    {
+      // we generate a random string for each upload. If the user uploads
+      // the same photo twice at the same time (same timestamp, same md5sum)
+      // we still want the path to be unique.
+      $file_path = sprintf($file_path_pattern, substr(bin2hex(random_bytes(4)), 0, 4));
+    }
+    while (file_exists($file_path));
   }
 
   if (is_uploaded_file($source_filepath))
@@ -510,8 +520,36 @@ SELECT
     'filesize' => $file_infos['filesize'],
   );
 
-  single_insert(IMAGE_FORMAT_TABLE, $insert);
-  $format_id = pwg_db_insert_id(IMAGE_FORMAT_TABLE);
+
+  $query = '
+SELECT
+  format_id
+  FROM '.IMAGE_FORMAT_TABLE.'
+  WHERE image_id = '.$format_of.'
+  AND ext = "'.$format_ext.'"
+;';
+
+  $formats = query2array($query);
+  if($formats)
+  {
+    $set_fields = array(
+      'filesize' => $file_infos['filesize'],
+    );
+    $where_fields = array(
+      'format_id' => $formats[0]['format_id'],
+      'image_id' => $format_of,
+      'ext' => $format_ext,
+    );
+    single_update(IMAGE_FORMAT_TABLE, $set_fields, $where_fields);
+    $format_id = $formats[0]['format_id'];
+    $add_status = "update";
+  }
+  else
+  {
+    single_insert(IMAGE_FORMAT_TABLE, $insert);
+    $format_id = pwg_db_insert_id(IMAGE_FORMAT_TABLE);
+    $add_status = "add";
+  }
 
   pwg_activity('photo', $format_of, 'edit', array('action'=>'add format', 'format_ext'=>$format_ext, 'format_id'=>$format_id));
 
@@ -520,7 +558,7 @@ SELECT
 
   trigger_notify('loc_end_add_format', $format_infos);
 
-  return $format_id;
+  return $add_status;
 }
 
 add_event_handler('upload_file', 'upload_file_pdf');
@@ -552,7 +590,7 @@ function upload_file_pdf($representative_ext, $file_path)
   $representative_file_path = original_to_representative($file_path, $ext);
   prepare_directory(dirname($representative_file_path));
 
-  $exec = $conf['ext_imagick_dir'].'convert';
+  $exec = $conf['ext_imagick_dir'].pwg_image::get_ext_imagick_command();
   if ('jpg' == $ext)
   {
     $exec.= ' -quality '.$jpg_quality;
@@ -601,7 +639,7 @@ function upload_file_heic($representative_ext, $file_path)
 
   list($w,$h) = get_optimal_dimensions_for_representative();
 
-  $exec = $conf['ext_imagick_dir'].'convert';
+  $exec = $conf['ext_imagick_dir'].pwg_image::get_ext_imagick_command();
   $exec.= ' -sampling-factor 4:2:0 -quality 85 -interlace JPEG -colorspace sRGB -auto-orient +repage -resize "'.$w.'x'.$h.'>"';
   $exec.= ' "'.realpath($file_path).'"';
   $exec.= ' "'.$representative_file_path.'"';
@@ -651,7 +689,7 @@ function upload_file_tiff($representative_ext, $file_path)
 
   prepare_directory(dirname($representative_file_path));
 
-  $exec = $conf['ext_imagick_dir'].'convert';
+  $exec = $conf['ext_imagick_dir'].pwg_image::get_ext_imagick_command();
 
   if ('jpg' == $conf['tiff_representative_ext'])
   {
@@ -798,7 +836,7 @@ function upload_file_psd($representative_ext, $file_path)
 
   prepare_directory(dirname($representative_file_path));
 
-  $exec = $conf['ext_imagick_dir'].'convert';
+  $exec = $conf['ext_imagick_dir'].pwg_image::get_ext_imagick_command();
 
   $exec .= ' "'.realpath($file_path).'"';
 
@@ -860,7 +898,7 @@ function upload_file_eps($representative_ext, $file_path)
 
   // convert -density 300 image.eps -resize 2048x2048 image.png
 
-  $exec = $conf['ext_imagick_dir'].'convert';
+  $exec = $conf['ext_imagick_dir'].pwg_image::get_ext_imagick_command();
   $exec.= ' -density 300';
   $exec.= ' "'.realpath($file_path).'"';
   $exec.= ' -resize 2048x2048';
@@ -1067,7 +1105,7 @@ function get_optimal_dimensions_for_representative()
   global $conf;
 
   $enabled = ImageStdParams::get_defined_type_map();
-  $disabled = @unserialize(@$conf['disabled_derivatives']);
+  $disabled = safe_unserialize(ImageStdParams::get_disabled_type_map());
   if ($disabled === false)
   {
     $disabled = array();

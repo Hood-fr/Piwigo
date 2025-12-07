@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: Finnish [FI]
-Version: 15.5.0
+Version: auto
 Language URI: http://piwigo.org/ext/extension_view.php?eid=686
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -132,8 +132,8 @@ $lang['Comments'] = 'Kommentit';
 $lang['Contact'] = 'Ota yhteyttä';
 $lang['created before %s (%s)'] = 'luotu ennen %s (%s)';
 $lang['created on %s'] = 'Luotu %s';
-$lang['Customize'] = 'Muokkaa';
-$lang['customize the appareance of the gallery'] = 'muokkaa gallerian ulkoasua';
+
+
 $lang['Delete'] = 'Poista';
 $lang['delete all photos from your favorites'] = 'poista kaikki kuvat suosikeista';
 $lang['descending'] = 'laskeva';
@@ -456,3 +456,4 @@ $lang['Custom dates'] = 'Tietyt päivät';
 $lang['There are no creation dates available for the photos currently filtered'] = 'Nykyisen suodatuksen mukaisille kuville ei ole saatavissa luomispäiviä';
 $lang['There are no tags available for the photos currently filtered'] = 'Nykyisen suodatuksen mukaisille kuville ei ole saatavissa tageja';
 $lang['There are no authors available for the photos currently filtered'] = 'Nykyisen suodatuksen mukaisille kuville ei ole saatavissa tekijätietoja';
+$lang['Set your password below.'] = 'Aseta salasana alla.';
