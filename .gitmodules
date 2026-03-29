@@ -132,4 +132,4 @@
 	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/check_uploads
 [submodule "plugins/piwigo-openstreetmap"]
 	path = plugins/piwigo-openstreetmap
-	url = git@github.com:Hood-fr/piwigo-openstreetmap.git
+	url = /Users/robinmoret/Documents/Creations/Daedalum/repository/piwigo_master/plugins/piwigo-openstreetmap

@@ -1,4 +1,4 @@
-{combine_css id='standard_pages_css' path="themes/standard_pages/css/standard_pages.css" order=100}
+{combine_css id='standard_pages_css' path="themes/standard_pages/skins/{$STD_PGS_SELECTED_SKIN}.css" order=100}
 {combine_css path="themes/default/vendor/fontello/css/gallery-icon.css" order=-10}
 
 <script>
@@ -29,9 +29,17 @@
 {/if}
   </section>
 
+{if 'none' != $STD_PGS_SELECTED_LOGO}
   <section id="logo-section">
+  {if 'piwigo_logo' == $STD_PGS_SELECTED_LOGO}
     <img id="piwigo-logo" src="{$ROOT_URL}themes/standard_pages/images/piwigo_logo.svg">
-  </section>
+  {else if 'custom_logo' == $STD_PGS_SELECTED_LOGO}
+    <img id="custom-logo" src="{$STD_PGS_SELECTED_LOGO_PATH}">
+  {else if 'gallery_title'}
+    <h1>{$GALLERY_TITLE}</h1>
+  {/if}
+    </section>
+{/if}
 
 
   <section id="password-form">
@@ -106,7 +114,7 @@
     </div>
 
   {elseif $action eq 'lost_code'}
-    <span class="success-message"><i class="gallery-icon-ok-circled"></i>{'An email has been sent with a verification code'|translate}</span>
+    <span class="success-message"><i class="gallery-icon-ok-circled"></i>{'If your account exists, a verification code has been sent to your email address.'|translate}</span>
     <div class="column-flex">
       <label for="user_code">{'Verification code'|@translate}</label>
       <div class="row-flex input-container">

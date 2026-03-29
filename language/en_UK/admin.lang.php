@@ -852,6 +852,8 @@ $lang['Update in progress... Please wait.'] = 'Update in progress... Please wait
 $lang['Update photos information'] = 'Update photos\' information';
 $lang['update the database from files'] = "update the database with files";
 $lang['Update to Piwigo %s'] = 'Update to Piwigo %s';
+$lang['Follow the update guide'] = 'Follow the update guide';
+$lang['Two container updates are available'] = 'Two container updates are available';
 $lang['Updates'] = 'Updates';
 $lang['Upload Photos'] = 'Upload Photos';
 $lang['Upload'] = "Upload";
@@ -1421,5 +1423,18 @@ $lang['Empty lounge'] = 'Empty lounge';
 $lang['There is currently %d photos in the lounge (upload buffer)'] = 'There is currently %d photos in the lounge (upload buffer)';
 $lang['%d photos were moved from the upload lounge to their albums'] = '%d photos were moved from the upload lounge to their albums';
 $lang['Admins only'] = 'Admins only';
+$lang['Standard pages'] = 'Standard pages';
+$lang['Standard pages aren\'t activated, however you have %d active themes that will still use them. These themes are:'] ='Standard pages aren\'t activated, however you have %d active themes that will still use them. These themes are:' ;
+$lang['Standard pages header'] = 'Standard pages header';
+$lang['Use Piwigo logo'] = 'Use Piwigo logo';
+$lang['Use custom logo (png, jpeg or svg)'] = 'Use custom logo (png, jpeg or svg)';
+$lang['Display Gallery title'] = 'Display Gallery title';
+$lang['Select a color theme for standard pages'] = 'Select a color theme for standard pages';
+$lang['Light mode'] = 'Light mode';
+$lang['Dark mode'] = 'Dark mode';
+$lang['Personalization settings'] ='Personalization settings';
+$lang['Change logo'] = 'Change logo';
+$lang['You are about to delete %s groups, are you sure?'] = 'You are about to delete %s groups, are you sure?';
+
 
 // Leave this line empty
