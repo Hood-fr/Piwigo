@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: العربية (مصر) [EG]
-Version: 16.3.0
+Version: 16.4.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=779
 Author: Piwigo team
 Author URI: http://piwigo.org

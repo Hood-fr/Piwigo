@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: 한국어 [KR]
-Version: 16.3.0
+Version: 16.4.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=509
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -176,9 +176,9 @@ $lang['month'][7] = "7월";
 $lang['month'][8] = "8월";
 $lang['month'][9] = "9월";
 $lang['Links'] = '링크';
-$lang['in this album'] = '(이 앨범)';
-$lang['in %d sub-album'] = '(%d개 하위 앨범)';
-$lang['in %d sub-albums'] = '(%d개 하위 앨범)';
+$lang['in this album'] = '(이 앨범에 있음)';
+$lang['in %d sub-album'] = '(%d개의 하위 앨범에 있음)';
+$lang['in %d sub-albums'] = '(%d개의 하위 앨범에 있음)';
 $lang['included'] = '포함됨';
 $lang['Invalid password!'] = '잘못된 비밀번호!';
 $lang['Language'] = '언어';
@@ -203,7 +203,7 @@ $lang['password updated'] = '비밀번호가 변경되었습니다';
 $lang['Recent period must be a positive integer value'] = '최근 기간은 양의 정수여야 합니다';
 $lang['photo'] = '사진';
 $lang['Click on the photo to see it in high definition'] = '고해상도로 보시려면 사진을 클릭하세요';
-$lang['Show file metadata'] = 'Metadata 보기';
+$lang['Show file metadata'] = '파일 메타데이터 표시';
 $lang['Powered by'] = '서비스 제공:';
 $lang['Preferences'] = '환경설정';
 $lang['Previous'] = '이전';
@@ -227,7 +227,7 @@ $lang['Search for Author'] = '작성자로 검색';
 $lang['Search in albums'] = '앨범에서 검색';
 $lang['Search by date'] = '날짜로 검색';
 $lang['Date'] = '날짜';
-$lang['End-Date'] = '끝나는 날짜';
+$lang['End-Date'] = '종료 날짜';
 $lang['Kind of date'] = '날짜의 종류';
 $lang['Submit'] = '등록';
 $lang['Yes'] = '예';
@@ -291,7 +291,7 @@ $lang['Invalid username or email'] = '잘못된 사용자 이름이나 이메일
 $lang['IP: %s'] = 'IP: %s';
 $lang['IPTC Metadata'] = 'IPTC 메타데이터';
 $lang['Menu'] = '메뉴'; 
-$lang['Email address is mandatory'] = '이메일 주소는 필수항목입니다';
+$lang['Email address is mandatory'] = '이메일 주소는 필수 항목입니다';
 $lang['First Page'] = '첫 페이지';
 $lang['Manual sort order'] = '사용자 정의 순서';
 $lang['N/A'] = 'N/A';
@@ -308,7 +308,7 @@ $lang['Return to home page'] = '홈페이지로 돌아가기';
 $lang['Search results'] = '검색 결과';
 $lang['set as album representative'] = '앨범 표지로 등록';
 $lang['slideshow'] = '슬라이드쇼';
-$lang['square'] = '사각형';
+$lang['square'] = '정사각형';
 $lang['stop the slideshow'] = '슬라이드쇼 정지';
 $lang['the beginning'] = '시작';
 $lang['the username must be given'] = '사용자 이름이 필요합니다';
@@ -324,7 +324,7 @@ $lang['The passwords do not match'] = '비밀번호가 일치하지 않습니다
 $lang['Thumbnails'] = '썸네일';
 $lang['User "%s" has no email address, password reset is not possible'] = '사용자 "%s"의 이메일 정보가 없어, 비밀번호 초기화를 할 수 없습니다.';
 $lang['User: %s'] = '사용자: %s';
-$lang['Username is mandatory'] = '사용자 이름은 필수 항목입니다.';
+$lang['Username is mandatory'] = '사용자 이름은 필수 항목입니다';
 $lang['Username modification'] = '사용자 이름 변경';
 $lang['Username or email'] = '사용자 이름 혹은 이메일';
 $lang['mandatory'] = '필수';
@@ -390,7 +390,7 @@ $lang['Here are your connection settings'] = '접속 설정은 다음과 같습�
 $lang['Send my connection settings by email'] = '접속 설정을 이메일로 보내기';
 $lang['Successfully registered, you will soon receive an email with your connection settings. Welcome!'] = '성공적으로 가입되었습니다. 곧 접속 설정이 있는 이메일을 받으실겁니다. 환영합니다.';
 $lang['View in'] = '다음에서 보기 : ';
-$lang['Search in sub-albums'] = '하위 앨범에서 검색';
+$lang['Search in sub-albums'] = '하위 앨범에서도 검색';
 $lang['Desktop'] = '컴퓨터';
 $lang['Forbidden'] = '금지됨';
 $lang['If you think you\'ve received this email in error, please contact us at %s'] = '만약 오류로 이 메일을 수신했다고 생각하시면, %s 로 연락 바랍니다.';
@@ -429,13 +429,12 @@ $lang['Check your inbox'] = '수신함을 확인하세요';
 $lang['Cancel'] = '취소';
 $lang['Change your password'] = '비밀번호 변경';
 $lang['An error has occured please got back to <a href="identification.php" title="Sign in">Sign in</a> or <a href="register.php">Register</a>'] = '오류가 발생했습니다. <a href="identification.php" title="로그인">로그인</a> 또는 <a href="register.php">회원가입</a>으로 돌아가 주세요';
-$lang['An email has been sent with a verification code'] = '인증 코드가 포함된 이메일이 발송되었습니다';
 $lang['An email has been sent with a link to reset your password'] = '비밀번호 재설정 링크가 포함된 이메일이 발송되었습니다.';
 $lang['Albums listed here match your search by word. Click on one to browse by album.'] = '여기에 나열된 앨범은 검색어와 일치합니다. 앨범을 클릭하면 해당 앨범으로 탐색할 수 있습니다.';
 $lang['Album title'] = '앨범 제목';
 $lang['Album description'] = '앨범 설명';
 $lang['Album already selected'] = '앨범이 이미 선택되었습니다';
-$lang['Added by'] = '추가됨';
+$lang['Added by'] = '추가한 사용자';
 $lang['Account'] = '계정';
 $lang['API Keys'] = 'API 키';
 $lang['API Key not found'] = 'API 키를 찾을 수 없습니다';
@@ -534,3 +533,4 @@ $lang['Empty filters'] = '빈 필터';
 $lang['Expired'] = '만료됨';
 $lang['Expired on'] = '만료일';
 $lang['Expires in'] = '만료 예정일';
+$lang['If your account exists, a verification code has been sent to your email address.'] = '계정이 존재하는 경우, 인증 코드가 귀하의 이메일 주소로 발송되었습니다.';
