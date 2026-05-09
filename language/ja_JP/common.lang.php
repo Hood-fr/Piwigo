@@ -7,7 +7,7 @@
 // +-----------------------------------------------------------------------+
 /*
 Language Name: 日本語 [JP]
-Version: 16.3.0
+Version: 16.4.0
 Language URI: http://piwigo.org/ext/extension_view.php?eid=425
 Author: Piwigo team
 Author URI: http://piwigo.org
@@ -430,3 +430,14 @@ $lang['Search in :'] = '以下から検索する';
 $lang['Empty filters'] = 'フィルターをクリア';
 $lang['You can try to edit your filters and perform a new search.'] = 'フィルターを変更して新たに検索を行うことができます。';
 $lang['No results are available.'] = '見つかりませんでした。';
+$lang['An email has been sent with a link to reset your password'] = 'パスワードリセット用のリンクがメールで送信されました。';
+$lang['Set your password below.'] = '下部にパスワードを設定してください。';
+$lang['Hello <em>%s</em>, enter your new password below.'] = '<em>%s</em>さんこんにちは、新しいパスワードを入力してください。';
+$lang['Here is your verification code:'] = '認証コード：';
+$lang['Already have an account ?'] = '既にアカウントをお持ちですか？';
+$lang['Cancel'] = 'キャンセル';
+$lang['Change your password'] = 'パスワードの変更';
+$lang['Click here to display it'] = 'ここをクリックして表示';
+$lang['Create an account'] = 'アカウントを作成';
+$lang['Done'] = '完了';
+$lang['Expired'] = '期限切れ';
