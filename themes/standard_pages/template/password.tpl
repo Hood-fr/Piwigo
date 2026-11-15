@@ -5,6 +5,7 @@
   var selected_language = `{$language_options[$current_language]}`;
   var url_logo_light = `{$ROOT_URL}themes/standard_pages/images/piwigo_logo.svg`;
   var url_logo_dark = `{$ROOT_URL}themes/standard_pages/images/piwigo_logo_dark.svg`;
+  var cookie_path = '{$COOKIE_PATH|@escape:'javascript'}';
 </script>
 {combine_script id='standard_pages_js' load='async' require='jquery' path='themes/standard_pages/js/standard_pages.js'}
 
@@ -84,7 +85,7 @@
       <label for="username">{'Username'|translate}</label>
       <div class="row-flex input-container">
         <i class="gallery-icon-user-2"></i>
-        <input type="text" class="" type="text" name="username" id="username" size="25" value={$username} disabled  >
+        <input type="text" class="" type="text" name="username" id="username" size="25" value="{$username|escape:html}" disabled  >
       </div>
     </div>
     {/if}
